@@ -1,0 +1,306 @@
+#!/bin/bash
+
+# -----------------------------------------------------------------------------
+# Load environmental variables
+# If you do not trust the path, configure below:
+SYSTEM=`uname -s`
+if [ "$SYSTEM" = Darwin ]
+then
+	source /etc/bashrc
+	source /etc/profile
+	source ${HOME}/.bash_profile
+elif [ "$SYSTEM" = Linux ]
+then
+	source /etc/profile
+	source /etc/bash.bashrc
+	source ${HOME}/.bashrc
+fi
+
+VER=0.1b
+VERDATE="1-Apr-2013"
+
+FILENAME=`basename $0`
+FILENAME="${FILENAME%.*}"
+DIRNAME=`dirname $0`
+
+OUTPUT_DIR=""
+LOG_LEVEL=""
+
+# -----------------------------------------------------------------------------
+# Load external functions
+source ${DIRNAME}/appris_env
+
+# -----------------------------------------------------------------------------
+# Usage
+
+USAGE="
+\n
+ APPRIS's binary package.\n
+\n
+ Name:\n
+\t appris_retrieve_stats\n
+\n
+ Description:\n
+\t Retrieves statistics from APPRIS methods.\n
+\n
+ Required arguments:\n
+\t -r, -release\n
+\t\t gen12   (Homo sapiens - gencode12/ensembl67)\n
+\t\t gen15   (Homo sapiens - gencode15/ensembl70)\n
+\t\t gen19   (Homo sapiens - gencode19/ensembl74)\n
+\t\t Mmus70  (Mus musculus - ensembl70)\n
+\t\t Rnor70  (Rattus norvegicus - ensembl70)\n
+\t\t Drer70  (Danio rerio - ensembl70)\n
+\t\t Lpar23A (Lynx pardinus)\n
+\n
+ \t -o [-out]\n
+\t\t Output path\n
+\t\t data/g15.v3.15Jul2013/\n
+\n
+\t -l, -loglevel\n
+\t\t info\n
+\t\t debug\n
+\n
+\t -v [-version]\n
+\t -h [-help]\n
+\n
+\n
+ Author: Jose Manuel Rodriguez Carrasco -jmrodriguez@cnio.es- (INB-GN2,CNIO)\n
+\n
+"
+
+# -----------------------------------------------------------------------------
+# Get input parameters
+
+while expr "//$1" : //- >/dev/null
+do
+	case "$1" in
+		-r | -release )
+			case "$2" in
+				gen12 | gen15 | gen19 | Lpar23A )
+					GENCODE=1
+					RELEASE=$2
+					;;
+				Mmus70 | Rnor70 | Drer70 )
+					GENCODE=0
+					RELEASE=$2
+					;;
+				* )
+					echo Unknown method name: "$2" 
+					echo -e $USAGE
+					exit 1
+					;;
+			esac
+			shift
+			;;	
+		-o | -out )
+        	OUTPUT_DIR=$2
+        	shift
+			;;
+		-l | -loglevel )
+			case "$2" in
+				info | debug )
+		        	LOG_LEVEL=$2
+					;;
+				* )
+					echo Unknown loglevel: "$2" 
+					echo -e $USAGE
+					exit 1
+					;;
+			esac
+			shift
+			;;
+		-h | -help )
+			echo -e $USAGE		
+			exit
+			;;
+		-v | -version )
+			echo "$VER", "$VERDATE"
+			exit
+			;;
+		* )
+			echo Unknown option: "$1"
+			echo -e $USAGE
+			exit 1
+			;;
+	esac
+	shift
+done
+
+if [ "${RELEASE}" == "" ]; then
+	echo You must specify at least a release!
+	echo -e $USAGE
+	exit 1
+fi  
+
+if [ "${OUTPUT_DIR}" == "" ]; then
+	echo You must specify at least version name!
+	echo -e $USAGE
+	exit 1
+fi  
+
+# -----------------------------------------------------------------------------
+# Prepare Environment from given release
+load_appris_release_env "${RELEASE}"
+
+# -----------------------------------------------------------------------------
+# Get method script name
+METHOD="appris"
+METHOD_SCRIPT="retrieve_stats"
+
+# -----------------------------------------------------------------------------
+# Var declarations
+SPECIEID=$(echo ${APPRIS_SPECIE} | tr "[:upper:]" "[:lower:]" | sed 's/ /_/')
+ANNOT_RST_MAIN_FILE="${OUTPUT_DIR}/appris_data.appris_raw.${SPECIEID}.txt"
+ANNOT_RST_LABEL_FILE="${OUTPUT_DIR}/appris_data.appris_label.${SPECIEID}.txt"
+ANNOT_RST_SCORE_FILE="${OUTPUT_DIR}/appris_data.appris_score.${SPECIEID}.txt"
+ANNOT_RST_STRANGE_FILE="${OUTPUT_DIR}/appris_data.appris_strange.${SPECIEID}.txt"
+ANNOT_RST_TRANSL_FILE="${OUTPUT_DIR}/appris_data.transl.${SPECIEID}.fa"
+
+OUTPUT_STATS_CCDS_RESULTFILE="${OUTPUT_DIR}/appris_stats.ccds.${SPECIEID}.txt"
+OUTPUT_STATS_REJ_RESULTFILE="${OUTPUT_DIR}/appris_stats.rej.${SPECIEID}.txt"
+OUTPUT_STATS_REJCCDS_RESULTFILE="${OUTPUT_DIR}/appris_stats.rejccds.${SPECIEID}.txt"
+OUTPUT_STATS_REJCCDS_RESULTFILE2="${OUTPUT_DIR}/appris_stats.rejccds2.${SPECIEID}.txt"
+
+# -----------------------------------------------------------------------------
+# Optional var declarations
+if [ "${GENCODE}" == 1 ]; then
+	ANNOT_RST_TRANSL_FILE="${GENCODE_TRANSLATION_FILE}"
+fi	
+
+# -----------------------------------------------------------------------------
+# local parameters
+LOG_PARAMETERS=""
+if [ "$LOG_LEVEL" != "" ]; then
+	LOG_FILENAME="${APPRIS_WORKSPACE_LOG_DIR}/${FILENAME}.log"
+	LOG_PARAMETERS="--loglevel=${LOG_LEVEL} --logappend --logfile=${LOG_FILENAME}"
+fi
+
+# -----------------------------------------------------------------------------
+# Run method
+SCRIPT="${APPRIS_SCRIPTS_DIR}/${METHOD_SCRIPT}.pl"
+
+# from a given list of genes
+if [[ "${GENE_LIST}" != ""  || "${RELEASE}" == "Lpar23A" ]] ; then
+
+	# local vars
+	RST_MAIN_FILES="${APPRIS_ANNOT_DIR}/*/*.appris"
+	RST_LABEL_FILES="${APPRIS_ANNOT_DIR}/*/*.appris.label"
+	RST_SCORE_FILES="${APPRIS_ANNOT_DIR}/*/*.appris.score"
+	RST_STRANGE_FILES="${APPRIS_ANNOT_DIR}/*/*.appris.strange"
+	RST_TRANSL_FILES="${APPRIS_ANNOT_DIR}/*/*.transl.fa"	
+			
+	# concatenate annotations ------------------
+	echo "================="	
+	echo "cat ${RST_MAIN_FILES} >> ${ANNOT_RST_MAIN_FILE}"
+	cat ${RST_MAIN_FILES} >> ${ANNOT_RST_MAIN_FILE}
+	
+	echo "cat ${RST_LABEL_FILES} >> ${ANNOT_RST_LABEL_FILE}"
+	cat ${RST_LABEL_FILES} >> ${ANNOT_RST_LABEL_FILE}
+	
+	echo "cat ${RST_SCORE_FILES} >> ${ANNOT_RST_SCORE_FILE}"
+	cat ${RST_SCORE_FILES} >> ${ANNOT_RST_SCORE_FILE}
+	
+	echo "cat ${RST_STRANGE_FILES} >> ${ANNOT_RST_STRANGE_FILE}"
+	cat ${RST_STRANGE_FILES} >> ${ANNOT_RST_STRANGE_FILE}	
+	echo "================="
+	
+	# concatenate sequences ------------------
+	echo "================="	
+	if [ "${GENCODE}" == 0 ]; then
+		echo "cat ${RST_TRANSL_FILES} >> ${ANNOT_RST_TRANSL_FILE}"
+		cat ${RST_TRANSL_FILES} >> ${ANNOT_RST_TRANSL_FILE}
+	fi	
+	echo "================="
+		
+	# print trace
+	echo "================="
+	echo "perl ${SCRIPT}"
+	echo "	--input-main=${ANNOT_RST_MAIN_FILE}"
+	echo "	--input-detail=${ANNOT_RST_LABEL_FILE}"
+	echo "	--input-seq=${ANNOT_RST_TRANSL_FILE}"
+	echo "	--output-ccds=${OUTPUT_STATS_CCDS_RESULTFILE}"
+	echo "	--output-rej=${OUTPUT_STATS_REJ_RESULTFILE}"
+	echo "	--output-rejccds=${OUTPUT_STATS_REJCCDS_RESULTFILE}"
+	echo "	--output-rejccds2=${OUTPUT_STATS_REJCCDS_RESULTFILE2}"	
+	echo " ${LOG_PARAMETERS}"
+	
+	# run method
+	perl ${SCRIPT} \
+		--input-main=${ANNOT_RST_MAIN_FILE} \
+		--input-detail=${ANNOT_RST_LABEL_FILE} \
+		--input-seq=${ANNOT_RST_TRANSL_FILE} \
+		--output-ccds=${OUTPUT_STATS_CCDS_RESULTFILE} \
+		--output-rej=${OUTPUT_STATS_REJ_RESULTFILE} \
+		--output-rejccds=${OUTPUT_STATS_REJCCDS_RESULTFILE} \
+		--output-rejccds2=${OUTPUT_STATS_REJCCDS_RESULTFILE2} \
+		${LOG_PARAMETERS}
+	echo "================="
+	
+# for the whole genome chromsome by chromosome
+else
+
+	# Run method for every chromosome
+	CHROMOSOME=(${APPRIS_CHR_LIST//,/ })
+	INDEX=${#CHROMOSOME[@]}
+	for ((i=0;i<$INDEX;i++)); do
+	
+		# local vars
+		CHR="${CHROMOSOME[${i}]}"
+		POSITION="chr${CHR}"	
+		CHR_RST_MAIN_FILES="${APPRIS_ANNOT_DIR}/${POSITION}/*/*.appris"
+		CHR_RST_LABEL_FILES="${APPRIS_ANNOT_DIR}/${POSITION}/*/*.appris.label"
+		CHR_RST_SCORE_FILES="${APPRIS_ANNOT_DIR}/${POSITION}/*/*.appris.score"
+		CHR_RST_STRANGE_FILES="${APPRIS_ANNOT_DIR}/${POSITION}/*/*.appris.strange"
+		CHR_RST_TRANSL_FILES="${APPRIS_ANNOT_DIR}/${POSITION}/*/*.transl.fa"	
+			
+		# concatenate annotations ------------------
+		echo "================="	
+		echo "cat ${CHR_RST_MAIN_FILES} >> ${ANNOT_RST_MAIN_FILE}"
+		cat ${CHR_RST_MAIN_FILES} >> ${ANNOT_RST_MAIN_FILE}
+		
+		echo "cat ${CHR_RST_LABEL_FILES} >> ${ANNOT_RST_LABEL_FILE}"
+		cat ${CHR_RST_LABEL_FILES} >> ${ANNOT_RST_LABEL_FILE}
+		
+		echo "cat ${CHR_RST_SCORE_FILES} >> ${ANNOT_RST_SCORE_FILE}"
+		cat ${CHR_RST_SCORE_FILES} >> ${ANNOT_RST_SCORE_FILE}
+		
+		echo "cat ${CHR_RST_STRANGE_FILES} >> ${ANNOT_RST_STRANGE_FILE}"
+		cat ${CHR_RST_STRANGE_FILES} >> ${ANNOT_RST_STRANGE_FILE}	
+		echo "================="
+		
+		# concatenate sequences ------------------
+		echo "================="	
+		if [ "${GENCODE}" == 0 ]; then
+			echo "cat ${CHR_RST_TRANSL_FILES} >> ${ANNOT_RST_TRANSL_FILE}"
+			cat ${CHR_RST_TRANSL_FILES} >> ${ANNOT_RST_TRANSL_FILE}
+		fi	
+		echo "================="
+	
+	done
+	
+	# print trace
+	echo "================="
+	echo "perl ${SCRIPT}"
+	echo "	--input-main=${ANNOT_RST_MAIN_FILE}"
+	echo "	--input-detail=${ANNOT_RST_LABEL_FILE}"
+	echo "	--input-seq=${ANNOT_RST_TRANSL_FILE}"
+	echo "	--output-ccds=${OUTPUT_STATS_CCDS_RESULTFILE}"
+	echo "	--output-rej=${OUTPUT_STATS_REJ_RESULTFILE}"
+	echo "	--output-rejccds=${OUTPUT_STATS_REJCCDS_RESULTFILE}"
+	echo "	--output-rejccds2=${OUTPUT_STATS_REJCCDS_RESULTFILE2}"	
+	echo " ${LOG_PARAMETERS}"
+	
+	# run method
+	perl ${SCRIPT} \
+		--input-main=${ANNOT_RST_MAIN_FILE} \
+		--input-detail=${ANNOT_RST_LABEL_FILE} \
+		--input-seq=${ANNOT_RST_TRANSL_FILE} \
+		--output-ccds=${OUTPUT_STATS_CCDS_RESULTFILE} \
+		--output-rej=${OUTPUT_STATS_REJ_RESULTFILE} \
+		--output-rejccds=${OUTPUT_STATS_REJCCDS_RESULTFILE} \
+		--output-rejccds2=${OUTPUT_STATS_REJCCDS_RESULTFILE2} \
+		${LOG_PARAMETERS}
+	echo "================="
+	
+fi

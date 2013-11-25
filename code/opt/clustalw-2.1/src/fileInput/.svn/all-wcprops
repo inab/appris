@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput
+END
+FileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/FileParser.h
+END
+EMBLFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/EMBLFileParser.h
+END
+MSFFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/MSFFileParser.cpp
+END
+FileReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/FileReader.cpp
+END
+PIRFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/PIRFileParser.cpp
+END
+MSFFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/MSFFileParser.h
+END
+FileReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/FileReader.h
+END
+RSFFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/RSFFileParser.cpp
+END
+PIRFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/PIRFileParser.h
+END
+GDEFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/GDEFileParser.cpp
+END
+RSFFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/RSFFileParser.h
+END
+GDEFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/GDEFileParser.h
+END
+InFileStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/InFileStream.cpp
+END
+ClustalFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/ClustalFileParser.cpp
+END
+PearsonFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/PearsonFileParser.cpp
+END
+InFileStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/InFileStream.h
+END
+ClustalFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/ClustalFileParser.h
+END
+PearsonFileParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/PearsonFileParser.h
+END
+FileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/FileParser.cpp
+END
+EMBLFileParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/fileInput/EMBLFileParser.cpp
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis
+END
+CRASHRegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/CRASHRegion.pm
+END
+Matador3D.pm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/Matador3D.pm
+END
+Firestar.pm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/Firestar.pm
+END
+Matador3DRegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/Matador3DRegion.pm
+END
+Region.pm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/Region.pm
+END
+FirestarRegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/FirestarRegion.pm
+END
+Omega.pm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/Omega.pm
+END
+CExonic.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/CExonic.pm
+END
+INERTIA.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/INERTIA.pm
+END
+OmegaRegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/OmegaRegion.pm
+END
+CExonicRegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/CExonicRegion.pm
+END
+SPADE.pm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/SPADE.pm
+END
+THUMP.pm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/THUMP.pm
+END
+APPRIS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/APPRIS.pm
+END
+INERTIARegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/INERTIARegion.pm
+END
+SLR.pm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/SLR.pm
+END
+CRASH.pm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/CRASH.pm
+END
+SPADERegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/SPADERegion.pm
+END
+THUMPRegion.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/THUMPRegion.pm
+END
+CORSAIR.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Analysis/CORSAIR.pm
+END

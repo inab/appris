@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES
+END
+RGui.mo
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/RGui.mo
+END
+R-compiler.mo
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-compiler.mo
+END
+R-base.mo
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-base.mo
+END
+R-grDevices.mo
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-grDevices.mo
+END
+grDevices.mo
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/grDevices.mo
+END
+R-splines.mo
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-splines.mo
+END
+splines.mo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/splines.mo
+END
+R-tcltk.mo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-tcltk.mo
+END
+R-stats4.mo
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-stats4.mo
+END
+tcltk.mo
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/tcltk.mo
+END
+R-grid.mo
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-grid.mo
+END
+grid.mo
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/grid.mo
+END
+R-parallel.mo
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-parallel.mo
+END
+parallel.mo
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/parallel.mo
+END
+R-stats.mo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-stats.mo
+END
+stats.mo
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/stats.mo
+END
+R-utils.mo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-utils.mo
+END
+R-tools.mo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-tools.mo
+END
+R-graphics.mo
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-graphics.mo
+END
+graphics.mo
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/graphics.mo
+END
+tools.mo
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/tools.mo
+END
+R.mo
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R.mo
+END
+R-methods.mo
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/R-methods.mo
+END
+methods.mo
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/translations/da/LC_MESSAGES/methods.mo
+END

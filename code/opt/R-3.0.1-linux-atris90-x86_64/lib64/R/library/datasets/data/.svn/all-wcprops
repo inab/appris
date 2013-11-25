@@ -1,0 +1,545 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data
+END
+treering.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/treering.R
+END
+OrchardSprays.R
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/OrchardSprays.R
+END
+HairEyeColor.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/HairEyeColor.R
+END
+Puromycin.R
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Puromycin.R
+END
+crimtab.rda
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/crimtab.rda
+END
+austres.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/austres.R
+END
+beavers.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/beavers.R
+END
+InsectSprays.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/InsectSprays.R
+END
+LakeHuron.R
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/LakeHuron.R
+END
+CO2.rda
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/CO2.rda
+END
+iris3.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/iris3.R
+END
+airquality.tab
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/airquality.tab
+END
+mtcars.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/mtcars.R
+END
+LifeCycleSavings.R
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/LifeCycleSavings.R
+END
+UKLungDeaths.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/UKLungDeaths.R
+END
+VADeaths.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/VADeaths.R
+END
+USArrests.tab
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/USArrests.tab
+END
+faithful.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/faithful.R
+END
+lh.R
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/lh.R
+END
+Harman74.cor.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Harman74.cor.R
+END
+EuStockMarkets.R
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/EuStockMarkets.R
+END
+stackloss.R
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/stackloss.R
+END
+euro.R
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/euro.R
+END
+rivers.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/rivers.R
+END
+sunspot.year.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/sunspot.year.R
+END
+JohnsonJohnson.R
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/JohnsonJohnson.R
+END
+BJsales.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/BJsales.R
+END
+Seatbelts.R
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Seatbelts.R
+END
+infert.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/infert.R
+END
+USAccDeaths.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/USAccDeaths.R
+END
+freeny.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/freeny.R
+END
+ToothGrowth.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/ToothGrowth.R
+END
+ChickWeight.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/ChickWeight.R
+END
+DNase.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/DNase.R
+END
+Titanic.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Titanic.R
+END
+islands.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/islands.R
+END
+quakes.tab
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/quakes.tab
+END
+attenu.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/attenu.R
+END
+volcano.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/volcano.R
+END
+BOD.R
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/BOD.R
+END
+iris.R
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/iris.R
+END
+AirPassengers.R
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/AirPassengers.R
+END
+uspop.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/uspop.R
+END
+pressure.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/pressure.R
+END
+PlantGrowth.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/PlantGrowth.R
+END
+randu.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/randu.R
+END
+Orange.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Orange.R
+END
+swiss.tab
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/swiss.tab
+END
+discoveries.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/discoveries.R
+END
+chickwts.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/chickwts.R
+END
+precip.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/precip.R
+END
+trees.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/trees.R
+END
+attitude.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/attitude.R
+END
+ability.cov.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/ability.cov.R
+END
+Nile.R
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Nile.R
+END
+Theoph.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Theoph.R
+END
+cars.R
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/cars.R
+END
+lynx.R
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/lynx.R
+END
+USJudgeRatings.R
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/USJudgeRatings.R
+END
+Rdata.rdb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Rdata.rdb
+END
+warpbreaks.R
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/warpbreaks.R
+END
+UCBAdmissions.R
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/UCBAdmissions.R
+END
+rock.tab
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/rock.tab
+END
+WorldPhones.R
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/WorldPhones.R
+END
+longley.R
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/longley.R
+END
+WWWusage.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/WWWusage.R
+END
+UKgas.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/UKgas.R
+END
+morley.tab
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/morley.tab
+END
+presidents.R
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/presidents.R
+END
+state.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/state.R
+END
+Rdata.rds
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Rdata.rds
+END
+co2.R
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/co2.R
+END
+UKDriverDeaths.R
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/UKDriverDeaths.R
+END
+occupationalStatus.R
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/occupationalStatus.R
+END
+women.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/women.R
+END
+anscombe.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/anscombe.R
+END
+Rdata.rdx
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Rdata.rdx
+END
+Loblolly.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Loblolly.R
+END
+nhtemp.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/nhtemp.R
+END
+Harman23.cor.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Harman23.cor.R
+END
+eurodist.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/eurodist.R
+END
+sunspots.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/sunspots.R
+END
+sunspot.month.R
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/sunspot.month.R
+END
+Formaldehyde.R
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Formaldehyde.R
+END
+airmiles.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/airmiles.R
+END
+nottem.R
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/nottem.R
+END
+Indometh.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/Indometh.R
+END
+USPersonalExpenditure.R
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/USPersonalExpenditure.R
+END
+sleep.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/sleep.R
+END
+esoph.R
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/datasets/data/esoph.R
+END

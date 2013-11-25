@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/docs.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/sarissa/sarissa.js"></script>
+	<script type="text/javascript" src="../js/sarissa/sarissa_ieemu_xpath.js"></script>
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#search_frame_input').keyup(searchEntity3);
+			$('#search_frame_image').click(searchEntity3);
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> Help & Docs
+	</div>
+	<div id="info_frame">
+		<a title="BioMart" href="http://appris.bioinfo.cnio.es/biomart/martview/" target='_blank'>BioMart</a>
+		| <a title="Help" href="docs.html">Help & Docs</a>
+		| <a title="Contact" href="contact.html" >Contact</a>
+	</div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>APPRIS Documentation</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+
+	<div class="content_rightcol">
+		<div class="content_body">				
+		<div class="content_subtitle">Data Production</div> <!-- Data Production -->
+		APPRIS is a database server that deploys a range of computational methods to provide 
+		value to the annotations of the human genome. The database selects one of the CDS for 
+		each gene as the principal functional combining 
+		<span class='content_highlighting'>protein structural information</span>, 
+		<span class='content_highlighting'>functionally important residues</span> and 
+		<span class='content_highlighting'>evidences of non-netrual evolution</span> of exons amongst others.		
+		<ul>	
+			<li><a href="gene_and_transcript_types.html">Gene and Transcript types</a>: 
+			The main data set combines the 
+			<a class='content_external_ref' target='_blank' href='http://www.sanger.ac.uk/research/projects/vertebrategenome/havana/'>HAVANA</a> 
+			manual annotation using evidence from various sources and research groups with the 
+			<a class='content_external_ref' target='_blank' href='http://www.sanger.ac.uk/resources/databases/ensembl.html'>Ensembl</a> 
+			automatic annotation pipelines to achieve an accurate and complete annotation of the human genome. 
+			</li>
+			<br/>
+			
+			<li><a href="appris.html">APPRIS Pipeline</a>:
+ 			Annotations displayed on our website are products of the APPRIS automatic pipeline that are deposited 
+			into public databases.			
+			</li>
+		</ul>
+		
+		<div class="content_subtitle">Data Access</div> <!-- Data Access -->
+			Report page of this web site offers an export option, suitable for small amounts of data.
+			This is the ideal option if you want a short sequence as a FASTA file, or a GFF file of a few features in a region.
+			Simply click on one of the "Export" links in the right menu, and select your output options.
+
+			But if you wish to extract multiple features, we recommend the following alternatives.
+		<ul>
+			<li><a href="api.html">Perl API Documentation</a>:
+			APPRIS data can be accessed remotely using our Perl API to connect to a public database server.</li>
+			<br/>
+			
+			<li><a href="apprislib/index.html" target='_blank'>Pdoc Perl documentation</a>:
+			This Perl API documentation is automatically generated from POD within the modules by Pdoc.			
+			</li>
+			<br/>
+
+			<li><a href="aws.html">Web Services</a>:
+			APPRIS data can be returned remotely using web services.
+			</li>
+			<br/>
+			
+			<li><a href="biomart.html">BioMart</a>:
+			APPRIS supports downloading of many more correlation tables via the highly customisable BioMart data mining tool.			
+			</li>
+		</ul>
+			
+		<div class="content_subtitle">About APPRIS</div> <!-- About -->
+		<ul>
+			<li><a href="publications.html">Publications</a>:
+			Articles linked to APPRIS.
+			</li>
+			<br />
+			
+			<li><a href="publications.html">Contact</a>:
+			Correspondence on any aspect of APPRIS would be welcome.			
+			</li>
+		</ul>		
+		</div> <!-- div#content_text -->	
+	</div>	<!-- div#content_rightcol -->
+	
+</div> <!-- div#content_panel -->
+
+</div> <!-- div#center_panel -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b
+END
+core_algorithms_multialpha.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/core_algorithms_multialpha.c
+END
+cmdline_hmmsearch.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/cmdline_hmmsearch.c
+END
+std_calculation_funcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/std_calculation_funcs.c
+END
+hmmsearch.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/hmmsearch.c
+END
+cmdline_hmmsearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/cmdline_hmmsearch.h
+END
+structs.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/structs.h
+END
+readhmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/readhmm.c
+END
+modhmms
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/modhmms
+END
+funcs.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/funcs.h
+END
+training_algorithms_multialpha.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/training_algorithms_multialpha.c
+END
+debug_funcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/debug_funcs.c
+END
+readseqs_multialpha.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/readseqs_multialpha.c
+END
+std_funcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/std_funcs.c
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/makefile
+END
+readhmm_multialpha.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/prodiv/modhmm0.92b/readhmm_multialpha.c
+END

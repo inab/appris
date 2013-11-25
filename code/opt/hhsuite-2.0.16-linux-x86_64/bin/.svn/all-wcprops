@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin
+END
+hhconsensus
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/hhconsensus
+END
+ffindex_build
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/ffindex_build
+END
+ffindex_get
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/ffindex_get
+END
+ffindex_from_fasta
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/ffindex_from_fasta
+END
+ffindex_unpack
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/ffindex_unpack
+END
+hhfilter
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/hhfilter
+END
+hhsearch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/hhsearch
+END
+ffindex_apply
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/ffindex_apply
+END
+ffindex_modify
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/ffindex_modify
+END
+hhalign
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/hhalign
+END
+hhblits
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/hhblits
+END
+hhmake
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/bin/hhmake
+END

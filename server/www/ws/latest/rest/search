@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# First we need to load environmental variables in order to use perl
+source /etc/profile
+source ${PWD}/../conf/vars.conf
+
+# Then, go!
+exec perl "${0}.pl" "$@"
+

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/appris.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#info_frame').html(APPRIS.INFO_FRAME);
+			$('#search_frame_input').keyup(searchEntity3);
+			$('#search_frame_image').click(searchEntity3);
+		});
+	</script>
+</head>
+
+<body>
+<a name="top"></a>	
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> <a href="docs.html">Help & Docs</a> > APPRIS Pipeline
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>APPRIS system</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+	
+	<div class="content_rightcol">
+		<div class="content_body">
+
+<br />
+<p>
+Alternative splicing generates different gene products. Recent studies have estimated that almost 100% of multi-exon human genes produce differently spliced mRNAs. It is important to designate one of the isoforms as the principal isoform in order to predict the potential changes in function, structure or localisation brought about by alternative splicing.
+</p>
+
+<p>APPRIS annotates variants with biological data such as protein structural information, functionally important residues, conservation of exonic structure and evidence of non-neutral evolution. APPRIS also makes automatic annotations of principal isoforms.
+</p>
+
+<p>The system is being used in the context of the scale up of the 
+	<a class='content_external_ref' target='_blank' href="http://www.genome.gov/10005107">ENCODE</a> project to annotate 100% of the human genome (20,700 protein-coding genes and 84,408 distinct alternative transcripts from 
+	<a class='content_external_ref' target='_blank'  href="http://www.gencodegenes.org/releases/7.html">Gencode7</a>, 
+	<a class='content_external_ref' target='_blank'  href="http://apr2011.archive.ensembl.org/index.html">Ensembl62</a>).
+</p>
+
+
+<p align="center"><img width='650px' src='../img/APPRISSchema.png'/></p>
+
+<p>APPRIS automates a range of computational methods that are used to annotate alternative splice variants and to define 
+<span class='content_highlighting'>principal variants</span> based.
+
+
+<div class='content_subtitle'>System Description</div> <!-- System Description -->
+<p>The goals of the APPRIS system are to annotate alternative variants with reliable biological data and to select the <span class='content_highlighting'>primary variant</span> for each gene.
+APPRIS is based on a range of complementary computational methods. 
+
+<p>The methods in APPRIS are the following:</p>
+<ol>
+	<li>Functionally important residues, <a class='logo_title_firestar' href="#firestar">firestar</a></li>
+	<li>Protein structural information, <a class='logo_title_matador3d' href='#matador3d'>Matador3D</a></li>
+	<li>Presence of whole protein domains, <a class='logo_title_spade' href='#spade'>SPADE</a></li>
+	<li>Conservation against vertebrates, <a class='logo_title_corsair' href='#corsair'>CORSAIR</a></li>
+	<li>Presence of whole trans-membrane helices, <a class='logo_title_thump' href='#thump'>THUMP</a></li>
+	<li>Prediction of signal peptide and sub-cellular location, <a class='logo_title_crash' href='#crash'>CRASH</a></li>
+	<li>Neutral evolution of exons, <a class='logo_title_inertia' href='#inertia'>INERTIA</a> [Note: Currently, this method is not affecting in the selection of the principal isoform]</li>
+	<li>Conservation of exonic structure, <a class='logo_title_cexonic' href='#cexonic'>CExonic</a> [Note: Currently, this method is not affecting in the selection of the principal isoform]</li>
+</ol>
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- FIRESTAR -->
+<a name='firestar'></a>
+<div class='title_method'>
+	<div class='logo_image_firestar'></div>
+	<h4><span class='logo_title_firestar'>Firestar: Functionally Important Residues</span></h4>
+</div>
+
+<p><span class='logo_title_firestar'>firestar</span> [1] predicts functionally important residues based on the 
+<a class='content_external_ref' target='_blank' href='http://firedb.bioinfo.cnio.es/Php/FireDB.php'>fireDB</a> database. The predictions are based on the local evaluation of alignments between the query sequence and the structures with functional information that are stored in FireDB. The reliability of predictions is assessed with <a class='content_external_ref' target='_blank' href='http://firedb.bioinfo.cnio.es/Php/square.php'>SQUARE</a> and the functional information is highlighted along with a reliability score.</p>
+
+<p>Functional residues are highly conserved, even across large evolutionary distances. Since these residues are unlikely to have arisen by chance we can also use this to help determine the principal isoform. Variants that have <i>"lost"</i> conserved functional residues are unlikely to be the principal isoform.
+
+<p>Its web server is 
+<a class='content_external_ref' target='_blank' href='http://firedb.bioinfo.cnio.es/Php/FireStar.php'>http://firedb.bioinfo.cnio.es/Php/FireStar.php</a></p>
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- MATADOR3D -->
+<a name='matador3d'></a>
+<div class='title_method'>
+	<h4><span class='logo_title_matador3d'>Matador3D: Protein structural information</span></h4>
+</div>
+
+<p>Protein structural information is analysed with <span class='logo_title_matador3d'>Matador3D</span>.
+In practice variant sequences from the same gene are mapped onto 3D structures by running BLAST against the <a class='content_external_ref' target='_blank' href='http://www.pdb.org'>PDB</a>.</p>
+
+<p>Protein structure is much more conserved than sequence and isoforms with large inserts or deletions relative to homologous crystal structures are also not likely to be principal.</p>
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- SPADE -->
+<a name='spade'></a>
+<div class='title_method'>
+	<div class='logo_image_spade'></div>
+	<h4><span class='logo_title_spade'>SPADE: Scanning Pfam Alignments for Damaged Entities</span></h4>
+</div>
+
+<p>Proteins are generally comprised of one or more functional regions commonly termed domains. Identifying the functional domains present in a variant can provide insights into the function and to determine the most likely principal isoform.</p>
+
+<p>The presence of functional domains is analysed with <span class='logo_title_spade'>Pfamscan</span>, <a class='content_external_ref' target='_blank' href='http://pfam.sanger.ac.uk/'>http://pfam.sanger.ac.uk</a></p>
+
+<p>Variants that have <i>"lost"</i> conserved functional domains are unlikely to be principal isoforms.</p>
+
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- CORSAIR -->
+<a name='corsair'></a>
+<div class='title_method'>
+	<h4><span class='logo_title_corsair'>CORSAIR: Conservation against vertebrates</span></h4>
+</div>
+
+<p><span class='logo_title_corsair'>CORSAIR</span> carries out <a class='content_external_ref' target='_blank' href='http://blast.ncbi.nlm.nih.gov'>BLAST</a> searches against vertebrates to determine the most likely principal isoform.</p>
+
+<p>Transcripts that are conserved over greater evolutionary distances are more likely to be the main variant.</p>
+
+<p>CORSAIR counts the number of species that align correctly and without gaps for each variant.</p>
+
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- THUMP -->
+<a name='thump'></a>
+<div class='title_method'>
+	<h4><span class='logo_title_thump'>THUMP: Detecting reliable trans-membrane helices</span></h4>
+</div>
+
+<p><span class='logo_title_thump'>THUMP</span> makes unanimous predictions of trans-membrane helices using three different methods: 
+<a class='content_external_ref' target='_blank' href='http://bioinf.cs.ucl.ac.uk/psipred'>MEMSAT 3.0</a>,
+<a class='content_external_ref' target='_blank' href='http://phobius.sbc.su.se'>Phobius</a>, and 
+<a class='content_external_ref' target='_blank' href='http://topcons.cbr.su.se/index.php?about=proprodiv'>PRODIV</a>. 
+A helix has to be predicted by all three methods to be considered reliable.</p>
+
+<p>Transcripts that have <i>"lost"</i> trans-membrane helices are less likely to be the principal isoform.
+
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- CRASH -->
+<a name='crash'></a>
+<div class='title_method'>
+	<h4><span class='logo_title_crash'>CRASH: Signal Peptide and Mitochondrial Signal Sequences.</span></h4>
+</div>
+
+<p>The presence and location of signal peptides and cleavage sites in amino acid sequences are analysed with <a class='content_external_ref' target='_blank' href='http://www.cbs.dtu.dk/services/SignalP/'>SignalP</a> program. And <a class='content_external_ref' target='_blank' href='http://www.cbs.dtu.dk/services/TargetP/'>TargetP</a> predicts the sub-cellular location of eukaryotic proteins. <span class='logo_title_crash'>CRASH</span> uses a rule-based analysis of these two programs to select only reliable predictions.</p>
+
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+
+<!-- INERTIA -->
+<a name='inertia'></a>
+<div class='title_method'>	
+	<h4><span class='logo_title_inertia'>INERTIA: Neutral evolution of exons</span></h4>
+</div>
+
+<p>In <span class='logo_title_inertia'>INERTIA</span> we were looking for exons that have neutral evolutionary rates. The principal isoform is not likely to contain exons that are evolving abnormally quickly or unusual selective pressures.</p>
+
+<p>Transcripts are aligned against vertebrate species using three alignment methods (<a class='content_external_ref' target='_blank' href='ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/multiz46way/maf/'>MAF</a>,
+<a class='content_external_ref' target='_blank' href='http://www.ebi.ac.uk/goldman-srv/prank'>PRANK</a>, and
+<a class='content_external_ref' target='_blank' href='http://www.ebi.ac.uk/Tools/kalign'>Kalign</a>) to limit alignment errors. Evolutionary rates of exons from the same gene are contrasted using SLR. INERTIA flags whole exons that have non-neutral evolutionary rates.</p>
+
+<p>Variants with differently evolving exons are unlikely to be the principal isoform.</p>
+
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+<!-- CEXONIC -->
+<a name='cexonic'></a>
+<div class='title_method'>
+	<div class='logo_image_cexonic'></div>	
+	<h4><span class='logo_title_cexonic'>CExonic: Conservation of exonic structure</span></h4>
+</div>
+
+<p>Transcription data is frequently used to study alternative splicing in one species. However, splice isoforms may be conserved between species at a certain evolutionary distance. Therefore, cross-species comparison of splicing isoforms may provide insight into the conservation of alternative splicing.</p>
+
+<p>The assessment of functional alternative splicing requires the identification of the gene product that retains the core biological function. The conservation of exonic structure between orthologous splicing isoforms of two species (<i>human</i>-<i>mouse</i>) would suggest that they exist in both species and that their biological function may be conserved.</p>
+
+<p>If a transcript does not have conserved exonic structure, while all the rest have, this variant is less likely to be the principal isoform.</p>
+
+Conservation of exonic structure is analysed with <span class='logo_title_cexonic'>CExonic</span>, <a class='content_external_ref' target='_blank' href='http://cexonic.bioinfo.cnio.es'>http://cexonic.bioinfo.cnio.es</a></p>
+
+
+<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+
+		</div> <!-- div#content_body -->	
+	</div>	<!-- div#content_rightcol -->
+
+</div> <!-- div#content_panel -->
+</div> <!-- div#center_panel -->
+</body>
+</html>

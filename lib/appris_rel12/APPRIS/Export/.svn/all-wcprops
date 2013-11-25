@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export
+END
+PROTEO.pm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/PROTEO.pm
+END
+SEQ.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/SEQ.pm
+END
+JSON.pm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/JSON.pm
+END
+RES.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/RES.pm
+END
+BED.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/BED.pm
+END
+SVG.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/SVG.pm
+END
+GTF.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel12/APPRIS/Export/GTF.pm
+END

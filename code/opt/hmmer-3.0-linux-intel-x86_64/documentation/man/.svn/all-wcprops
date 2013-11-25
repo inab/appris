@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man
+END
+hmmscan.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmscan.man
+END
+hmmsearch.man
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmsearch.man
+END
+hmmer.man
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmer.man
+END
+phmmer.man
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/phmmer.man
+END
+hmmsim.man
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmsim.man
+END
+hmmfetch.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmfetch.man
+END
+hmmalign.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmalign.man
+END
+hmmstat.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmstat.man
+END
+hmmpress.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmpress.man
+END
+boilerplate-tail
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/boilerplate-tail
+END
+hmmemit.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmemit.man
+END
+hmmbuild.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmbuild.man
+END
+jackhmmer.man
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/jackhmmer.man
+END
+hmmconvert.man
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/documentation/man/hmmconvert.man
+END

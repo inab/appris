@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	notSupported.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" title="APPRIS Home" style="cursor: default;"></div>	
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<!-- <div class="logo_title_appris"></div> -->
+		<span class='logo_title'>A web server for determining principal splice isoforms</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<center>
+<table style="font-size: 14px" bgcolor="#FFFFFF">
+	<tr>
+		<td width="500px" style="text-align: center"><b>The browser that you are using is not supported by<br/> APPRIS website.</b></td>
+	</tr>
+	<tr>
+		<td width="500px" style="text-align: center">
+			We are  working to improve cross-browser compatibility.<br/>
+			Meanwhile, please use: <br/><br/> 
+			<a href="http://www.mozilla.com/firefox" title="Get Firefox" target="_blank" style="text-decoration: none; color: black; font-weight: bold">
+				<img src="img/firefox_icon.png" style="width: 50px; height: 50px; border: 0">Firefox</img>
+			</a>
+			<a href="http://www.google.com/chrome" title="Get Chrome" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+				<img src="img/chrome_icon.png" style="width: 50px; height: 50px; border: 0">Chrome</img>
+			</a>
+			<a href="http://www.apple.com/safari" title="Get Safari" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+				<img src="img/safari_icon.png" style="width: 50px; height: 50px; border: 0">Safari</img>
+			</a>
+			<a href="http://www.opera.com/download" title="Get Opera" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+				<img src="img/opera_icon.png" style="width: 50px; height: 50px; border: 0">Opera</img>
+			</a>
+		</td>
+	</tr> 
+</table>
+</center>	
+</div> <!-- div#center_panel -->
+
+</body>
+
+</html>

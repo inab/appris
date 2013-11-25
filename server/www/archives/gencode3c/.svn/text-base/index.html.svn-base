@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	appris.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/browserDetect.js"></script>
+	<script type="text/javascript" src="js/google.analytics.js"></script>	
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/sarissa/sarissa.js"></script>
+	<script type="text/javascript" src="js/sarissa/sarissa_ieemu_xpath.js"></script>	
+	<script type="text/javascript" src="js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser(); 
+
+		// Google Analytics
+		google_analytics_INB();
+		google_analytics_APPRIS();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#search_frame_input').keyup(searchEntity);
+			$('#search_frame_image').click(searchEntity);
+			$('#search_frame_input2').keyup(searchEntity2);
+			$('#search_frame_image2').click(searchEntity2);
+		});
+	</script>
+
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" title="APPRIS Home" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>	
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="appris.html">Home</a>
+	</div>
+	<div id="info_frame">
+		<a title="BioMart" href="http://appris.bioinfo.cnio.es/biomart/martview/" target='_blank'>BioMart</a>
+		| <a title="Help" href="docs/docs.html">Help & Docs</a>
+		| <a title="Contact" href="docs/contact.html" >Contact</a>
+	</div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<!-- <div class="logo_title_appris"></div> -->
+		<span class='logo_title'>A system for annotating alternative splice isoforms</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="content_leftcol_first">
+			<div id="search_frame2">
+				<div id="search_frame_launch2">
+					<span class="run_label">Search gene/transcript:</span>
+					<input class="run_txt" type="text" id="search_frame_input2"/>
+					<input class="run_btn" type="button" value="GO" id="search_frame_image2"/>
+					<span>e.g. <b>TRMT2A-005</b> or <b>ENSG00000099904</b> or <b>RNF215</b></span>
+				</div>
+			</div>
+		</div>
+		<div class="content_leftcol_second">
+			<p>
+				<b>APPRIS</b> is a database server that deploys a range of computational methods to provide value to the annotations 
+				of the human genome. The database selects one of the CDS for each gene as the <b>principal functional combining protein 
+				structural information</b>, <b>functionally important residues</b> and <b>evidences of non-netrual evolution of exons</b>
+				amongst others.
+			</p>
+			<p>
+				The server is being used in the context of part of the scale up of the 
+				<a class='content_external_ref' target='_blank' href="http://www.genome.gov/10005107">ENCODE</a> project to annotate 100% of the 
+				human genome (22,304 genes and 72,731 transcripts from 
+				<a class='content_external_ref' target='_blank'  href="http://www.gencodegenes.org/releases/3c.html">Gencode3c</a>, 
+				<a class='content_external_ref' target='_blank'  href="http://sep2009.archive.ensembl.org/index.html">Ensembl56</a>).
+			</p>
+			<p>
+				Alternative splicing generates different gene products. Recent studies have estimated that almost 
+				<b>100% of multi-exon human genes</b> produce differently spliced mRNAs. It is important to designate one of 
+				the isoforms as the "principal" functional isoform in order to predict the changes in function, structure or 
+				localisation brought about by <b>Alternative Splicing</b>.
+			</p>
+		</div>
+	</div>
+	<div class="content_rightcol">
+		<div class="content_rightcol_first">
+			<div class='content_subtitle2'>The GENCODE Project: Encyclop&aelig;dia of genes and gene variants</div>
+			<p align="left">
+				<img src="img/ENCODE-logo_small.gif" style="float: left; margin: 5px 10px 5px 5px;"/>
+			</p>
+			<p>
+				The National Human Genome Research Institute (NHGRI) launched a public research consortium named 
+				<a class='content_external_ref' target='_blank' href="http://www.genome.gov/10005107">ENCODE</a>, the Encyclopedia Of DNA Elements, 
+				in September 2003, to carry out a project to identify all functional elements in the human genome sequence.
+				After a successful pilot phase on 1% of the genome, the scale-up to the entire genome is now underway.
+				The <a class='content_external_ref' target='_blank' href="http://www.sanger.ac.uk/research/projects/vertebrategenome/">Wellcome Trust Sanger Institute</a>
+				was awarded a grant to carry out a scale-up of the GENCODE project for integrated annotation of gene features.
+			</p>
+			<p> 
+				The aim of <a class='content_external_ref' target='_blank'  href="http://www.gencodegenes.org">GENCODE</a> as a 
+				sub-project of the <a class='content_external_ref' target='_blank'  href="http://www.genome.gov/10005107">ENCODE</a> scale-up 
+				project is to <b>annotate all evidence-based gene features in the entire human genome</b> at a high accuracy. 
+				The result will be a set of annotations including all protein-coding loci with alternatively transcribed variants, 
+				non-coding loci with transcript evidence, and pseudogenes.
+				The process to create this annotation involves manual curation, different computational 
+				analysis and targeted experimental approaches. Putative loci can be verified by wet-lab experiments and computational 
+				predictions will be analysed manually.
+			</p>
+		</div>
+		<div class="content_rightcol_second">
+			<img src="img/CNIO-logo_small.png" style="float: left; margin: 0px 8px 0px 0px;"/>
+			<img src="img/INB-logo_small.png" style="float: right; margin: 0px 0px 0px 8px;"/>
+			<span style="text-align: left;">
+			<b>APPRIS</b> is a joint project between <i>Centro Nacional de Investigaciones Oncologicas</i>, 
+			<a href="http://www.cnio.es" target='_blank'>CNIO</a>
+			and <i>Instituto Nacional de Bioinformatica</i>, <a href="http://www.inab.org" target='_blank'>INB</a>.
+			</span>		 
+		</div>
+	</div>
+	
+</div> <!-- div#content_panel -->
+
+<div id="bottom_panel">
+	<div id="content_release"></div> <!-- div#content_release -->
+</div> <!-- div#bottom_panel -->
+
+	
+</div> <!-- div#center_panel -->
+
+</body>
+</html>

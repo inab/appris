@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg3396"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="NO_UNKNOWN_OK_color.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs3398">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3404" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6652381"
+     inkscape:cx="526.18109"
+     inkscape:cy="250.79368"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="879"
+     inkscape:window-height="713"
+     inkscape:window-x="196"
+     inkscape:window-y="35"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="688.4753,390.83751"
+       id="guide3070" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="748.60415,201.43164"
+       id="guide3074" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="695.9914,500.57265"
+       id="guide3137" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="748.60415,321.68933"
+       id="guide3145" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="203.68647,582.49821"
+       id="guide4237" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="154.83178,15.032212"
+       id="guide4251" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="343.11023,166.10594"
+       id="guide4259" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="508.61578,693.56697"
+       id="guide4881" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3401">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2167"
+       transform="matrix(1.0113628,0,0,1.0113628,-300.99002,-393.94699)"
+       style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-opacity:1"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/NO-icon.png"
+       inkscape:export-xdpi="9.1599998"
+       inkscape:export-ydpi="9.1599998">
+      <path
+         id="path2163"
+         d="M 371.57276,418.27055 491.97615,538.67394"
+         style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <use
+         height="1052.3622"
+         width="744.09448"
+         transform="matrix(-1,0,0,1,863.54891,0)"
+         id="use2165"
+         xlink:href="#path2163"
+         y="0"
+         x="0"
+         style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#00721a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 100.61579,472.55818 9.45985,30.25925 63.69144,-109.91906 23.56618,-3.21472 c -28.42137,40.65268 -54.62282,88.63736 -77.8392,135.38296 -20.379803,41.03421 -19.22528,8.9321 -44.263483,-38.43766 l 25.385213,-14.07077 z"
+       id="path2159"
+       sodipodi:nodetypes="ccccscc"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/OK-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:214.21414185000000430px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:'.Aqua Kana';-inkscape-font-specification:'.Aqua Kana Light'"
+       x="57.758694"
+       y="396.10025"
+       id="text4169"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN-icon.png"
+       inkscape:export-xdpi="9.6994638"
+       inkscape:export-ydpi="9.6994638"
+       transform="scale(1.1191156,0.89356274)"><tspan
+         sodipodi:role="line"
+         id="tspan4171"
+         x="57.758694"
+         y="396.10025"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'.Aqua Kana Bold';-inkscape-font-specification:'.Aqua Kana Bold, Semi-Bold';fill:#c0911d;fill-opacity:1">?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:190px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Symbol;-inkscape-font-specification:Symbol"
+       x="21.045097"
+       y="729.06226"
+       id="text3463"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         sodipodi:role="line"
+         id="tspan3465"
+         x="21.045097"
+         y="729.06226">#</tspan></text>
+    <g
+       inkscape:export-ydpi="9.1599998"
+       inkscape:export-xdpi="9.1599998"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/NO_1-icon.png"
+       style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-opacity:1"
+       transform="matrix(1.0113628,0,0,1.0113628,-69.290666,-395.73394)"
+       id="use4853">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 371.57276,418.27055 491.97615,538.67394"
+         id="path4865" />
+      <use
+         style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-opacity:1"
+         x="0"
+         y="0"
+         xlink:href="#path2163"
+         id="use4867"
+         transform="matrix(-1,0,0,1,863.54891,0)"
+         width="744.09448"
+         height="1052.3622" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#a30f00;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="435.29227"
+       y="89.509506"
+       id="use4855"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/NO_1-icon.png"
+       inkscape:export-xdpi="9.1599998"
+       inkscape:export-ydpi="9.1599998"><tspan
+         sodipodi:role="line"
+         id="tspan4861"
+         x="435.29227"
+         y="89.509506"
+         style="font-size:107.92821503px;font-weight:normal;fill:#a30f00;fill-opacity:1;stroke:none;-inkscape-font-specification:Apple Casual">*</tspan></text>
+    <g
+       id="g4869"
+       transform="matrix(1.0113628,0,0,1.0113628,162.75371,-395.19851)"
+       style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-opacity:1"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/NO_2-icon.png"
+       inkscape:export-xdpi="9.1599998"
+       inkscape:export-ydpi="9.1599998">
+      <path
+         id="path4871"
+         d="M 371.57276,418.27055 491.97615,538.67394"
+         style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-width:32;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <use
+         height="1052.3622"
+         width="744.09448"
+         transform="matrix(-1,0,0,1,863.54891,0)"
+         id="use4873"
+         xlink:href="#path2163"
+         y="0"
+         x="0"
+         style="fill:#a30f00;fill-opacity:1;fill-rule:nonzero;stroke:#a30f00;stroke-opacity:1" />
+    </g>
+    <text
+       id="text4875"
+       y="90.044937"
+       x="667.33667"
+       style="font-size:53.96410751000000516px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#a30f00;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/NO_2-icon.png"
+       inkscape:export-xdpi="9.1599998"
+       inkscape:export-ydpi="9.1599998"><tspan
+         style="font-size:107.92821503000000405px;font-weight:normal;-inkscape-font-specification:Apple Casual;fill:#a30f00;fill-opacity:1"
+         y="90.044937"
+         x="667.33667"
+         id="tspan4877"
+         sodipodi:role="line">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#a30f00;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="713.33667"
+       y="90.044937"
+       id="text4883"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/NO_2-icon.png"
+       inkscape:export-xdpi="9.1599998"
+       inkscape:export-ydpi="9.1599998"><tspan
+         sodipodi:role="line"
+         id="tspan4885"
+         x="713.33667"
+         y="90.044937"
+         style="font-size:107.92821503px;font-weight:normal;fill:#a30f00;fill-opacity:1;-inkscape-font-specification:Apple Casual">*</tspan></text>
+    <text
+       transform="scale(1.1191156,0.89356274)"
+       inkscape:export-ydpi="9.6994638"
+       inkscape:export-xdpi="9.6994638"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN_1-icon.png"
+       id="text4887"
+       y="396.10025"
+       x="266.85239"
+       style="font-size:214.21414185000000430px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:'.Aqua Kana';-inkscape-font-specification:'.Aqua Kana Light'"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'.Aqua Kana Bold';-inkscape-font-specification:'.Aqua Kana Bold, Semi-Bold';fill:#c0911d;fill-opacity:1"
+         y="396.10025"
+         x="266.85239"
+         id="tspan4889"
+         sodipodi:role="line">?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751000000516px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="416.7955"
+       y="283.46368"
+       id="text4891"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN_1-icon.png"
+       inkscape:export-xdpi="9.6994638"
+       inkscape:export-ydpi="9.6994638"><tspan
+         sodipodi:role="line"
+         id="tspan4893"
+         x="416.7955"
+         y="283.46368"
+         style="font-size:107.92821503000000405px;font-weight:normal;fill:#c0911d;fill-opacity:1;-inkscape-font-specification:Apple Casual">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:214.21414185px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:'.Aqua Kana';-inkscape-font-specification:'.Aqua Kana Light'"
+       x="484.88339"
+       y="396.10025"
+       id="text4899"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN_2-icon.png"
+       inkscape:export-xdpi="9.6994638"
+       inkscape:export-ydpi="9.6994638"
+       transform="scale(1.1191156,0.89356274)"><tspan
+         sodipodi:role="line"
+         id="tspan4901"
+         x="484.88339"
+         y="396.10025"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#c0911d;fill-opacity:1;font-family:'.Aqua Kana Bold';-inkscape-font-specification:'.Aqua Kana Bold, Semi-Bold'">?</tspan></text>
+    <text
+       id="text4903"
+       y="283.46368"
+       x="660.79553"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN_2-icon.png"
+       inkscape:export-xdpi="9.6994638"
+       inkscape:export-ydpi="9.6994638"><tspan
+         style="font-size:107.92821503px;font-weight:normal;fill:#c0911d;fill-opacity:1;-inkscape-font-specification:Apple Casual"
+         y="283.46368"
+         x="660.79553"
+         id="tspan4905"
+         sodipodi:role="line">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="706.79553"
+       y="283.46368"
+       id="text4907"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN_2-icon.png"
+       inkscape:export-xdpi="9.6994638"
+       inkscape:export-ydpi="9.6994638"><tspan
+         sodipodi:role="line"
+         id="tspan4909"
+         x="706.79553"
+         y="283.46368"
+         style="font-size:107.92821503px;font-weight:normal;fill:#c0911d;fill-opacity:1;-inkscape-font-specification:Apple Casual">*</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="11.672784"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/OK_1-icon.png"
+       sodipodi:nodetypes="ccccscc"
+       id="path4915"
+       d="m 328.61579,472.55818 9.45985,30.25925 63.69144,-109.91906 23.56618,-3.21472 c -28.42137,40.65268 -54.62282,88.63736 -77.8392,135.38296 -20.3798,41.03421 -19.22528,8.9321 -44.26348,-38.43766 l 25.38521,-14.07077 z"
+       style="fill:#00721a;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751000000516px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#00721a;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="417.27371"
+       y="462.34702"
+       id="text4917"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/OK_1-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         sodipodi:role="line"
+         id="tspan4919"
+         x="417.27371"
+         y="462.34702"
+         style="font-size:107.92821503000000405px;font-weight:normal;fill:#00721a;fill-opacity:1;-inkscape-font-specification:Apple Casual">*</tspan></text>
+    <path
+       style="fill:#00721a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 594.61579,472.55818 9.45985,30.25925 63.69144,-109.91906 23.56618,-3.21472 c -28.42137,40.65268 -54.62282,88.63736 -77.8392,135.38296 -20.3798,41.03421 -19.22528,8.9321 -44.26348,-38.43766 l 25.38521,-14.07077 z"
+       id="path4925"
+       sodipodi:nodetypes="ccccscc"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/OK_2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"
+       inkscape:connector-curvature="0" />
+    <text
+       id="text4927"
+       y="654.24963"
+       x="401.70032"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN2_1-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         style="font-size:107.92821503px;font-weight:normal;fill:#c0911d;fill-opacity:1;-inkscape-font-specification:Apple Casual"
+         y="654.24963"
+         x="401.70032"
+         id="tspan4929"
+         sodipodi:role="line">*</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4935"
+       y="729.06226"
+       x="269.0451"
+       style="font-size:190px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Symbol;-inkscape-font-specification:Symbol"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN2_1-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         y="729.06226"
+         x="269.0451"
+         id="tspan4937"
+         sodipodi:role="line">#</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="657.70032"
+       y="654.24963"
+       id="text4939"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN2_2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         sodipodi:role="line"
+         id="tspan4941"
+         x="657.70032"
+         y="654.24963"
+         style="font-size:107.92821503px;font-weight:normal;fill:#c0911d;fill-opacity:1;-inkscape-font-specification:Apple Casual">*</tspan></text>
+    <text
+       id="text4943"
+       y="654.24963"
+       x="703.70032"
+       style="font-size:53.96410751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN2_2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         style="font-size:107.92821503px;font-weight:normal;fill:#c0911d;fill-opacity:1;-inkscape-font-specification:Apple Casual"
+         y="654.24963"
+         x="703.70032"
+         id="tspan4945"
+         sodipodi:role="line">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:190px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#c0911d;fill-opacity:1;stroke:none;font-family:Symbol;-inkscape-font-specification:Symbol"
+       x="523.0451"
+       y="729.06226"
+       id="text4947"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/UNKNOWN2_2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         sodipodi:role="line"
+         id="tspan4949"
+         x="523.0451"
+         y="729.06226">#</tspan></text>
+    <text
+       id="text4951"
+       y="461.85022"
+       x="685.73895"
+       style="font-size:53.96410751000000516px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#00721a;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/OK_2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         style="font-size:107.92821503000000405px;font-weight:normal;fill:#00721a;fill-opacity:1;-inkscape-font-specification:Apple Casual"
+         y="461.85022"
+         x="685.73895"
+         id="tspan4953"
+         sodipodi:role="line">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.96410751000000516px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#00721a;fill-opacity:1;stroke:none;font-family:Apple Casual;-inkscape-font-specification:Apple Casual"
+       x="731.73895"
+       y="461.85022"
+       id="text4955"
+       inkscape:export-filename="/Users/jmrodriguez/projects/Encode/release_7/www/img/2/OK_2-icon.png"
+       inkscape:export-xdpi="11.672784"
+       inkscape:export-ydpi="11.672784"><tspan
+         sodipodi:role="line"
+         id="tspan4957"
+         x="731.73895"
+         y="461.85022"
+         style="font-size:107.92821503000000405px;font-weight:normal;fill:#00721a;fill-opacity:1;-inkscape-font-specification:Apple Casual">*</tspan></text>
+  </g>
+</svg>

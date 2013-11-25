@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/p/appris/code/!svn/ver/766/tags/release-1.2/database
+END
+backups.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/appris/code/!svn/ver/766/tags/release-1.2/database/backups.sh
+END
+apprisdb.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/appris/code/!svn/ver/766/tags/release-1.2/database/apprisdb.sql
+END
+import.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/appris/code/!svn/ver/766/tags/release-1.2/database/import.sh
+END
+annotation.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/appris/code/!svn/ver/766/tags/release-1.2/database/annotation.sql
+END
+report.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/appris/code/!svn/ver/766/tags/release-1.2/database/report.sql
+END
+create.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/appris/code/!svn/ver/766/tags/release-1.2/database/create.sh
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite
+END
+e2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/e2.sh
+END
+coverage_report.pl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/coverage_report.pl
+END
+driver_report.pl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/driver_report.pl
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/Makefile.in
+END
+parse-t1.dat
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/parse-t1.dat
+END
+i1-degen-residues.pl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/i1-degen-residues.pl
+END
+i2-ncbi-indices.pl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/i2-ncbi-indices.pl
+END
+dmatrix-t1.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/dmatrix-t1.c
+END
+valgrind_report.pl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/valgrind_report.pl
+END
+dmatrix-t2.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/dmatrix-t2.c
+END
+parse-t1.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/parse-t1.c
+END
+testsuite.sqc
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/testsuite/testsuite.sqc
+END

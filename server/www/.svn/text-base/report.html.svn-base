@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>
+	<meta name="description" content="APPRIS: Selecting Principal Alternative Isoforms" />
+	<meta name="keywords" content="appris, alternative splicing, isoform, genome, annotation, encode, gencode, protein, structure, functional, residues, specie, alignment, evolution, exon, domain, peptide, membrane, helices, mitochondrial, firestar, matador3d, inertia, corsair, spade, cexonic, crash, thump" />
+
+<!--
+	$Id$
+	report.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="img/APPRIS-favicon.ico.png"/>	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/browserDetect.js"></script>
+	<script type="text/javascript" src="js/google.analytics.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.svg.js"></script>
+
+	<script type="text/javascript" src="js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="js/appris/table.js"></script>
+	<script type="text/javascript" src="js/appris/search.js"></script>	
+	<script type="text/javascript" src="js/appris/report.js"></script>
+	<script type="text/javascript" src="js/appris/report.search.js"></script>
+	<script type="text/javascript" src="js/appris/report.summary.js"></script>
+	<script type="text/javascript" src="js/appris/report.detail.js"></script>
+	<script type="text/javascript" src="js/appris/report.sequence.js"></script>
+	<script type="text/javascript" src="js/appris/report.ucsc.appris.js"></script>
+	<script type="text/javascript" src="js/appris/report.ucsc.proteo.js"></script>
+	<script type="text/javascript" src="js/appris/report.ucsc.rna-seq.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_archives').html(contentArchives(location));			
+			$('#info_frame').html(APPRIS.INFO_FRAME_DOC);
+			$('#search_frame_input').keyup(searchEntity);
+			$('#search_frame_image').click(searchEntity);			
+
+			var oGetParameters = obtainGETparameters();
+			if (oGetParameters['id'] && oGetParameters['namespace'] && oGetParameters['specie']) {
+				printStatusMessage('#header_panel',true,'Loading...');
+				$('#search_frame_image').css({ 'background-image': "url('./img/iloading.gif')" });
+
+				var sId = oGetParameters['id'];
+				var sNamespace = oGetParameters['namespace'];
+				var sSpecie = oGetParameters['specie'];
+				runReportPipeline(sId, sNamespace, sSpecie); // Async call				
+			}
+			else {
+				stopStatusPanels(); // No Entries
+			}
+		});
+	</script>
+
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="appris.html">Home</a>
+		> Report View
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div class="status_panel">
+		<div class="loading_frame"></div>		
+		<div class="status_message"></div>
+	</div>		
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+	<div id="result_panel">		
+
+		<div id="title_panel">
+			<div class="head"></div>
+			<div class="report"></div>
+		</div> <!-- div#title_panel -->
+		
+		<div id="summary_panel">
+			<div class="title">Principal isoform
+				<img class="popup_info_img" src="img/info-icon.png" onclick="infoPopUpWindow(APPRIS.REPORT_INFO_SUMMARY_PANEL)" title="Click here for more information"/>
+			</div>
+			<div class="menu">
+				<span class="show" title="Show APPRIS annotations in detail">Show</span> |
+				<span class="hide" title="Hide APPRIS annotations in detail">Hide</span> | 
+				<span class="export" title="Export APPRIS annotations">Export<div class="export_menu"></div></span>
+			</div>
+			<div class="description">
+				<p>
+					The box shows the coding variants annotated by ENSEMBL. The principal variant selected by APPRIS is marked with a green tick, where APPRIS cannot make a selection, the isoforms are marked with a yellow question mark.
+				</p>				
+			</div>
+			<div class="status_panel">
+				<div class="loading_frame"></div>		
+				<div class="status_message"></div>
+			</div>
+			<div class="report"></div>
+		</div> <!-- div#summary_panel -->
+				
+		<div id="appris_panel">
+			<div class="title">APPRIS annotations in detail
+				<img class="popup_info_img" src="img/info-icon.png" onclick="infoPopUpWindow(APPRIS.REPORT_INFO_APPRIS_PANEL)" title="Click here for more information"/>
+			</div>
+			<div class="menu">
+				<span class="show" title="Show APPRIS annotations in detail">Show</span> |
+				<span class="hide" title="Hide APPRIS annotations in detail">Hide</span> | 
+				<span class="export" title="Export APPRIS annotations">Export<div class="export_menu"></div></span>				
+			</div>
+			<div class="description">
+				<p>
+					<b>APPRIS</b> selects principal isoforms based on a range of methods that use protein structural information, functionally important residues, conservation of exonic structure and evidence of unusual evolution.
+				</p>				
+			</div>
+			<div class="status_panel">
+				<div class="loading_frame"></div>		
+				<div class="status_message"></div>
+			</div>
+			<div class="report"></div>
+		</div> <!-- div#appris_panel -->
+
+		<div id="sequence_panel">
+			<div class="title" style="display: inline">Protein sequences
+				<img class="popup_info_img" src="img/info-icon.png" onclick="infoPopUpWindow(APPRIS.REPORT_INFO_SEQUENCE_PANEL)" title="Click here for more information"/>
+			</div>
+			<div class="menu">
+				<span class="show" title="Show Protein sequence data">Show</span> |
+				<span class="hide" title="Hide Protein sequence data">Hide</span> | 
+				<span class="export" title="Export Protein sequence">Export<div class="export_menu"></div></span> |
+				<span class="tool" title="Tools for Protein sequence">Tools<div class="tool_menu"></div></span>				
+			</div>
+			<div class="description">
+				<p>
+					Amino acid sequences for all coding variants allows the visualization of protein-based annotations.					
+				</p>
+			</div>
+			<div class="status_panel">
+				<div class="loading_frame"></div>		
+				<div class="status_message"></div>
+			</div>
+			<div class="report"></div>
+		</div> <!-- div#sequence_panel -->
+				
+		<div id="ucsc_appris_panel">
+			<div class="title">APPRIS annotations in UCSC Genome Browser
+				<img class="popup_info_img" src="img/info-icon.png" onclick="infoPopUpWindow(APPRIS.REPORT_INFO_UCSC_PANEL)" title="Click here for more information"/>
+			</div>
+			<div class="menu">
+				<span class="show" title="Show UCSC panel">Show</span> |
+				<span class="hide" title="Hide UCSC panel">Hide</span> | 
+				<span class="export" title="Export  UCSC annotations">Export<div class="export_menu"></div></span>
+			</div>
+			<div class="description">
+				<p>
+					The UCSC Genome Browser was created by the Genome Bioinformatics Group of UC Santa Cruz. Software Copyright (c) The Regents of the University of California. All rights reserved. The UCSC, like ENSEMBL, are part of the GENCODE consortium.
+				</p>
+				<p>
+					<b>Note:</b> The browser window may include transcripts and annotations from neighbouring genes. Also the current version the ENSEMBL Gene Predictions may vary from the annotations for some genes.
+				</p>
+			</div>
+			<div class="status_panel">
+				<div class="loading_frame"></div>		
+				<div class="status_message"></div>
+			</div>
+			<div class="report"></div>
+		</div> <!-- div#ucsc_appris_panel -->
+		
+		<div id="ucsc_proteo_panel">
+			<div class="title">Proteomic evidence in UCSC Genome Browser
+				<img class="popup_info_img" src="img/info-icon.png" onclick="infoPopUpWindow(APPRIS.REPORT_INFO_UCSC_PROTEO_PANEL)" title="Click here for more information"/>
+			</div>
+			<div class="menu">
+				<span class="show" title="Show UCSC panel">Show</span> |
+				<span class="hide" title="Hide UCSC panel">Hide</span> | 
+				<span class="export" title="Export  UCSC annotations">Export<div class="export_menu"></div></span>
+			</div>
+			<div class="status_panel">
+				<div class="loading_frame"></div>		
+				<div class="status_message"></div>
+			</div>
+			<div class="report"></div>
+		</div> <!-- div#ucsc_proteo_panel -->
+		
+		<div id="ucsc_rnaseq_panel">
+			<div class="title">RNA-seq tracks in UCSC Genome Browser
+				<img class="popup_info_img" src="img/info-icon.png" onclick="infoPopUpWindow(APPRIS.REPORT_INFO_UCSC_RNASEQ_PANEL)" title="Click here for more information"/>
+			</div>
+			<div class="menu">
+				<span class="show" title="Show UCSC panel">Show</span> |
+				<span class="hide" title="Hide UCSC panel">Hide</span> 
+			</div>
+			<div class="status_panel">
+				<div class="loading_frame"></div>		
+				<div class="status_message"></div>
+			</div>
+			<div class="report"></div>
+		</div> <!-- div#ucsc_rnaseq_panel -->
+			
+	</div> <!-- div#result_panel -->
+	
+	<div id="bottom_panel" style="position: relative">
+		<div id="content_release"></div> <!-- div#content_release -->
+		<div id="content_archives"></div> <!-- div#content_archives -->
+	</div> <!-- div#bottom_panel -->
+	
+</div> <!-- div#center_panel -->
+
+<div id="popup_info">
+	<div class="popup_info_sms"></div>
+</div> <!-- div#popup_info -->
+
+
+</body>
+</html>

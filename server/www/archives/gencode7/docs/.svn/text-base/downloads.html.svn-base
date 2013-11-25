@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/docs.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#content_panel .content_body .main_download_title').html(APPRIS.MAIN_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .firestar_download_title').html(APPRIS.FIRESTAR_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .matador3d_download_title').html(APPRIS.MATADOR3D_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .corsair_download_title').html(APPRIS.CORSAIR_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .spade_download_title').html(APPRIS.SPADE_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .inertia_download_title').html(APPRIS.INERTIA_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .cexonic_download_title').html(APPRIS.CEXONIC_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .thump_download_title').html(APPRIS.THUMP_DOWNLOAD_TITLE);
+			$('#content_panel .content_body .crash_download_title').html(APPRIS.CRASH_DOWNLOAD_TITLE);			
+			$('#content_panel .content_body .main_download').html(APPRIS.MAIN_DOWNLOAD);
+			$('#content_panel .content_body .firestar_download').html(APPRIS.FIRESTAR_DOWNLOAD);
+			$('#content_panel .content_body .matador3d_download').html(APPRIS.MATADOR3D_DOWNLOAD);
+			$('#content_panel .content_body .corsair_download').html(APPRIS.CORSAIR_DOWNLOAD);
+			$('#content_panel .content_body .spade_download').html(APPRIS.SPADE_DOWNLOAD);
+			$('#content_panel .content_body .inertia_download').html(APPRIS.INERTIA_DOWNLOAD);
+			$('#content_panel .content_body .cexonic_download').html(APPRIS.CEXONIC_DOWNLOAD);
+			$('#content_panel .content_body .thump_download').html(APPRIS.THUMP_DOWNLOAD);
+			$('#content_panel .content_body .crash_download').html(APPRIS.CRASH_DOWNLOAD);						
+			$('#info_frame').html(APPRIS.INFO_FRAME);
+			$('#search_frame_input').keyup(searchEntity3);
+			$('#search_frame_image').click(searchEntity3);
+		});
+	</script>
+</head>
+
+<body>
+<a name="top"></a>
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> <a href="docs.html">Help & Docs</a> > Downloads
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>Downloads</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+
+	<div class="content_rightcol">
+	<div class="content_body">	
+		<div class="content_subtitle">Export via website</div> <!-- Export via website -->
+		The APPRIS report pages offer an export option for small amounts of data. This is the ideal option if you want a protein sequence as a <a class='content_external_ref' target='_blank' href='http://www.ebi.ac.uk/help/formats.html#fasta'>FASTA</a> file, or a <a class='content_external_ref' target='_blank' href='http://www.json.org/'>JSON</a>/<a class='content_external_ref' target='_blank' href='http://mblab.wustl.edu/GTF2.html'>GTF</a> file of a few features of a gene or transcript. Furthermore, downloads of annotation tracks (in the <a class='content_external_ref' target='_blank' href='http://genome.ucsc.edu/FAQ/FAQformat.html#format1'>BED</a> format) across genome region are possible.
+		<br />
+		Simply select the desired gene/transcript, click on one of the "<b>Export</b>" links on the right of the page, and select your output options.
+
+		<div class="content_subtitle">Fetch data via perl</div> <!--Fetch data via perl -->
+		It is possible to write your own Perl scripts to retrieve small-to-medium datasets. All our data is available through the <a href="api.html">Perl API</a>. Use the API to retrieve gene and transcript sets, functionally important residues, conservation across species and much more.
+
+		<div class="content_subtitle">Download Data</div> <!-- Data Access -->
+		The annotations of the following methods are available free.
+		<p>	
+		<ul> <!-- get the files from APPRIS.js -->
+			<li><a href='downloads.html#main_download' style='color: black'><div class='main_download_title'></div></a></li>
+			<li><a href='downloads.html#firestar_download' style='color: black'><div class='firestar_download_title'></div></a></li>
+			<li><a href='downloads.html#matador3d_download' style='color: black'><div class='matador3d_download_title'></div></a></li>
+			<li><a href='downloads.html#corsair_download' style='color: black'><div class='corsair_download_title'></div></a></li>
+			<li><a href='downloads.html#spade_download' style='color: black'><div class='spade_download_title'></div></a></li>
+			<li><a href='downloads.html#inertia_download' style='color: black'><div class='inertia_download_title'></div></a></li>
+			<li><a href='downloads.html#cexonic_download' style='color: black'><div class='cexonic_download_title'></div></a></li>
+			<li><a href='downloads.html#thump_download' style='color: black'><div class='thump_download_title'></div></a></li>
+			<li><a href='downloads.html#crash_download' style='color: black'><div class='crash_download_title'></div></a></li>
+		</ul>
+		</p>
+		<p>
+		Here you can download the annotations as <i>TABULAR</i> format and <a class='content_external_ref' target='_blank' href='http://mblab.wustl.edu/GTF22.html'>GTF</a> (a Gene Transfer Format):			
+		</p>		
+		<ul>
+			<li>
+				<a name='main_download'></a>
+				<div class='main_download'></div> <!-- get the files from APPRIS.js -->
+				<p>
+				This file has a <i>tabular format</i> whose columns are the following:
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Ensembl gene identifier</u></li>
+					<li><u>Ensembl transcript identifier</u></li>
+					<li><u>Transcript name</u></li>
+					<li><u>CCDS identifier</u> (otherwise '-')</li>
+					<li><u>APPRIS annotation</u> where the variant was predicted as the main isoform (PRINCIPAL), and it is not able to decide which is the main isoform (LONGEST)</li>
+				</ul>
+				</p>
+				<p>
+					Where APPRIS is not able to decide which is the main isoform, APPRIS selects the variant with the longest protein sequence among those isoforms that APPRIS considers as candidate isoforms</p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>
+			</li>
+			<li>
+				<a name='firestar_download'></a>
+				<div class='firestar_download'></div> <!-- get the files from APPRIS.js -->
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'FIRESTAR'</li>
+					<li><u>Type of annotation</u>: 'functional_residue'</li>
+					<li><u>Start position</u> of functional residue</li>
+					<li><u>End position</u> of functional residue</li>
+					<li><u>Score</u>: for these annotations it is always '0'</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon
+						<ul>
+							<li><u>note</u>: peptide position of functional residue</li>
+						</ul>
+					</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>
+			</li>
+			<li>
+				<a name='matador3d_download'></a>
+				<div class='matador3d_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'MATADOR3D'</li>
+					<li><u>Type of annotation</u>: 'homologous_structure'</li>
+					<li><u>Start position</u> of tertiary structure</li>
+					<li><u>End position</u> of tertiary structure</li>
+					<li><u>Score</u>: based on the number of regions that can be mapped to structural homologues</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon
+						<ul>
+							<li><u>note</u>: pdb id and identity</li>
+						</ul>
+					</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>
+			</li>
+			<li>
+				<a name='corsair_download'></a>
+				<div class='corsair_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'CORSAIR'</li>
+					<li><u>Type of annotation</u>: 'no_vert_conservation', 'doubtful_vert_conservation', and 'vertebrate_conservation'</li>
+					<li><u>Start position</u> of transcript</li>
+					<li><u>End position</u> of transcript</li>
+					<li><u>Score</u>: that is approximately the number of vertebrate species that can be aligned without introducing gaps</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>
+			</li>
+			<li>
+				<a name='spade_download'></a>
+				<div class='spade_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'SPADE'</li>
+					<li><u>Type of annotation</u>: 'domain', 'domain_possibly_damaged', 'domain_damaged', and 'domain_wrong'</li>
+					<li><u>Start position</u> of domain</li>
+					<li><u>End position</u> of domain</li>
+					<li><u>Score</u>: a local pfam domain integrity score which decides whether a domain is damaged or not</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>				
+			</li>
+			<li>
+				<a name='inertia_download'></a>
+				<div class='inertia_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'INERTIA'</li>
+					<li><u>Type of annotation</u>: 'neutral_evolution', and 'unusual_evolution'</li>
+					<li><u>Start position</u> of exon</li>
+					<li><u>End position</u> of exon</li>
+					<li><u>Score</u>: for these annotations it is always '.'</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>				
+			</li>
+			<li>
+				<a name='cexonic_download'></a>
+				<div class='cexonic_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'CEXONIC'</li>
+					<li><u>Type of annotation</u>: 'exon_conservation', and 'non-aligned_introns'</li>
+					<li><u>Start position</u> of exon</li>
+					<li><u>End position</u> of exon</li>
+					<li><u>Score</u>: for these annotations it is always '.'</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>				
+			</li>
+			<li>
+				<a name='thump_download'></a>
+				<div class='thump_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'THUMP'</li>
+					<li><u>Type of annotation</u>: 'tmh_signal', and 'damaged_tmh_signal'</li>
+					<li><u>Start position</u> of transmembrane helix</li>
+					<li><u>End position</u> of transmembrane helix</li>
+					<li><u>Score</u>: for these annotations it is always '0'</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>
+			</li>
+			<li>
+				<a name='crash_download'></a>
+				<div class='crash_download'></div>
+				<p>
+				This file has a <i>GTF format</i> that is a tabular file whose columns are the following:
+				</p>
+				<ul>
+					<li><u>Chromosome</u></li>
+					<li><u>Method name</u>: 'CRASH'</li>
+					<li><u>Type of annotation</u>: 'pep_signal','doubtful_pep_signal','no_pep_signal', 'mit_signal','doubtful_mit_signal', and 'no_mit_signal'</li>
+					<li><u>Start position</u> of peptide and mitochondrial signal</li>
+					<li><u>End position</u> of peptide and mitochondrial signal</li>
+					<li><u>Score</u>: for these annotations it is always '.'</li>
+					<li><u>Strand</u></li>
+					<li><u>Frame</u>: for these annotations it is always '.'</li>
+					<li><u>Attributes</u> end in a semicolon
+						<ul>
+							<li><u>note</u>: specific results of SignalP (s_mean,s_prob,d_score,c_max) and TargetP (reliability,localization)</li>
+						</ul>
+					</li>
+				</ul>
+				<p>
+					<a href="#top"><span style="text-decoration: underline; cursor: pointer; float: right; color: black">Go to the Top</span></a>
+				</p>
+			</li>
+		</ul>
+		
+	</div> <!-- div#content_body -->	
+	</div>	<!-- div#content_rightcol -->
+	
+</div> <!-- div#content_panel -->
+
+</div> <!-- div#center_panel -->
+</body>
+</html>

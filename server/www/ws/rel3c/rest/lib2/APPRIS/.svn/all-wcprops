@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS
+END
+XrefEntry.pm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/XrefEntry.pm
+END
+Exporter.pm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Exporter.pm
+END
+Registry.pm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Registry.pm
+END
+CDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/CDS.pm
+END
+Exon.pm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Exon.pm
+END
+Transcript.pm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Transcript.pm
+END
+ProCDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/ProCDS.pm
+END
+Intruder.pm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Intruder.pm
+END
+Parser.pm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Parser.pm
+END
+Gene.pm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Gene.pm
+END
+Translation.pm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Translation.pm
+END
+Codon.pm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Codon.pm
+END
+Analysis.pm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Analysis.pm
+END

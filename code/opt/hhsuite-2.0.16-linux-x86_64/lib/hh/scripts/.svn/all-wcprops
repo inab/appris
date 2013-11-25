@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts
+END
+splitfasta.pl
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/splitfasta.pl
+END
+Align.pm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/Align.pm
+END
+addss.pl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/addss.pl
+END
+create_profile_from_hmmer.pl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/create_profile_from_hmmer.pl
+END
+hhmakemodel.pl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/hhmakemodel.pl
+END
+reformat.pl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/reformat.pl
+END
+HHPaths.pm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/HHPaths.pm
+END
+create_profile_from_hhm.pl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/create_profile_from_hhm.pl
+END
+multithread.pl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/multithread.pl
+END
+hhblitsdb.pl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hhsuite-2.0.16-linux-x86_64/lib/hh/scripts/hhblitsdb.pl
+END

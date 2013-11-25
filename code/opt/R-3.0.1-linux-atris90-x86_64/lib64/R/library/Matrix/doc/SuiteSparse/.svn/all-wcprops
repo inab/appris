@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse
+END
+AMD.txt
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse/AMD.txt
+END
+CHOLMOD.txt
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse/CHOLMOD.txt
+END
+SPQR.txt
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse/SPQR.txt
+END
+SuiteSparse_config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse/SuiteSparse_config.txt
+END
+COLAMD.txt
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse/COLAMD.txt
+END
+UserGuides.txt
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/Matrix/doc/SuiteSparse/UserGuides.txt
+END

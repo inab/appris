@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin
+END
+appris_insert_appris
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_insert_appris
+END
+appris_export_exon_data
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_export_exon_data
+END
+appris_export_method_annots
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_export_method_annots
+END
+appris_retrieve_stats
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_retrieve_stats
+END
+appris_retrieve_annots
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_retrieve_annots
+END
+appris_env
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_env
+END
+apprisall
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/apprisall
+END
+appris_check_appris
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_check_appris
+END
+appris_gencode_report
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_gencode_report
+END
+appris_ls_annots
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/bin/appris_ls_annots
+END

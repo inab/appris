@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/gene_and_transcript_types.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser(); 
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#info_frame').html(APPRIS.INFO_FRAME);			
+			$('#search_frame_input').keyup(searchEntity3);
+			$('#search_frame_image').click(searchEntity3);
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> <a href="docs.html">Help & Docs</a> > Gene and Transcript types
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>Gene and Transcript types</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+
+	<div class="content_rightcol">
+		<div class="content_body">
+<br />
+<p>APPRIS shows annotation from different sources and classifies genes and transcripts into different classes. Since a single gene often has more than one transcript, and these transcripts can be of different classes, the classification of the gene as a whole is defined by the transcript with the 'highest' level of classification. So for example human LRRC8 is a 'Known Protein Coding' gene, and has a couple of 'Protein coding' transcripts. It also has 'Putative Processed transcripts' but these do not affect the classification of the gene as a whole.</p>
+
+<p>The <a class='content_external_ref' target='_blank' href='http://www.gencodegenes.org/data.html'>GENCODE</a> data set combines the <a class='content_external_ref' target='_blank' href='http://www.sanger.ac.uk/research/projects/vertebrategenome/havana/'>HAVANA</a> manual annotation using evidence from various sources and research groups with the <a class='content_external_ref' target='_blank' href='http://www.sanger.ac.uk/resources/databases/ensembl.html'>Ensembl</a> automatic annotation pipelines to achieve an accurate and complete annotation of the human genome.</p>
+
+<p>Further details are listed on  
+<a class='content_external_ref' target='_blank' href='http://www.gencodegenes.org/gencode_biotypes.html'>GENCODE descriptions</a>, or in the 
+<a class='content_external_ref' target='_blank' href='http://www.ensembl.org/Help/Glossary?'>Ensembl glossary</a>.</p>
+
+
+<div class='content_subtitle'>Gene Classification</div>
+
+<p>Genes are classified by GENCODE according to their <span class='content_highlighting'>Status</span>, which indicates the type of evidence that supports the annotation, and their <span class='content_highlighting'>Class</span> (or <span class='content_highlighting'>Biotype</span>), an indicator of biological significance. The protein coding genes evaluated by <span class='content_highlighting'>APPRIS</span> include the <span class='content_highlighting'>Protein coding</span>, <span class='content_highlighting'>Nonsense-mediated decay</span> and <span class='content_highlighting'>IG</span> and <span class='content_highlighting'>TR Gene</span> classes.
+
+<h4>Status:</h4>
+<ul>
+	<li><span class='content_highlighting'>Known</span>: Identical to known cDNAs or proteins from the same species and has an entry in species specific model databases.</li>
+	<li><span class='content_highlighting'>Novel</span>: Identical or homologous to cDNAs from the same species, or proteins from all species.</li>
+	<li><span class='content_highlighting'>Putative</span>: Identical or homologous to spliced ESTs from the same species.</li>
+	<li><span class='content_highlighting'>Predicted</span>: Based on <i>ab initio</i> prediction and for which at least 
+	one exon is supported by biological data (unspliced ESTs, protein sequence similarity with mouse or tetraodon genomes 
+	or expression data from Rosetta).</li>
+</ul>
+
+<h4>Class (or Biotype):</h4>
+<ul>
+	<li><span class='content_highlighting'>Protein coding</span>: Contains an open reading frame (ORF).</li>
+	<li><span class='content_highlighting'>Processed transcript</span>: Doesn't contain an ORF.</li>
+	<li><span class='content_highlighting'>Pseudogene</span>: Similar to known proteins but contain a frameshift and/or stop codon(s) which disrupts the ORF.</li>
+	<li><span class='content_highlighting'>IG Gene</span>: Immunoglobulin gene.</li>
+	<li><span class='content_highlighting'>TR Gene</span>: A T cell receptor gene.</li>
+	<li><span class='content_highlighting'>TEC (To be Experimentally Confirmed)</span>: This is used for non-spliced 
+	EST clusters that have polyA features. This category has been specifically created for the 
+	ENCODE project to highlight regions that could indicate the presence of protein coding genes 
+	that require experimental validation, either by 5' RACE or RT-PCR to extend the transcripts, 
+	or by confirming expression of the putatively-encoded peptide with specific antibodies.</li>
+</ul>
+
+<div class='content_subtitle'>Transcript Classification</div>
+
+<p>Transcripts are classified according to their <span class='content_highlighting'>Class</span>:</p>
+
+<ul>
+	<li><span class='content_highlighting'>Protein coding</span>: Protein coding transcripts.</li>
+	<li><span class='content_highlighting'>Processed transcript</span>: Non-coding transcripts.</li>
+	<li><span class='content_highlighting'>Pseudogene</span>: Have homology to proteins but generally 
+	suffer from a disrupted coding sequence and	an active homologous gene can be found at another locus. 
+	Sometimes these entries have an intact coding sequence	or an open but truncated ORF, 
+	in which case there is other evidence used (for example genomic polyA stretches at the 3' end) to classify 
+	them as a pseudogene.</li>
+	<li><span class='content_highlighting'>Nonsense mediated decay</span>: If the coding sequence 
+	(following the appropriate reference) of a transcript finishes >50bp from a downstream splice site then 
+	it is tagged as NMD. If the variant does	not cover the full reference coding sequence then it is annotated as 
+	NMD if NMD is unavoidable i.e. no matter what the exon structure of the missing portion is the transcript will be 
+	subject to NMD.</li>
+	<li><span class='content_highlighting'>TEC (To be Experimentally Confirmed)</span>: This is used for 
+	non-spliced EST clusters that have polyA features. This category has been specifically created for the 
+	ENCODE project to highlight regions that could indicate the presence of novel protein coding genes that 
+	require experimental validation, either by 5' RACE or RT-PCR to extend the transcripts, or by confirming 
+	expression of the putatively-encoded peptide with specific antibodies.</li>
+	<li><span class='content_highlighting'>Artifact</span>: Used to tag mistakes in the public databases 
+	(Ensembl/SwissProt/ Trembl). Usually these arise from high-throughput cDNA sequencing projects, 
+	which submit automatic annotation sometimes resulting in erroneous coding sequences that are, 
+	for example, 3' UTRs.</li>
+	<li><span class='content_highlighting'>Transposon</span>: An intact, and therefore potentially, active transposon.</li>	
+	<li><span class='content_highlighting'>IG Gene</span>: An immunoglobulin gene.</li>	
+	<li><span class='content_highlighting'>TR Gene</span>: A T cell receptor gene.</li>	
+	<li><span class='content_highlighting'>Disrupted domain</span>: Otherwise viable coding region omitted from this 
+	alternatively spliced transcript because the splice variation affects a region coding for a protein domain.</li>
+</ul>
+		</div> <!-- div#content_body -->	
+	</div>	<!-- div#content_rightcol -->
+
+</div> <!-- div#content_panel -->
+</div> <!-- div#center_panel -->
+</body>
+</html>

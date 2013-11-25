@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS
+END
+EnsEMBL.pm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/EnsEMBL.pm
+END
+XrefEntry.pm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/XrefEntry.pm
+END
+Exporter.pm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Exporter.pm
+END
+Registry.pm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Registry.pm
+END
+CDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/CDS.pm
+END
+Exon.pm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Exon.pm
+END
+Transcript.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Transcript.pm
+END
+ProCDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/ProCDS.pm
+END
+Intruder.pm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Intruder.pm
+END
+Parser.pm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Parser.pm
+END
+Gene.pm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Gene.pm
+END
+Translation.pm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Translation.pm
+END
+Codon.pm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Codon.pm
+END
+Analysis.pm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/APPRIS/Analysis.pm
+END

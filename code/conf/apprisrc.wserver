@@ -1,0 +1,9 @@
+##########################################################
+# SETTING UP ENVIRONMENT VARIABLES AND PERL LIBRARY PATH #
+##########################################################
+
+# ------------------------------------------------#
+# Setting up specific vars of APPRIS's Web Server #
+# ------------------------------------------------#
+
+export APPRIS_PROGRAMS_TMP_DIR="${APPRIS_CODE_DIR}/cached/wserver"

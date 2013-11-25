@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin
+END
+proxy_biomart.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/proxy_biomart.cgi
+END
+proxy_ucsc.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/proxy_ucsc.cgi
+END
+export_appris.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/export_appris.cgi
+END
+export_sequence.cgi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/export_sequence.cgi.pl
+END
+export_data.cgi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/export_data.cgi.pl
+END
+search_identifiers.cgi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/search_identifiers.cgi.pl
+END
+proxy_biomart.cgi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/proxy_biomart.cgi.pl
+END
+proxy_ucsc.cgi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/proxy_ucsc.cgi.pl
+END
+export_appris.cgi.pl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/export_appris.cgi.pl
+END
+export_sequence.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/export_sequence.cgi
+END
+search_identifiers.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/search_identifiers.cgi
+END
+export_data.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/export_data.cgi
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils
+END
+ScriptUtils.pm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils/ScriptUtils.pm
+END
+ProCDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils/ProCDS.pm
+END
+Exception.pm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils/Exception.pm
+END
+File.pm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils/File.pm
+END
+Logger.pm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils/Logger.pm
+END
+Argument.pm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/APPRIS/Utils/Argument.pm
+END

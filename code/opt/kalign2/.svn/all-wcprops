@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/Makefile.in
+END
+kalign2_feature.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_feature.c
+END
+kalign2_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_misc.c
+END
+kalign2.source_code.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2.source_code.tar.gz
+END
+config.log
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/config.log
+END
+kalign2_input.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_input.c
+END
+kalign2_feature.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_feature.h
+END
+kalign2_output.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_output.c
+END
+kalign2_hirschberg_dna.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_hirschberg_dna.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/config.h
+END
+kalign2_input.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_input.h
+END
+kalign2_output.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_output.h
+END
+kalign2_hirschberg_dna.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_hirschberg_dna.h
+END
+kalign2_conservation.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_conservation.c
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/configure.ac
+END
+kalign2_mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_mem.c
+END
+kalign2_advanced_gaps.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_advanced_gaps.c
+END
+kalign2_hirschberg.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_hirschberg.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/COPYING
+END
+kalign2_string_matching.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_string_matching.c
+END
+kalign2_inferface.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_inferface.c
+END
+kalign2_advanced_gaps.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_advanced_gaps.h
+END
+kalign2_hirschberg.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_hirschberg.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/Makefile
+END
+kalign2_hirschberg_large.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_hirschberg_large.c
+END
+kalign2_profile_alignment.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_profile_alignment.c
+END
+kalign2_stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_stats.c
+END
+kalign2_hirschberg_large.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_hirschberg_large.h
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/config.status
+END
+kalign2_tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_tree.c
+END
+kalign2_profile.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_profile.c
+END
+kalign2_alignment_types.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_alignment_types.c
+END
+kalign2_dp.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_dp.c
+END
+kalign2_profile_alignment.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_profile_alignment.h
+END
+kalign2_simple_gaps.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_simple_gaps.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/README
+END
+kalign2_distance_calculation.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_distance_calculation.c
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/config.h.in
+END
+kalign2_upgma.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_upgma.c
+END
+kalign
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign
+END
+kalign2_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2_main.c
+END
+kalign2.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/kalign2/kalign2.h
+END

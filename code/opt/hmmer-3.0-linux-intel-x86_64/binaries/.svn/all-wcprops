@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries
+END
+hmmconvert
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmconvert
+END
+hmmscan
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmscan
+END
+esl-histplot
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-histplot
+END
+phmmer
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/phmmer
+END
+hmmsim
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmsim
+END
+hmmalign
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmalign
+END
+hmmemit
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmemit
+END
+esl-reformat
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-reformat
+END
+hmmbuild
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmbuild
+END
+esl-alimask
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-alimask
+END
+esl-seqstat
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-seqstat
+END
+esl-alimerge
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-alimerge
+END
+esl-weight
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-weight
+END
+esl-afetch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-afetch
+END
+esl-alimanip
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-alimanip
+END
+hmmstat
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmstat
+END
+esl-shuffle
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-shuffle
+END
+esl-selectn
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-selectn
+END
+esl-alistat
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-alistat
+END
+esl-ssdraw
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-ssdraw
+END
+esl-alimap
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-alimap
+END
+esl-compstruct
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-compstruct
+END
+esl-compalign
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-compalign
+END
+hmmfetch
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmfetch
+END
+esl-sfetch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-sfetch
+END
+hmmpress
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmpress
+END
+jackhmmer
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/jackhmmer
+END
+esl-cluster
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-cluster
+END
+esl-construct
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-construct
+END
+hmmsearch
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/hmmsearch
+END
+esl-mask
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/binaries/esl-mask
+END

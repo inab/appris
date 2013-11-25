@@ -1,0 +1,935 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel
+END
+esl_regexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_regexp.h
+END
+esl_minimizer.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_minimizer.c
+END
+esl_dirichlet.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_dirichlet.c
+END
+esl_minimizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_minimizer.h
+END
+esl_dirichlet.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_dirichlet.h
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/configure.ac
+END
+esl_msa.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msa.c
+END
+esl_gev.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gev.c
+END
+esl_msacluster.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msacluster.c
+END
+esl_sqio_ascii.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio_ascii.c
+END
+esl_msa.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msa.h
+END
+easel.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/easel.c
+END
+esl_gev.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gev.h
+END
+esl_msacluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msacluster.h
+END
+esl_sqio_ascii.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio_ascii.h
+END
+esl_rootfinder.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_rootfinder.tex
+END
+esl_randomseq.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_randomseq.c
+END
+esl_sse.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sse.c
+END
+easel.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/easel.h
+END
+esl_keyhash.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_keyhash.c
+END
+esl_ssi.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_ssi.c
+END
+esl_randomseq.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_randomseq.h
+END
+esl_msa.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msa.tex
+END
+esl_sse.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sse.h
+END
+esl_keyhash.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_keyhash.h
+END
+esl_ssi.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_ssi.h
+END
+esl_keyhash.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_keyhash.tex
+END
+esl_vmx.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_vmx.c
+END
+esl_histogram.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_histogram.tex
+END
+esl_wuss.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_wuss.tex
+END
+esl_vmx.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_vmx.h
+END
+esl_gamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gamma.c
+END
+esl_stack.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stack.tex
+END
+esl_exponential.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_exponential.c
+END
+esl_gamma.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gamma.h
+END
+esl_normal.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_normal.c
+END
+esl_gumbel.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gumbel.tex
+END
+esl_distance.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_distance.c
+END
+esl_exponential.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_exponential.h
+END
+esl_normal.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_normal.h
+END
+esl_distance.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_distance.h
+END
+esl_cluster.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_cluster.tex
+END
+esl_scorematrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_scorematrix.c
+END
+esl_mpi.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_mpi.tex
+END
+esl_scorematrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_scorematrix.h
+END
+esl_normal.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_normal.tex
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/config.guess
+END
+esl_rootfinder.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_rootfinder.c
+END
+esl_stopwatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stopwatch.c
+END
+esl_scorematrix.tex
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_scorematrix.tex
+END
+esl_rootfinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_rootfinder.h
+END
+esl_ratematrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_ratematrix.c
+END
+esl_stopwatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stopwatch.h
+END
+esl_hmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_hmm.c
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/INSTALL
+END
+esl_ratematrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_ratematrix.h
+END
+esl_hmm.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_hmm.h
+END
+BUGTRAX
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/BUGTRAX
+END
+esl_sqio.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio.tex
+END
+esl_paml.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_paml.c
+END
+esl_stopwatch.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stopwatch.tex
+END
+esl_swat.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_swat.tex
+END
+esl_stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stats.c
+END
+esl_paml.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_paml.h
+END
+esl_ratematrix.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_ratematrix.tex
+END
+esl_gev.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gev.tex
+END
+esl_stats.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stats.h
+END
+esl_sqio_ncbi.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio_ncbi.c
+END
+esl_randomseq.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_randomseq.tex
+END
+esl_dmatrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_dmatrix.c
+END
+esl_sqio_ncbi.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio_ncbi.h
+END
+esl_gumbel.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gumbel.c
+END
+esl_dmatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_dmatrix.h
+END
+esl_tree.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_tree.tex
+END
+esl_gumbel.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gumbel.h
+END
+esl_vectorops.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_vectorops.c
+END
+esl_getopts.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_getopts.c
+END
+esl_dmatrix.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_dmatrix.tex
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/aclocal.m4
+END
+esl_stretchexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stretchexp.c
+END
+esl_vectorops.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_vectorops.h
+END
+esl_getopts.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_getopts.h
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/install-sh
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/Makefile.in
+END
+esl_stretchexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stretchexp.h
+END
+esl_vectorops.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_vectorops.tex
+END
+esl_regexp.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_regexp.tex
+END
+esl_sqio.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio.c
+END
+esl_config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_config.h.in
+END
+esl_sqio.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sqio.h
+END
+esl_weibull.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_weibull.tex
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/COPYRIGHT
+END
+esl_msaweight.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msaweight.c
+END
+esl_fileparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_fileparser.c
+END
+esl_msaweight.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msaweight.h
+END
+esl_mixgev.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_mixgev.c
+END
+esl_tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_tree.c
+END
+esl_msacluster.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msacluster.tex
+END
+esl_sq.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sq.tex
+END
+esl_fileparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_fileparser.h
+END
+interface_gsl.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/interface_gsl.c
+END
+esl_mixgev.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_mixgev.h
+END
+easel.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/easel.tex
+END
+esl_tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_tree.h
+END
+esl_msaweight.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msaweight.tex
+END
+esl_paml.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_paml.tex
+END
+interface_gsl.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/interface_gsl.h
+END
+esl_sse.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sse.tex
+END
+esl_fileparser.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_fileparser.tex
+END
+esl_ssi.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_ssi.tex
+END
+esl_random.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_random.c
+END
+esl_alphabet.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_alphabet.c
+END
+esl_random.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_random.h
+END
+esl_alphabet.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_alphabet.h
+END
+esl_threads.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_threads.c
+END
+esl_msashuffle.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msashuffle.c
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/configure
+END
+esl_random.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_random.tex
+END
+esl_alphabet.tex
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_alphabet.tex
+END
+esl_threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_threads.h
+END
+esl_gamma.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_gamma.tex
+END
+esl_msashuffle.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_msashuffle.h
+END
+esl_getopts.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_getopts.tex
+END
+esl_weibull.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_weibull.c
+END
+esl_hyperexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_hyperexp.c
+END
+esl_exponential.tex
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_exponential.tex
+END
+esl_stretchexp.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stretchexp.tex
+END
+esl_distance.tex
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_distance.tex
+END
+esl_weibull.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_weibull.h
+END
+interface_lapack.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/interface_lapack.c
+END
+00README
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/00README
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/config.sub
+END
+esl_hyperexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_hyperexp.h
+END
+interface_lapack.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/interface_lapack.h
+END
+esl_swat.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_swat.c
+END
+esl_minimizer.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_minimizer.tex
+END
+esl_hyperexp.tex
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_hyperexp.tex
+END
+esl_sq.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sq.c
+END
+esl_dirichlet.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_dirichlet.tex
+END
+esl_workqueue.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_workqueue.c
+END
+esl_sq.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_sq.h
+END
+esl_workqueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_workqueue.h
+END
+esl_histogram.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_histogram.c
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/LICENSE
+END
+esl_wuss.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_wuss.c
+END
+esl_histogram.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_histogram.h
+END
+esl_stack.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stack.c
+END
+esl_wuss.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_wuss.h
+END
+esl_stack.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stack.h
+END
+esl_stats.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_stats.tex
+END
+esl_cluster.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_cluster.c
+END
+esl_mpi.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_mpi.c
+END
+esl_cluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_cluster.h
+END
+esl_regexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_regexp.c
+END
+esl_mpi.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/esl_mpi.h
+END

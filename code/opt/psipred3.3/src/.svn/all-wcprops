@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src
+END
+pfilt.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/pfilt.c
+END
+chkparse
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/chkparse
+END
+chkparse.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/chkparse.c
+END
+sspred_avpred.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/sspred_avpred.c
+END
+seq2mtx
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/seq2mtx
+END
+sspred_hmulti.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/sspred_hmulti.c
+END
+psipass2
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/psipass2
+END
+seq2mtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/seq2mtx.c
+END
+psipred
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/psipred
+END
+sspred_net.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/sspred_net.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/Makefile
+END
+ssdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/ssdefs.h
+END
+pfilt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/pfilt
+END
+sspred_net2.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/src/sspred_net2.h
+END

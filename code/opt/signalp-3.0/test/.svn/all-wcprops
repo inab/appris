@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/signalp-3.0/test
+END
+test.ps
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/signalp-3.0/test/test.ps
+END
+test.out
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/signalp-3.0/test/test.out
+END
+test.dat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/signalp-3.0/test/test.dat
+END
+test.seq
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/signalp-3.0/test/test.seq
+END
+test5.seq
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/signalp-3.0/test/test5.seq
+END

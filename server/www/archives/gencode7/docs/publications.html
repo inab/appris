@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/contact.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>	
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser(); 
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#info_frame').html(APPRIS.INFO_FRAME);			
+			$('#search_frame_input').keyup(searchEntity);
+			$('#search_frame_image').click(searchEntity);
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" title="APPRIS Home" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> <a href="docs.html">Help & Docs</a> > Publications
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>Publications</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+	
+	<div class="content_rightcol">
+		<div class="content_body">
+			<div class="content_subtitle"></div>
+			<p>[1] Lopez G, Maietta P, Rodriguez JM, Valencia A, Tress ML.<br />
+			<span class='content_highlighting'>firestar--advances in
+the prediction of functionally important residues.</span><br />
+			<a class='content_external_ref' target='_blank' href='http://nar.oxfordjournals.org/content/39/suppl_2/W235.long'>
+			Nucleic Acids Res. 2011. 39:W235-41.</a>
+			</p>
+			<p>[2] Tress ML, Wesselink JJ, Frankish A, Lopez G, Goldman N, Loytynoja A, Massingham T, Pardi F, Whelan S, Harrow J, Valencia A.<br />
+			<span class='content_highlighting'>Determination and validation of principal gene products.</span><br />
+			<a class='content_external_ref' target='_blank' href='http://bioinformatics.oxfordjournals.org/cgi/content/full/24/1/11'>
+			Bioinformatics. 2008. 24:11-17</a>
+			</p>
+			<p>[3] Lopez G, Valencia A, Tress ML.<br />
+			<span class='content_highlighting'>firestar--prediction of functionally important residues using structural templates 
+			and alignment reliability.</span><br />
+			<a class='content_external_ref' target='_blank' href='http://nar.oxfordjournals.org/cgi/content/full/gkm297?ijkey=vMKUHaDnlVj9v0G&keytype=ref'>
+			Nucleic Acids Res. 35:W573-7. 2007</a>
+			</p>			
+			<p>[4] Massingham T, Goldman N.<br />
+			<span class='content_highlighting'>Detecting amino acid sites under positive selection
+and purifying selection.</span><br />
+			<a class='content_external_ref' target='_blank' href='http://www.genetics.org/content/169/3/1753.long'>
+			Genetics. 2005 Mar;169(3):1753-62.</a>
+			</p>
+			<p>[5] Punta M, Coggill PC, Eberhardt RY, Mistry J, Tate J, Boursnell C, Pang N,
+Forslund K, Ceric G, Clements J, Heger A, Holm L, Sonnhammer EL, Eddy SR, Bateman
+A, Finn RD.<br />
+			<span class='content_highlighting'>The Pfam protein families database.</span><br />
+			<a class='content_external_ref' target='_blank' href='http://nar.oxfordjournals.org/content/40/D1/D290.long'>
+			Nucleic Acids Res. 2012 40:D290-301.</a>
+			</p>
+			<p>[6] Petersen TN, Brunak S, von Heijne G, Nielsen H.<br />
+			<span class='content_highlighting'>SignalP 4.0: discriminating
+signal peptides from transmembrane regions.</span><br />
+			<a class='content_external_ref' target='_blank' href='http://www.nature.com/nmeth/journal/v8/n10/full/nmeth.1701.html'>
+			Nat Methods. 2011 Sep 29;8(10):785-6.</a>
+			</p>
+
+		</div> <!-- div#content_body -->	
+	</div>	<!-- div#content_rightcol -->
+
+</div> <!-- div#content_panel -->
+</div> <!-- div#center_panel -->
+</body>
+
+</html>

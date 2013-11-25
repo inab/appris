@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts
+END
+create_ensembl_aligns.pl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/create_ensembl_aligns.pl
+END
+iappris.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/iappris.pl
+END
+retrieve_allmain_data.pl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/retrieve_allmain_data.pl
+END
+retrieve_method_data.pl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/retrieve_method_data.pl
+END
+insert_appris.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/insert_appris.pl
+END
+count_rfc.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/count_rfc.pl
+END
+retrieve_main_data.pl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/retrieve_main_data.pl
+END
+apprisall.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/apprisall.pl
+END
+get_diff_genes.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/get_diff_genes.pl
+END
+check_appris.pl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/check_appris.pl
+END
+create_genelist.pl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/create_genelist.pl
+END
+cappris.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/cappris.pl
+END
+retrieve_homolog_data.pl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/retrieve_homolog_data.pl
+END
+appris_stats.R
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/appris_stats.R
+END
+export_exon_data.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/export_exon_data.pl
+END
+export_method_annots.pl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/export_method_annots.pl
+END
+retrieve_stats.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/appris/code/!svn/ver/766/tags/release-1.2/scripts/retrieve_stats.pl
+END

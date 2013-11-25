@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>
+	<meta name="description" content="APPRIS: Selecting Principal Alternative Isoforms" />
+	<meta name="keywords" content="appris, alternative splicing, isoform, genome, annotation, encode, gencode, protein, structure, functional, residues, specie, alignment, evolution, exon, domain, peptide, membrane, helices, mitochondrial, firestar, matador3d, inertia, corsair, spade, cexonic, crash, thump" />
+  
+<!--
+	$Id$
+	appris.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/browserDetect.js"></script>
+	<script type="text/javascript" src="js/serverDetect.js"></script>
+	<script type="text/javascript" src="js/google.analytics.js"></script>	
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser(); 
+
+		// Check server
+		checkServer(); 
+
+		// Google Analytics
+		//google_analytics_INB();
+		//google_analytics_APPRIS();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_archives').html(APPRIS.ARCHIVES);
+			$('#info_frame').html(APPRIS.INFO_FRAME_DOC);			
+			$('#search_frame_input').keyup(searchEntity);
+			$('#search_frame_image').click(searchEntity);
+			$('#search_frame_input2').keyup(searchEntity2);
+			$('#search_frame_image2').click(searchEntity2);
+		});
+	</script>
+	
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-25975549-1']);
+	  _gaq.push(['_setDomainName', 'bioinfo.cnio.es']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" title="APPRIS Home" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>	
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="appris.html">Home</a>
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<!-- <div class="logo_title_appris"></div> -->
+		<span class='logo_title'>A system for annotating alternative splice isoforms</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="content_leftcol_first">
+			<div id="search_frame2">
+				<div id="search_frame_launch2">
+					<span class="run_label">Search gene/transcript:</span>
+					<input class="run_txt" type="text" id="search_frame_input2"/>
+					<input class="run_btn" type="button" value="GO" id="search_frame_image2"/>
+					<span>e.g. <b>TRMT2A-005</b> or <b>ENSG00000099904</b> or <b>RNF215</b></span>
+				</div>
+			</div>
+		</div>
+		<div class="content_leftcol_second">
+			<p>
+				<b>APPRIS</b> [1] is a system that deploys a range of computational methods to provide value to the annotations of the human genome. APPRIS also selects one of the CDS for each gene as the <b>principal isoform</b>.
+			<p>
+				APPRIS defines the principal variant by combining <b>protein structural</b> and <b>functional information</b> and 
+				<b>information from the conservation of related species</b>.				
+			</p>
+			<p>
+				The server is being used in the context of the scale up of the 
+				<a class='content_external_ref' target='_blank' href="http://www.genome.gov/10005107">ENCODE</a> project to annotate 
+				the human genome (<b>20,481 protein-coding genes</b> and <b>93,145 distinct alternative transcripts</b> from 
+				<a class='content_external_ref' target='_blank'  href="http://www.gencodegenes.org/releases/12.html">Gencode12</a>, 
+				<a class='content_external_ref' target='_blank'  href="http://may2012.archive.ensembl.org/index.html">Ensembl67</a>).				
+			</p>
+			<p>
+				All of our data is available free. <a href="docs/downloads.html">Here</a> you can also download the <b>list of main isoforms</b> selected by APPRIS. 
+			</p>
+			<!--
+			<p>
+				Furthermore, <b>preliminary results</b> for 
+				<a class='content_external_ref' target='_blank'  href="http://www.gencodegenes.org/releases/12.html">Gencode12</a>, 
+				<a class='content_external_ref' target='_blank'  href="http://may2012.archive.ensembl.org/index.html">Ensembl67</a>) 				
+				are available <a href="preliminary/gencode12/appris.html">here</a>. 
+			</p>
+			-->
+		</div>
+		<div class="content_leftcol_third">
+			<p>[1] Rodriguez JM, Maietta P, Ezkurdia I, Pietrelli A, Wesselink JJ, Lopez G, Valencia A, Tress ML.<br />
+			<span class='content_highlighting'>APPRIS: annotation of principal and alternative splice isoforms. </span><br />
+			<a class='content_external_ref' target='_blank' href='http://nar.oxfordjournals.org/content/41/D1/D110.long'>
+			Nucleic Acids Res. 2013 Jan;41(Database issue):D110-7.</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="content_rightcol">
+		<div class="content_rightcol_first">
+			<div class='content_subtitle2'>The GENCODE annotation: an Encyclop&aelig;dia of genes and gene variants</div>
+			<p align="left">
+				<img src="img/ENCODE-logo_small.gif" style="float: left; margin: 5px 10px 5px 5px;"/>
+			</p>
+			<p>
+				The National Human Genome Research Institute (NHGRI) launched 
+				<a class='content_external_ref' target='_blank' href="http://www.genome.gov/10005107">ENCODE</a>, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. 
+			<p> 
+				The aim of <a class='content_external_ref' target='_blank'  href="http://www.gencodegenes.org">GENCODE</a> as a 
+				sub-project of the <a class='content_external_ref' target='_blank'  href="http://www.genome.gov/10005107">ENCODE</a> 
+				is the high accuracy annotation of all evidence-based gene features. The consortium is genarating a set of <b>annotations including protein-coding loci, alternatively transcribed variants, transcribed non-coding loci, and pseudogenes</b>. The annotation process involves manual curation, computational analysis and targeted experimental approaches.
+			</p>
+		</div>
+		<div class="content_rightcol_second">
+			<img src="img/CNIO-logo_small.png" style="float: left; margin: 0px 20px 0px 0px;"/>
+			<img src="img/INB-logo_small.png" style="float: right; margin: 0px 0px 0px 20px;"/>
+			<span style="text-align: left;">
+			<b>APPRIS</b> is a joint project between 
+			<i>Centro Nacional de Investigaciones Oncologicas</i>,
+			<a class='content_external_ref' href="http://www.cnio.es" target='_blank'>CNIO</a>
+			and <i>Instituto Nacional de Bioinformatica</i>, <a class='content_external_ref' href="http://www.inab.org" target='_blank'>INB</a>.
+			<p></p>			
+			</span>		 
+		</div>
+	</div>
+	
+</div> <!-- div#content_panel -->
+
+<div id="bottom_panel">
+	<div id="content_release"></div> <!-- div#content_release -->
+	<div id="content_archives"></div> <!-- div#content_archives -->
+</div> <!-- div#bottom_panel -->
+
+<div id="popup_info">
+	<div class="popup_info_sms"></div>
+</div> <!-- div#popup_info -->
+
+</div> <!-- div#center_panel -->
+
+</body>
+</html>

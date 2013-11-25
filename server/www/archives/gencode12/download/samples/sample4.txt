@@ -1,0 +1,101 @@
+#!/usr/bin/perl -W
+
+use strict;
+use warnings;
+
+use APPRIS::Registry;
+
+#
+# Prints the APPRIS annotations in detail
+# http://appris.bioinfo.cnio.es/report.html?id=ENSG00000140464&namespace=Ensembl_Gene_Id
+#
+
+sub main()
+{
+	# APPRIS Registry
+	# The Registry system allows to tell your programs where to find the APPRIS databases and how to connect to them.
+	# The following call will load all the local APPRIS database that was downloaded previously.
+	# By means of config file
+	my($registry)=APPRIS::Registry->new();
+	$registry->load_registry_from_ini (
+		-file	=> "config.ini"
+	);
+	
+	my ($gene) = $registry->fetch_by_gene_stable_id('ENSG00000140464');
+	#my ($gene) = $registry->fetch_by_gene_stable_id('ENSG00000163793');
+	
+	foreach my $transcript (@{$gene->transcripts})
+	{		
+		# get transcript info
+		my ($trans_id) = $transcript->stable_id;
+	
+		# get APPRIS annotation
+
+		my ($num_func_residues) = '-';
+		my ($struct_score) = '-';
+		my ($vert_score) = '-';
+		my ($domain_annot) = '-';
+		my ($e_evol_annot) = '-';
+		my ($e_cons_annot) = '-';
+		my ($num_tmh) = '-';
+		my ($pep_annot) = '-';
+		my ($mit_annot) = '-';
+		my ($appris_annot) = '-';
+		my ($analysis) = $registry->fetch_analysis_by_stable_id($trans_id,'all');
+		
+		
+		if ( $analysis and $analysis->firestar and defined $analysis->firestar->num_residues ) {
+			$num_func_residues = $analysis->firestar->num_residues;
+		}
+		if ( $analysis and $analysis->matador3d and defined $analysis->matador3d->score ) {
+			$struct_score = $analysis->matador3d->score;
+		}
+		if ( $analysis and $analysis->corsair and defined $analysis->corsair->score ) {
+			$vert_score = $analysis->corsair->score;
+		}
+		if ( $analysis and $analysis->spade and defined $analysis->spade->domain_signal ) {
+			$domain_annot = $analysis->spade->domain_signal;
+		}
+		if ( $analysis and $analysis->inertia and defined $analysis->inertia->unusual_evolution ) {
+			$e_evol_annot = $analysis->inertia->unusual_evolution;
+		}
+		if ( $analysis and $analysis->cexonic and defined $analysis->cexonic->conservation_exon ) {
+			$e_cons_annot = $analysis->cexonic->conservation_exon;
+		}
+		if ( $analysis and $analysis->thump and defined $analysis->thump->num_tmh ) {
+			$num_tmh = $analysis->thump->num_tmh;
+		}
+		if ( $analysis and $analysis->crash and defined $analysis->crash->peptide_signal ) {
+			$pep_annot = $analysis->crash->peptide_signal;
+		}
+		if ( $analysis and $analysis->crash and defined $analysis->crash->mitochondrial_signal ) {
+			$mit_annot = $analysis->crash->mitochondrial_signal;
+		}
+		
+		if ( $analysis and $analysis->appris and defined $analysis->appris->principal_isoform_signal ) {
+			$appris_annot = $analysis->appris->principal_isoform_signal;
+		}
+		
+		 		
+		print	$gene->stable_id . "\t" .
+				$trans_id . "\t" .
+				$num_func_residues . "\t" .
+				$struct_score . "\t" .
+				$vert_score . "\t" .
+				$domain_annot . "\t" .
+				$e_evol_annot . "\t" .
+				$e_cons_annot . "\t" .
+				$num_tmh . "\t" .
+				$pep_annot . "\t" .
+				$mit_annot . "\t" .
+				$appris_annot . "\t" .
+				
+				"\n";	
+		
+	}
+}
+
+main();
+
+
+1;

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/windows
+END
+math_win.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/windows/math_win.c
+END
+err.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/windows/err.c
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/windows/Readme.txt
+END
+math_win.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/windows/math_win.h
+END
+err.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/windows/err.h
+END

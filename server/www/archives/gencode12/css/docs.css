@@ -1,0 +1,133 @@
+/*
+ * 
+ * CONTENT PANEL
+ *
+ */
+#content_panel {
+	float: left;
+	padding: 0px;
+}
+
+#content_panel .content_leftcol {
+	float: left;
+	margin-bottom: 20px;
+	width: 24%;/*240px;*/
+	height: auto;
+}
+#content_panel .content_rightcol {
+	float: left;
+	margin-bottom: 20px;
+	width: 75%;
+	height: auto;
+}
+
+/*
+ * 
+ * SIDEBAR PANEL
+ *
+ */
+#content_panel .content_body {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*
+ * 
+ * SIDEBAR PANEL
+ *
+ */
+#content_panel .sidebar {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	float: left;
+	height: auto;
+	margin: 30px 0 30px 10px;
+	padding: 0px 10px 20px 0px;
+	text-align: justify;
+	font-family: "Lucida Sans Unicode", sans-serif, Verdana;
+	font-size: 12px;	
+	font-weight: normal;
+	background-color: #FFF3B3;
+	border: 1px double #EEE;
+	border-color: #E4E4E4 #CFCFCF #CCC #CFCFCF;
+}
+#content_panel .sidebar h2 {
+	margin: 0;
+	padding: 2px 0 3px 10px;
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+	background-color: #F4A927;
+	width: 100%;
+}
+#content_panel .sidebar h3 {
+	margin: 0;
+	padding: 2px 0 3px 5px;
+	color: black;
+	font-size: 13px;
+	text-decoration: none;
+}
+#content_panel .sidebar ul {
+	padding: 0;
+	margin-left: 10px;
+	white-space : nowrap;
+	list-style-type: none;
+	list-style-image: none;
+}
+#content_panel .sidebar ul li, #content_panel .sidebar ul li ul li a {
+	color: #909090;
+}
+#content_panel .sidebar ul li, #content_panel .sidebar ul li a, #content_panel .sidebar h2 a {
+	color: black;
+	text-decoration: none;
+}
+#content_panel .sidebar a:hover, #content_panel .sidebar h2 a:hover {
+	color: #909090;
+	text-decoration: underline;
+}
+
+/* CENTER PANEL: Release frame */
+#content_release {
+	position: relative;
+	bottom: 0;
+	float: left;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: auto;
+	height: auto;	
+	color: black;
+	font-family: "Lucida Sans Unicode", normal, sans-serif, Verdana;
+	font-size: 11px;
+	text-align: left;
+}
+#content_release a {
+	color: blue;
+}
+/* CENTER PANEL: Release frame */
+#content_panel .code {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #EEE;
+    /*margin: 1em 1em 0.4em;
+    padding: 0.2em 0.5em;*/
+    font-family: "Courier New", sans-serif, Verdana;
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+pre {
+    margin-left: 1em;
+}
+
+/*
+ *
+ * FOR REALEASES
+ *
+ */
+#content_panel .sidebar h2 {
+	background-color: #B3A11B;
+} 
+#content_panel .sidebar {
+	background-color: #E4DEBE;
+}

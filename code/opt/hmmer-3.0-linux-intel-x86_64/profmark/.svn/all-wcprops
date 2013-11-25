@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark
+END
+pmark-h3
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark-h3
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/Makefile.in
+END
+x-phmmer-fps
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/x-phmmer-fps
+END
+pmark-h2-fs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark-h2-fs
+END
+demotic_hmmer.pm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/demotic_hmmer.pm
+END
+hmmer2profmark
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/hmmer2profmark
+END
+rocplot.pl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/rocplot.pl
+END
+pmark-h2-ls
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark-h2-ls
+END
+00README
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/00README
+END
+pmark-fps
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark-fps
+END
+demotic_wublast.pm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/demotic_wublast.pm
+END
+rocplot.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/rocplot.c
+END
+create-profmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/create-profmark.c
+END
+h2extract
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/h2extract
+END
+wublast2profmark
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/wublast2profmark
+END
+pmark.param
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark.param
+END
+x-phmmer-consensus
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/x-phmmer-consensus
+END
+x-hmmsearch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/x-hmmsearch
+END
+pmark-master.pl
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark-master.pl
+END
+pmark-blast
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/pmark-blast
+END
+demotic_fasta.pm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/profmark/demotic_fasta.pm
+END

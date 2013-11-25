@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/interface
+END
+InteractiveMenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/interface/InteractiveMenu.cpp
+END
+CommandLineParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/interface/CommandLineParser.cpp
+END
+InteractiveMenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/interface/InteractiveMenu.h
+END
+CommandLineParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/interface/CommandLineParser.h
+END

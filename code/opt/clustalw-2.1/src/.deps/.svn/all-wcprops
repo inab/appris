@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps
+END
+InteractiveMenu.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/InteractiveMenu.Po
+END
+CommandLineParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/CommandLineParser.Po
+END
+ObjectiveScore.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ObjectiveScore.Po
+END
+ProfileWithSub.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ProfileWithSub.Po
+END
+PIRFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/PIRFileParser.Po
+END
+Clustal.Po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Clustal.Po
+END
+RSFFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/RSFFileParser.Po
+END
+Sequence.Po
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Sequence.Po
+END
+InvalidCombination.Po
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/InvalidCombination.Po
+END
+LowScoreSegProfile.Po
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/LowScoreSegProfile.Po
+END
+SubMatrix.Po
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/SubMatrix.Po
+END
+MSA.Po
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/MSA.Po
+END
+TreeInterface.Po
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/TreeInterface.Po
+END
+UPGMAAlgorithm.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/UPGMAAlgorithm.Po
+END
+FullPairwiseAlign.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/FullPairwiseAlign.Po
+END
+UnRootedClusterTree.Po
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/UnRootedClusterTree.Po
+END
+InFileStream.Po
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/InFileStream.Po
+END
+Help.Po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Help.Po
+END
+DebugLog.Po
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/DebugLog.Po
+END
+ClustalWResources.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ClustalWResources.Po
+END
+RootedGuideTree.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/RootedGuideTree.Po
+END
+ProfileBase.Po
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ProfileBase.Po
+END
+EMBLFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/EMBLFileParser.Po
+END
+FileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/FileParser.Po
+END
+RootedTreeOutput.Po
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/RootedTreeOutput.Po
+END
+Iteration.Po
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Iteration.Po
+END
+Stats.Po
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Stats.Po
+END
+AlignmentOutput.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/AlignmentOutput.Po
+END
+Tree.Po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Tree.Po
+END
+OutputFile.Po
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/OutputFile.Po
+END
+MyersMillerProfileAlign.Po
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/MyersMillerProfileAlign.Po
+END
+MSFFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/MSFFileParser.Po
+END
+FileReader.Po
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/FileReader.Po
+END
+UserParameters.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/UserParameters.Po
+END
+Utility.Po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Utility.Po
+END
+FastPairwiseAlign.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/FastPairwiseAlign.Po
+END
+GDEFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/GDEFileParser.Po
+END
+Alignment.Po
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Alignment.Po
+END
+RootedClusterTree.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/RootedClusterTree.Po
+END
+ProfileStandard.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ProfileStandard.Po
+END
+ClusterTreeOutput.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ClusterTreeOutput.Po
+END
+PearsonFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/PearsonFileParser.Po
+END
+ClustalFileParser.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ClustalFileParser.Po
+END
+main.Po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/main.Po
+END
+Node.Po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/Node.Po
+END
+NJTree.Po
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/NJTree.Po
+END
+RandomGenerator.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/RandomGenerator.Po
+END
+VectorOutOfRange.Po
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/VectorOutOfRange.Po
+END
+AlignmentSteps.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/AlignmentSteps.Po
+END
+SymMatrix.Po
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/SymMatrix.Po
+END
+ClusterTree.Po
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/.deps/ClusterTree.Po
+END

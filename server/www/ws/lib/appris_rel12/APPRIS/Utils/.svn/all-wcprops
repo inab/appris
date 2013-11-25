@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils
+END
+Clusters.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Clusters.pm
+END
+EnsEMBL.pm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/EnsEMBL.pm
+END
+ScriptUtils.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/ScriptUtils.pm
+END
+Constant.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Constant.pm
+END
+ProCDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/ProCDS.pm
+END
+Exception.pm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Exception.pm
+END
+File.pm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/File.pm
+END
+Logger.pm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Logger.pm
+END
+Cluster.pm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Cluster.pm
+END
+Argument.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Argument.pm
+END
+WSpace.pm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/WSpace.pm
+END
+Cluster2.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/lib/appris_rel12/APPRIS/Utils/Cluster2.pm
+END

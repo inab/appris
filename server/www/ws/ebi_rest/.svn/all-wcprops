@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/ebi_rest
+END
+muscle_lwp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/ebi_rest/muscle_lwp.pl
+END
+clustalw2_lwp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/ebi_rest/clustalw2_lwp.pl
+END
+ncbiblast_lwp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/ebi_rest/ncbiblast_lwp.pl
+END

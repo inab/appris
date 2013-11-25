@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment
+END
+Alignment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/Alignment.cpp
+END
+AlignmentOutput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/AlignmentOutput.cpp
+END
+Alignment.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/Alignment.h
+END
+AlignmentOutput.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/AlignmentOutput.h
+END
+ObjectiveScore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/ObjectiveScore.cpp
+END
+Sequence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/Sequence.cpp
+END
+ObjectiveScore.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/ObjectiveScore.h
+END
+Sequence.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/alignment/Sequence.h
+END

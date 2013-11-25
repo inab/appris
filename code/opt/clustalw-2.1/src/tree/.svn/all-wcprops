@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree
+END
+Tree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/Tree.cpp
+END
+ClusterTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/ClusterTree.cpp
+END
+AlignmentSteps.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/AlignmentSteps.h
+END
+Tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/Tree.h
+END
+ClusterTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/ClusterTree.h
+END
+ClusterTreeAlgorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/ClusterTreeAlgorithm.h
+END
+TreeInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/TreeInterface.cpp
+END
+UnRootedClusterTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UnRootedClusterTree.cpp
+END
+ClusterTreeOutput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/ClusterTreeOutput.cpp
+END
+TreeInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/TreeInterface.h
+END
+dayhoff.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/dayhoff.h
+END
+UnRootedClusterTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UnRootedClusterTree.h
+END
+RandomGenerator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/RandomGenerator.cpp
+END
+NJTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/NJTree.cpp
+END
+ClusterTreeOutput.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/ClusterTreeOutput.h
+END
+RandomGenerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/RandomGenerator.h
+END
+NJTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/NJTree.h
+END
+AlignmentSteps.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/AlignmentSteps.cpp
+END

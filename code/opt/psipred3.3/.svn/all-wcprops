@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/LICENSE
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/VERSION
+END
+runpsipred
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/runpsipred
+END
+runpsipred_single
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/runpsipred_single
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/psipred3.3/README
+END

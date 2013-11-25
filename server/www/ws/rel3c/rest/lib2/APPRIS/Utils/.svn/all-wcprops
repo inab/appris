@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils
+END
+ScriptUtils.pm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils/ScriptUtils.pm
+END
+ProCDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils/ProCDS.pm
+END
+Exception.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils/Exception.pm
+END
+File.pm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils/File.pm
+END
+Logger.pm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils/Logger.pm
+END
+Argument.pm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rel3c/rest/lib2/APPRIS/Utils/Argument.pm
+END

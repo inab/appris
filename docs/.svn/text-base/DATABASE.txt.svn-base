@@ -1,0 +1,26 @@
+
+# To create the database
+./create.sh 'appris_homo_sapiens_gencode_15_dev'  'jabba.cnio.es' 'wensembl' 'wensembl' >& create.sh.log
+
+# To dump the database table by table. Execute the file 'backups.sh <database> <hostname> <user> <pwd> <database file name> <num. version>'
+./backups.sh appris_homo_sapiens_gencode_15_dev  jabba.cnio.es  wensembl  wensembl  /home/jmrodriguez/projects/Encode/gencode15/data/g15.v3.15Jul2013/appris_db.homo_sapiens.dump.gz
+./backups.sh appris_mus_musculus_e70_dev  jabba.cnio.es  wensembl  wensembl  /home/jmrodriguez/projects/Encode/musculus70/data/e70.v3.15Jul2013/appris_db.mus_musculus.dump.gz 
+
+# To Import the database. Execute the file 'import.sh <database> <hostname> <user> <pwd> <database file name>'
+./import.sh   appris_homo_sapiens_gencode_15  jabba.cnio.es  wensembl  wensembl  /home/jmrodriguez/projects/Encode/gencode15/data/g15.v3.15Jul2013/appris_db.homo_sapiens.dump.gz
+
+# Get information from database
+mysql appris_homo_sapiens_gencode_15_dev -h jabba.cnio.es -u ensembl < report.sql
+
+# Get the number of results of transcripts from method
+mysql appris_homo_sapiens_gencode_15_dev -h jabba.cnio.es -u ensembl < annotation.sql
+
+# NOTE:
+# Problems importing tables: ERROR 2006 (HY000) at line 332: MySQL server has gone away
+# In that case you have to got a packet bigger than 'max_allowed_packet' bytes
+#
+You just opened a terminal, connected to mysql on one, set the following: 
+set global max_allowed_packet=1000000000; 
+set global net_buffer_length=1000000; 
+
+and then ran the importation

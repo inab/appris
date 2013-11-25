@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/samples
+END
+set_perl_path.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/samples/set_perl_path.sh
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/samples/config.ini
+END
+sample.pl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/samples/sample.pl
+END
+sample2.pl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/lib/appris_rel15/samples/sample2.pl
+END

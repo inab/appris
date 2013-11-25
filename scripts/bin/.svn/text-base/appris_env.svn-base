@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# -----------------------------------------------------------------------------
+# Main bash script that loads environmental variable
+
+DIRNAME=`dirname $0`
+APPRIS_REL_ENV_FILES=( 'apprisrc.gen12' 'apprisrc.gen15' 'apprisrc.gen19' 'apprisrc.Mmus70' 'apprisrc.Rnor70' 'apprisrc.Drer70' 'apprisrc.Lpar23A' )
+APPRIS_REL_ENV=( 'gen12' 'gen15' 'gen19' 'Mmus70' 'Rnor70' 'Drer70' 'Lpar23A' )
+
+load_appris_release_env() {
+	local e
+	for ((i=0; i < "${#APPRIS_REL_ENV[@]}"; i++)); do
+		if [ "$1" == "${APPRIS_REL_ENV[$i]}" ]; then
+			echo "source ${DIRNAME}/../conf/${APPRIS_REL_ENV_FILES[$i]}"
+			source ${DIRNAME}/../conf/${APPRIS_REL_ENV_FILES[$i]}
+		fi		
+	done
+}
+

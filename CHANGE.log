@@ -1,0 +1,232 @@
+#########################
+# DESCRIPTION OF APPRIS RELEASES: A.B.C
+# A -> Release of web server
+# B -> Release of code
+# C -> Release of new data or small changes
+#########################
+
+
+#######################
+# DATE: 	XXYYYZZZZ #
+# RELEASE:  4.1       #
+#######################
+
+* MAIN DESCRIPTION:
+
+* CREATE WEB SERVER. TODO!!!
+
+
+#######################
+# DATE: 	XXYYYZZZZ #
+# RELEASE:  3.3.1     #
+#######################
+
+* MAIN DESCRIPTION:
+
+* APPRIS-DATA:
+	
+* APPRIS-CODE, v1.3
+
+	- (main) APPRIS
+		- Take into account the cached files of gtf and aligments.
+		- Include new changed path as parameter
+		- Now appris can not execute 'none' method.
+		- Include new description for inputs. [inpath,ensembl,gencode,sequence] # TODO !!		
+
+	- INERTIA
+		- New version of inertia that runs all pipeline in one script.
+
+	- CORSAIR TODO!!!!!
+		- Acquires the scores using the range of exon-miniexons.
+		- Acquires the scores using without any exon information (using only the sequence).
+
+	- MATADOR3D TODO!!!!!
+		- Acquires the scores using without any exon information (using only the sequence).
+
+	- MATADOR3D TODO!!!!!
+		- New decision in the algorithm:
+			The first variants have to overcome in 0.5 to seconds.
+			Then, the seconds have to overcome in 0.5 to the thirds.
+		
+
+#######################
+# DATE: 	25Nov2013 #
+# RELEASE:  3.2.1     #
+#######################
+
+* MAIN DESCRIPTION:
+
+	
+* APPRIS-DATA:
+
+- Include "chromosome" column within "conserved_exons" data.
+
+- Human
+	> Gencode 19, gen19.v1.25Nov2013
+
+	> Gencode 15, g15.v4.16Oct2013
+	
+- Mouse
+	> Ensembl70, e70.v4.29Oct2013
+
+- Rat
+	> Ensembl70, e70.v4.29Oct2013
+
+- Zebrafish
+	> Ensembl70, e70.v1.25Nov2013
+
+
+* APPRIS-WEBSITE:
+
+
+* APPRIS-CODE:
+
+- v1.2:
+
+	- Put together README files
+	
+	- (main) APPRIS
+		- Modify the way to obtain the inputs
+			- Type of inputs: 
+				- directory data (cached)
+				- gencode data
+				- ensembl data
+				- sequence (protein) data
+			- Type of alignment:
+				- compara
+		- Delete runner files				
+
+		- Add INERTIA script
+		- Accepts new parameters. 't-align' that describes the type of alignment.
+			- Type of alignment:
+				- compara		
+
+	- CORSAIR
+		- New scores for the Lynx pardinus
+		- New cutoff of 1.5
+		- Include the list of species for 'Danio rerio'
+	
+	- MATADOR3D
+		- The gene ENSG00000160404 is rejecting ENST00000373284 with an negative alignment -0.20125 because 
+		the percentage of gaps is bigger than 25.
+		We have modify the threshold of percentages of gaps to:
+		
+				elsif ($gaps > 25)
+					{ $totalgaps = 0 }
+				elsif ($gaps > 33)
+					{ $totalgaps = -0.5 }
+				elsif ($gaps > 40)
+				
+		- Take the correct transcript		
+		- Change the threshold of Matador3D to 0.65
+
+	- APPRIS
+		- Reliability scores:
+			If transcript is UNKOWN, its reliability score is NR (not rejected).
+			And if the transcript has the longest protein sequences, its reliability score is NR*
+			
+			Only the transcripts with PRICIPAL have reliability scores.
+		- If we don't have information of codons, we continue saving the appris score.
+
+	- THUMP		
+		- Changes the regular expresion to parse transcript for any kind of identifier. 
+			
+#########################
+# DATE: 	16Aug2013   #
+# RELEASE:  3.1.1       #
+#########################
+
+* APPRIS-WEBSITE:
+
+- Links of archives redirect to more specific website.
+
+- Rename the suffix of data files of 'rattus_norvegicus'.
+
+- Change the annotations of SPADE and THUMP. Now, we print their "scores" in the website:
+	- SPADE shows an float number where the absolute number is the pfam domains that are detected. Then, the number after the decimal indicates the numbers of partial domains.
+	- THUMP shows the number of TMH detected. Again, the number after the decimal indicates the partial TMH.
+ 
+- Delete the phrase "on Human (GRCh37/hg19) Assembly" from the 'report' web page.
+
+- Fix the URL that retrieves proteomics data as BED format.
+
+- Update the proteomic data (gencode12):
+	- Peptides were assembled from five previously available proteomics data sets. Three of the peptide data sets came from published large-scale experiments (Ezkurdia, Nagaraj, Geiger) 
+	and the others were from two large spectra libraries, PeptideAtlas (Farrah) and NIST (http://peptide.nist.gov/).
+	These tracks show where peptide evidence exists (0 or 1) , but there is no means of scoring these tracks.  
+
+
+#########################
+# DATE: 	25Jul2013   #
+# RELEASE:  3.1         #
+#########################
+
+
+* MAIN DESCRIPTION:
+
+
+* APPRIS-CODE:
+
+We have decided to establish new nomenclature of version of appris's code.
+
+- v1.1:
+
+	- SPADE does not migrate domains of variants with the same sequence where pfamscan does not provide results. 
+		For example, ENSG00000021300.7 (Gencode 15)
+		
+	- FIRESTAR prints results whose cutoff is smaller than 65%. This is bad!!! 
+	For example, ENSG00000184361 (Gencode 15)
+
+	- CORSAIR, v10. We have added the new scores of the rest of species (including Lynx pardinus):
+		'Rest of species'
+			'Homo sapiens'				=> 1,
+			'Pan troglodytes'			=> 1,
+			'Mus musculus'				=> 1.1,
+			'Rattus norvegicus'			=> 1.1,
+			'Bos taurus'				=> 1.2,
+			'Canis lupus familiaris'	=> 1.2,
+			'Sus scrofa'				=> 1.2,
+			'Monodelphis domestica'		=> 1.3,
+			'Gallus gallus'				=> 2,
+			'Taeniopygia guttata'		=> 2,
+			'Anolis carolinensis'		=> 2,
+			'Xenopus tropicalis'		=> 2.2,
+			'Tetraodon nigroviridis'	=> 2,
+			'Danio rerio'				=> 2.5,
+
+* APPRIS-DATA:
+
+- Human
+	> Gencode 12, rel12.27Jun2013.v5
+		- SPADE did not migrate variant domains with the same sequence.
+		- INERTIA new results.
+
+	> Gencode 15, g15.v3.15Jul2013
+		- SPADE did not migrate variant domains with the same sequence.		
+		- FIRESTAR printed results whose cutoff was smaller than 65%.
+
+* NEW GENOMES:
+
+- Mouse
+	> Ensembl70, e70.v3.15Jul2013
+		- SPADE did not migrate variant domains with the same sequence.		
+		- FIRESTAR printed results whose cutoff was smaller than 65%.
+
+- Rat
+	> Ensembl70, e70.v3.10Jul2013
+		- SPADE did not migrate variant domains with the same sequence.		
+		- FIRESTAR printed results whose cutoff was smaller than 65%.
+
+
+* APPRIS-WEBSITE:
+	
+	- Add script for the rest of species
+	
+	- Include new data files into website:
+		- appris data exon by exon
+		
+	- Modify "download" web page.
+
+
+
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM
+END
+HMMIO.pm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMMIO.pm
+END
+HMMSequence.pm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMMSequence.pm
+END
+HMMResultsIO.pm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMMResultsIO.pm
+END
+HMMMatch.pm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMMMatch.pm
+END
+HMM.pm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMM.pm
+END
+HMMUnit.pm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMMUnit.pm
+END
+HMMResults.pm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/PfamScan/Bio/Pfam/HMM/HMMResults.pm
+END

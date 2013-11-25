@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src
+END
+optimize.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/optimize.c
+END
+options.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/options.h
+END
+Makefile.osx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/Makefile.osx
+END
+optimize.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/optimize.h
+END
+nucmodel.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/nucmodel.c
+END
+substitution_matrices.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/substitution_matrices.h
+END
+nucmodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/nucmodel.h
+END
+mystring.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/mystring.c
+END
+mystring.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/mystring.h
+END
+gamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/gamma.c
+END
+codonmodel.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/codonmodel.c
+END
+like.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/like.c
+END
+rng.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/rng.c
+END
+._brent.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/._brent.c
+END
+gamma.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/gamma.h
+END
+codonmodel.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/codonmodel.h
+END
+tree_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/tree_data.c
+END
+like.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/like.h
+END
+statistics.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/statistics.c
+END
+linemin.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/linemin.c
+END
+rng.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/rng.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/Makefile
+END
+bases.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/bases.c
+END
+tree_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/tree_data.h
+END
+statistics.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/statistics.h
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/tree.c
+END
+model.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/model.c
+END
+linemin.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/linemin.h
+END
+genetic_codes.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/genetic_codes.h
+END
+slr.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/slr.c
+END
+bases.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/bases.h
+END
+utility.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/utility.c
+END
+matrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/matrix.c
+END
+gencode.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/gencode.c
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/tree.h
+END
+model.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/model.h
+END
+utility.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/utility.h
+END
+matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/matrix.h
+END
+gencode.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/gencode.h
+END
+data.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/data.c
+END
+optimize_new.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/optimize_new.c
+END
+brent.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/brent.c
+END
+vec.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/vec.c
+END
+data.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/data.h
+END
+spinner.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/spinner.c
+END
+vec.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/vec.h
+END
+rbtree.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/rbtree.c
+END
+root.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/root.c
+END
+spinner.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/spinner.h
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/.gitignore
+END
+rbtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/rbtree.h
+END
+root.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/root.h
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/Makefile.linux
+END
+Makefile.cygwin
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/Makefile.cygwin
+END
+options.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/slr-1.4.3/src/options.c
+END

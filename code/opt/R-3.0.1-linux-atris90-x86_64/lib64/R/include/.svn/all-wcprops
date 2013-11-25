@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include
+END
+Rembedded.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rembedded.h
+END
+Rmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rmath.h
+END
+Rdefines.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rdefines.h
+END
+R.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/R.h
+END
+Rinternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rinternals.h
+END
+Rinterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rinterface.h
+END
+S.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/S.h
+END
+Rconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rconfig.h
+END
+Rversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/include/Rversion.h
+END

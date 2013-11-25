@@ -1,0 +1,69 @@
+; This is a configuration file used by APPRIS scripts
+
+; Setting up the APPRIS's pipeline
+[APPRIS_PIPELINE]
+  structure=firestar,matador3d,spade,corsair,thump,crash,inertia,appris
+  workspace=APPRIS__PIPELINE__WORKSPACE
+  methods=APPRIS__PIPELINE__METHODS
+  species=APPRIS__SPECIES
+
+; Setting up the inputs of APPRIS's pipeline
+[INPUT_VARS]
+  name=data
+
+; Setting up the vars for cache
+[CACHE_VARS]
+  name=cache
+  
+; Setting up the FIRESTAR vars
+[FIRESTAR_VARS]
+  name=firestar
+  workspaces=Analysis,Analysis/LOG,Analysis/Perl,Analysis/QSUB_files
+
+; Setting up the MATADOR3D vars
+[MATADOR3D_VARS]
+  name=matador3d
+  program=blastpgp
+  db=pdb
+  evalue=0.01
+  cutoff=0.65
+
+; Setting up the SPADE vars
+[SPADE_VARS]
+  name=spade
+  program=pfam_scan.pl
+  evalue=0.00001
+  cutoff=0.25
+
+; Setting up the CORSAIR vars
+[CORSAIR_VARS]
+  name=corsair
+  program=blastpgp
+  db=refseq_vert
+  cutoff=1.5
+
+; Setting up the INERTIA vars
+[INERTIA_VARS]
+  name=inertia
+  program=Slr
+  aligns=ucsc
+  stypes=ucsc,ucsc.kalign,ucsc.prank
+  omega=0.5
+  pvalue=0.025
+  
+; Setting up the THUMP vars
+[THUMP_VARS]
+  name=thump
+  workspaces=sequences,predictions,mod,psiblast,aligns,tmp
+  db=sprot_clean_trembl_clean_90
+
+; Setting up the CRASH vars
+[CRASH_VARS]
+  name=crash
+  program1=signalp -t euk -f full -m nn+hmm -trunc 70
+  program2=targetp
+  
+; Setting up the APPRIS vars
+[APPRIS_VARS]
+  name=appris
+  

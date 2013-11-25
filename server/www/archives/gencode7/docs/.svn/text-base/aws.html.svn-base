@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/docs.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#info_frame').html(APPRIS.INFO_FRAME);
+			$('#search_frame_input').keyup(searchEntity3);
+			$('#search_frame_image').click(searchEntity3);
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> <a href="docs.html">Help & Docs</a> > Web Services		
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>Extracting data with Web Services</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+	
+	<div class="content_rightcol">
+
+<div class="content_body">
+<br />
+
+<a name="rest-services"></a> <!-- RESTful Web services -->
+<div class="content_subtitle">RESTful Web services</div>
+<p>APPRIS allows manipulation of the database data through various RESTful web services. 
+	There are services that retrieve useful information of genes/transcripts, and services that retrieve the 
+	results of the execution of APPRIS methods. Outputs can be obtained in plain text, JSON/GTF format, or BED format 
+	that makes possible to visualize the annotation tracks across the genomics region. 
+</p>
+<p>RESTful calls are able to access using Universal Resource Locators (URLs) be means of a simple web browser query. 
+	The general syntax of URLs is as follows:
+<pre class='code'>
+    http://appris.bioinfo.cnio.es/ws/rel7/rest/firestar/name/CRISP3
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^ ^^^^ ^^^^^^
+                site-specific prefix           method  type  query
+</pre>
+</p>
+<p>
+The first part of URL is the site-specific prefix that refers to the host of web services (http://appris.bioinfo.cnio.es/ws/). 
+The 'version' of dataset is indicating from the following field in the URL (eg. rel7, rel3c), or by the keyword 'latest' 
+allowing to access to the last release. The 'rest' field refers to the type of web service (at the moment, the web services 
+available are the type of REST). The 'method' field indicates the type of services we are going to call. 
+The following fields regarding to the 'type of query' and 'query' string.
+</p>
+<p>
+To provide a clarifying idea about what these web services are able to do, in the following link the web services are described more in detail.
+</p>
+<a name="gene-rest-services"></a> <!-- Retrieve gene information -->
+<h4>RETRIEVE GENE INFORMATION</h4> 
+<ul>
+		
+	<li>
+	<p><span class='content_highlighting'>export</span>, 
+	retrieves the APPRIS data from a given Ensembl gene/transcript identifier. The output format could be GFF, JSON, or BED.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=GTF'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=GTF</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=GTF&source=firestar'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=GTF&source=firestar</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENST00000405930?format=GTF&source=firestar'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENST00000405930?format=GTF&source=firestar</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=JSON'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=JSON</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=JSON&source=firestar'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=JSON&source=firestar</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENST00000405930?format=JSON&source=firestar'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENST00000405930?format=JSON&source=firestar</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=BED'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=BED</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=BED&source=spade'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=BED&source=spade</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=BED&source=spade&head=no'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENSG00000099904?format=BED&source=spade&head=no</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENST00000405930?format=BED&source=spade&head=no'>http://appris.bioinfo.cnio.es/ws/latest/rest/export/id/ENST00000405930?format=BED&source=spade&head=no</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000405930).</li>
+						<li>format (string), indicates the type of output format (GTF, JSON, or BED). By default, it is JSON.<br />
+						For more information on GTF (Gene Transfer Format), see http://genome.ucsc.edu/FAQ/FAQformat.html#format4<br />
+						For more information on JSON (JavaScript Object Notation), see http://www.json.org<br />
+						For more information on BED, see http://genome.ucsc.edu/FAQ/FAQformat.html#format1<br />
+						</li>
+						<li>source (string), computational methods used to define principal functional variants.<br />
+						('appris', 'firestar', 'matador3d', 'spade', 'corsair', 'inertia', 'cexonic', 'crash', 'thump').<br />
+						</li>						
+						<li>head (string), optional variable in the case of BED output, retrieves (or does not) the overall display of the UCSC Genome browser, 'yes','no', or 'only'.
+						</li>
+					</ul>	
+				<li>Response:</li>
+					<p>The output is a text/plain format. To see a sample response, try to call one of the links above.
+				</p>
+			</ul>
+		</p>
+	</p>
+
+	<li>
+	<p><span class='content_highlighting'>sequence</span>,
+	retrieves both transcript sequence and protein sequence from a given Ensembl gene/transcript identifier (e.g. ENSG00000099904, or ENST00000405930).</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/sequence/id/ENSG00000099904?type=na&format=fasta'>http://appris.bioinfo.cnio.es/ws/latest/rest/sequence/id/ENSG00000099904?type=na&format=fasta</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/sequence/id/ENSG00000099904?type=aa'>http://appris.bioinfo.cnio.es/ws/latest/rest/sequence/id/ENSG00000099904?type=aa</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/sequence/id/ENST00000405930?type=aa'>http://appris.bioinfo.cnio.es/ws/latest/rest/sequence/id/ENST00000405930?type=aa</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000382363).</li>
+						<li>type (string), indicates the type of sequence.<br />
+						'na' for Nucleotide sequence, and 'aa' for Aminoacid sequence.<br />
+						</li>
+						<li>format (string), optional variable, indicates the type of output format. At the moment, the unique format output is 'fasta'.<br />
+						For more information on FASTA, see http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain as FASTA format.
+<pre class='code'>
+>ENST00000436518|ENSG00000099904|ZDHHC8-004|180
+MVLREGSCAGRQNASACWPHGTTGCPWLTRAVSPAVPVYNGIIFLFVLANFSMATFMDPGVFPRADEDED
+KEDDFRAPLYKNVDVRGIQVRMKWCATCHFYRPPRCSHCSVCDNCVEDFDHHCPWVNNCIGRRNYRYFFL
+FLLSLSAHMVGVVAFGLVYVLNHAEGLGAAHTTITYPWFL</pre>
+				</p>
+			</ul>
+		</p>
+	</p>
+	
+	<li>
+	<p><span class='content_highlighting'>search</span>, 
+	retrieves useful information from a query (gene/trancript) that would be stored in the APPRIS database. The output format can be XML or JSON.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/ENST00000366621?format=XML'>http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/ENST00000366621?format=XML</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/OTTHUMG00000014823'>http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/OTTHUMG00000014823</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/RNF215'>http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/RNF215</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/CCDS1599?format=XML'>http://appris.bioinfo.cnio.es/ws/latest/rest/search/query/CCDS1599?format=XML</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>query (string), is a query input that could be:<br />
+						- Ensembl gene/transcript identifier,<br />
+						- VEGA gene/transcript identifier,<br />
+						- gene/transcript name,<br />
+						- CCDS identifier.<br />
+						</li>						
+						<li>format (string), indicates the type of output format (GTF, JSON, or BED). By default, it is JSON.<br />
+							For more information on GTF (Gene Transfer Format), see http://genome.ucsc.edu/FAQ/FAQformat.html#format4<br />
+							For more information on JSON (JavaScript Object Notation), see http://www.json.org<br />
+							For more information on BED, see http://genome.ucsc.edu/FAQ/FAQformat.html#format1<br />
+						</li>						
+					</ul>	
+				<li>Response:</li>
+					<p>The output as XML Document.
+<pre class='code'>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;query xmlns:appris="http://appris.bioinfo.cnio.es" id="ENST00000366621"&gt;
+  &lt;match label="ENST00000366621" namespace="Ensembl_Transcript_Id" chr="1" start="233749750" end="233808258"&gt;
+    &lt;class&gt;&lt;![CDATA[protein_coding]]&gt;&lt;/class&gt;
+    &lt;status&gt;&lt;![CDATA[UNKNOWN]]&gt;&lt;/status&gt;
+    &lt;dblink namespace="External_Id" id="KCNK1-001"/&gt;
+    &lt;dblink namespace="Vega_Transcript_Id" id="OTTHUMT00000092565"/&gt;
+    &lt;dblink namespace="Ensembl_Gene_Id" id="ENSG00000135750"/&gt;
+    &lt;dblink namespace="CCDS" id="CCDS1599.1"/&gt;
+  &lt;/match&gt;
+&lt;/query&gt;</pre>
+				</p>
+<p>The output as JSON.
+<pre class='code'>
+{
+  "query":"ENST00000366621",
+  "match":[
+    {
+      "namespace":"Ensembl_Transcript_Id",
+      "status":"KNOWN",
+      "chr":"1",
+      "dblink":[
+        {
+          "namespace":"External_Id",
+          "id":"KCNK1-001"
+        },{
+          "namespace":"Havana_Transcript_Id",
+          "id":"OTTHUMT00000092565.1"
+        },{
+          "namespace":"Ensembl_Gene_Id",
+          "id":"ENSG00000135750"
+        },{
+          "namespace":"Ensembl_Peptide_Id",
+          "id":"ENSP00000355580"
+        },{
+          "namespace":"CCDS",
+          "id":"CCDS1599.1"
+        }
+      ],
+      "biotype":"protein_coding",
+      "end":"233808258",
+      "label":"ENST00000366621",
+      "start":"233749750"
+    }
+  ]
+}</pre>
+				</p>
+			</ul>
+		</p>
+	</p>
+	
+</ul>
+
+
+
+<a name="method-rest-services"></a> <!-- Retrieve method information -->
+<h4>RETRIEVE METHOD INFORMATION</h4>
+<p>APPRIS automates a range of computational methods to annotate alternative isoforms and to define a principal variant.</p>
+
+<ul>
+
+	<li>
+	<p><span class='content_highlighting'>appris</span>,
+	APPRIS annotates alternative variants by combining protein structural and functional information and information from the conservation of related species.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/appris/id/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/appris/id/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/appris/name/CRISP3'>http://appris.bioinfo.cnio.es/ws/latest/rest/appris/name/CRISP3</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/appris/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/appris/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/appris/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/appris/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/appris/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/appris/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA gene/transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- gene/transcript name (e.g. ZDHHC8 or ZDHHC8P-205),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see <br />
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.appris.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.appris.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+	
+	<li>
+	<p><span class='content_highlighting'>firestar</span>, 
+	<a class='content_external_ref' target='_blank' href='http://firedb.bioinfo.cnio.es/Php/FireStar.php'>Firestar</a> (Lopez et al., 2007) is a method that predicts functionally important residues in protein sequences.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/id/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/id/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/name/CRISP3'>http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/name/CRISP3</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/firestar/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA gene/transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- gene/transcript name (e.g. ZDHHC8 or ZDHHC8P-205),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br /> 
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.firestar.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.firestar.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+	
+	<li>
+	<p><span class='content_highlighting'>matador3d</span>, 
+	Matador3D is a locally-installed method that checks for structural homologues for each transcript in the PDB.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/id/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/id/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/name/CRISP3'>http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/name/CRISP3</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/matador3d/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA gene/transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- gene/transcript name (e.g. ZDHHC8 or ZDHHC8P-205),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.matador3d.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.matador3d.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+
+	<li>
+	<p><span class='content_highlighting'>spade</span>, 
+	SPADE uses a locally installed version of the program <a class='content_external_ref' target='_blank' href='http://pfam.sanger.ac.uk/'>Pfamscan</a> to identify the 
+	effect of alternative splicing on the conservation of protein functional domains.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/spade/id/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/spade/id/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/spade/name/CRISP3'>http://appris.bioinfo.cnio.es/ws/latest/rest/spade/name/CRISP3</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/spade/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/spade/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/spade/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/spade/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/spade/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/spade/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA gene/transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- gene/transcript name (e.g. ZDHHC8 or ZDHHC8P-205),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br /> 
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.spade.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.spade.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+
+	<li>
+	<p><span class='content_highlighting'>inertia</span>, 
+	From a transcript, INERTIA detects exons with non-neutral evolutionary rates. Transcripts are aligned 
+	against related species using three different alignment methods, and evolutionary rates of exons for 
+	each of the three alignments are contrasted using 
+	<a class='content_external_ref' target='_blank' href='http://www.ebi.ac.uk/goldman/SLR/'>SLR</a> software.</li>
+
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/name/CRISP3-203'>http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/name/CRISP3-203</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/inertia/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl transcript identifier (e.g. ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- transcript name (e.g. CRISP3-203),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.inertia.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.inertia.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+
+	<li>
+	<p><span class='content_highlighting'>cexonic</span>, 
+	CExonic is a method for the determination of conservation of exonic structure. The conservation of 
+	exonic structure between orthologous splice isoforms of two species (human and mouse) would suggest 
+	that their biological function may be conserved.</li>
+
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/id/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/id/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/name/CRISP3'>http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/name/CRISP3</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/cexonic/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA gene/transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- gene/transcript name (e.g. ZDHHC8 or ZDHHC8P-205),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br/> 
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.cexonic.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.cexonic.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+
+	<li>
+	<p><span class='content_highlighting'>thump</span>, 
+	THUMP makes conservative predictions of trans-membrane helices by analyzing the 
+	output of three locally installed trans-membrane prediction methods.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/thump/id/ENSG00000099904'>http://appris.bioinfo.cnio.es/ws/latest/rest/thump/id/ENSG00000099904</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/thump/name/CRISP3'>http://appris.bioinfo.cnio.es/ws/latest/rest/thump/name/CRISP3</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/thump/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/thump/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/thump/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/thump/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/thump/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/thump/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl gene/transcript identifier. (e.g. ENSG00000099904, or ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA gene/transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- gene/transcript name (e.g. ZDHHC8 or ZDHHC8P-205),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.thump.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.thump.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+	
+	<li>
+	<p><span class='content_highlighting'>crash</span>, 
+	From a transcript, CRASH makes conservative predictions of signal peptides and mitochondrial signal sequences 
+	by analyzing the output of the 
+	<a class='content_external_ref' target='_blank' href='http://www.cbs.dtu.dk/services/SignalP/'>SignalP</a> and 
+	<a class='content_external_ref' target='_blank' href='http://www.cbs.dtu.dk/services/TargetP/'>TargetP</a> programs.</li>
+	
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/crash/id/ENST00000334554'>http://appris.bioinfo.cnio.es/ws/latest/rest/crash/id/ENST00000334554</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/crash/name/CRISP3-203'>http://appris.bioinfo.cnio.es/ws/latest/rest/crash/name/CRISP3-203</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/crash/name/OTTHUMT00000040871'>http://appris.bioinfo.cnio.es/ws/latest/rest/crash/name/OTTHUMT00000040871</a><br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/ws/latest/rest/crash/name/CCDS4929'>http://appris.bioinfo.cnio.es/ws/latest/rest/crash/name/CCDS4929</a><br/>
+
+		<p>
+			<ul>
+				<li>Parameters:</li>
+					<ul>
+						<li>id (string), Ensembl transcript identifier (e.g. ENST00000334554).</li>
+						<li>name (string), is a query input that could be:<br />
+							- VEGA transcript identifier (e.g. OTTHUMT00000040871),<br />
+							- transcript name (e.g. CRISP3-203),<br />
+							- CCDS identifier (e.g. CCDS4929).<br />
+						</li>
+					</ul>
+				<li>Response:</li>
+					<p>The output is a text/plain format. For more information on output, see<br/>
+<a class='code' target='_blank' href='http://appris.bioinfo.cnio.es/docs/rest/README.crash.txt'>http://appris.bioinfo.cnio.es/docs/rest/README.crash.txt</a><br/>
+				</p>
+			</ul>
+		</p>
+	</p>
+	
+
+	
+		
+</ul>
+
+<br/>
+<!--
+<a name="moby-services"></a>
+<p align="center">
+	<img width='15%' src='../img/moby.png'></img> 
+</p>		
+<p align="justify"><a class='content_external_ref' target='_blank' href="http://www.biomoby.org">BioMOBY</a> (BioMOBY consortium, 2008) 
+is an international research project involving 
+biological data hosts, biological data service providers, and 
+coders whose aim is to explore various methodologies for biological 
+data representation, distribution, and discovery.</p> 
+<center><h4>OBJETIVES</h4></center> 
+<ul> 
+	<li>Study how to address interoperability problems that are actually 
+	being faced by bioinformatics users of web-accesible resources today, 
+	and what are the factors that promote the adoption of new approaches.</li> 
+	<li>How to balance between increasing potential for interoperability and the 
+	likelihood of widespread adoption? I.e. focus upon minimizing the barriers 
+	to entry into the system, or  insist upon a set of constraints that will 
+	guarantee usefulness of components of the system.</li> 
+</ul>
+<div class="content_subtitle">APPRIS BioMOBY services</div>
+
+<p align="justify">APPRIS BioMOBY services have been designed from 
+the several programs which belong to build APPRIS pipeline.
+Every service has got an instance of RDF document that describes itself.
+</p> 
+
+<ul>
+	<li>
+		<p>
+		<span class='content_highlighting'>runAPPRIS</span>: 
+		APPRIS combines protein structural information, functionally important residues and cross species alignments to make automatic annotations of alternative isoforms. This service retrieves the consensus annotation of APPRIS pipeline from a given gene identifier ('ENSEMBL', 'VEGA', 'HUGO').
+		<br />
+		<ul>	
+			<li>Input: Moby Object that has gene identifier (Object{'ENSEMBL', 'VEGA', 'HUGO'}).</li>
+			<li>Output: Complex Moby Object based on APPRIS result (APPRIS_Report{'appris_report'}).</li>
+			<li>RDF document: <a href='http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runAPPRIS' target='_blank'>http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runAPPRIS</a>.</li>			
+		</ul>
+		</p>
+ 	</li>
+	<li>
+		<p>
+		<span class='content_highlighting'>runFirestar</span>: 
+		is a BioMOBY services that executes the <a class='content_external_ref' target='_blank' href='http://firedb.bioinfo.cnio.es/Php/FireStar.php'>firestar</a> server, which predicts functional residues from structural templates and alignment reliability.
+		<br />
+		<ul>
+			<li>Input: Moby Object of protein sequence as Fasta format (FASTA_AA_multi{'sequences'}).</li>
+			<li>Output: Complex Moby Object based on Firestar result (Firestar_Text{'predicting_functional_residues'}).</li>
+			<li>RDF document: <a href='http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runFirestar' target='_blank'>http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runFirestar</a>.</li>
+		</ul>
+		</p>
+ 	</li>
+	<li>
+		<p>
+		<span class='content_highlighting'>runCRASH</span>: 
+		CRASH predicts signal peptides and mitochondrial signal sequences. The presence and location of signal peptides and cleavage sites in amino acid sequences are analysed with the programs <a class='content_external_ref' target='_blank' href='http://www.cbs.dtu.dk/services/SignalP/'>SignalP</a> 
+		and <a class='content_external_ref' target='_blank' href='http://www.cbs.dtu.dk/services/TargetP/'>TargetP</a>, which predict the sub-cellular location of eukaryotic proteins.
+		<br />
+		<ul>	
+			<li>Input: Moby Object of protein sequence as Fasta format (FASTA_AA_multi{'sequences'}).</li>
+			<li>Output: Complex Moby Object based on CRASH result (CRASH_Text{'crash_report'}).</li>
+			<li>RDF document: <a href='http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runCRASH' target='_blank'>http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runCRASH</a>.</li>
+		</ul>
+		</p>
+ 	</li>
+	<li>
+		<p>
+		<span class='content_highlighting'>runCExonic</span>: 
+		CExonic compares the conservation of exon structure between humans and other species. The method is applicable to any sequenced eukaryotic genome. At the moment, it details the human-mouse comparison.
+		<br />
+		<ul>	
+			<li>Input: Moby Object of genomic location (Genomic_Location{'NCBI36', 'VEGA', 'ENSEMBL'}).</li>
+			<li>Output: Complex Moby Object based on CExonic result (CExonic_Alignment_Text{'alignment_text'}).</li>
+			<li>RDF document: <a href='http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runCExonic' target='_blank'>http://moby-dev.inab.org/RESOURCES/MOBY-S/ServiceInstances/cnio.es,runCExonic</a>.</li>			
+		</ul>
+		</p>
+ 	</li>
+</ul>
+-->
+
+
+
+		</div> <!-- div#content_body -->	
+	</div>	<!-- div#content_rightcol -->
+
+</div> <!-- div#content_panel -->			
+
+</div> <!-- div#center_panel -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/samples
+END
+set_perl_path.sh
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/samples/set_perl_path.sh
+END
+config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/samples/config.ini
+END
+sample.pl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/samples/sample.pl
+END
+sample2.pl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib2/samples/sample2.pl
+END

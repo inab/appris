@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib
+END
+DB.pm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/DB.pm
+END
+EnsEMBL.pm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/EnsEMBL.pm
+END
+MySQL.pm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/MySQL.pm
+END
+MOBY.pm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/MOBY.pm
+END
+CDS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/CDS.pm
+END
+Constant.pm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/Constant.pm
+END
+Otter.pm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/Otter.pm
+END
+File.pm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/File.pm
+END
+Export.pm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/archives/gencode3c/cgi-bin/lib/Export.pm
+END

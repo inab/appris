@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps
+END
+esl-construct.man
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-construct.man
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/Makefile.in
+END
+esl-cluster.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-cluster.c
+END
+esl-mask.man
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-mask.man
+END
+esl-construct.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-construct.c
+END
+esl-mask.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-mask.c
+END
+esl-histplot.man
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-histplot.man
+END
+esl-alimask.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimask.itest.pl
+END
+esl-construct.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-construct.itest.pl
+END
+esl-alimerge.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimerge.itest.pl
+END
+esl-histplot.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-histplot.c
+END
+esl-reformat.man
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-reformat.man
+END
+esl-alimask.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimask.man
+END
+esl-seqstat.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-seqstat.man
+END
+esl-alimerge.man
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimerge.man
+END
+esl-reformat.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-reformat.c
+END
+esl-weight.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-weight.man
+END
+esl-alistat.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alistat.itest.pl
+END
+esl-alimask.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimask.c
+END
+esl-afetch.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-afetch.man
+END
+esl-alimanip.man
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimanip.man
+END
+esl-alimap.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimap.itest.pl
+END
+esl-seqstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-seqstat.c
+END
+esl-alimerge.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimerge.c
+END
+esl-shuffle.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-shuffle.man
+END
+esl-selectn.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-selectn.man
+END
+esl-weight.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-weight.c
+END
+esl-compalign.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-compalign.itest.pl
+END
+esl-alistat.man
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alistat.man
+END
+esl-afetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-afetch.c
+END
+esl-alimanip.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimanip.c
+END
+esl-compstruct.man
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-compstruct.man
+END
+esl-alimap.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimap.man
+END
+esl-shuffle.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-shuffle.c
+END
+esl-selectn.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-selectn.c
+END
+esl-alistat.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alistat.c
+END
+esl-compalign.man
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-compalign.man
+END
+esl-compstruct.c
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-compstruct.c
+END
+esl-alimap.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimap.c
+END
+esl-ssdraw.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-ssdraw.c
+END
+esl-sfetch.man
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-sfetch.man
+END
+esl-compalign.c
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-compalign.c
+END
+esl-alimanip.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-alimanip.itest.pl
+END
+esl-mask.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-mask.itest.pl
+END
+esl-sfetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-sfetch.c
+END
+esl-shuffle.itest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/hmmer-3.0-linux-intel-x86_64/easel/miniapps/esl-shuffle.itest.pl
+END

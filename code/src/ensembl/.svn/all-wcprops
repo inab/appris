@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl
+END
+run_getEComparaAlign.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/run_getEComparaAlign.sh
+END
+replaceStopWithGaps.pl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/replaceStopWithGaps.pl
+END
+getProCDS.pl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/getProCDS.pl
+END
+getGTF.pl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/getGTF.pl
+END
+getGencodeEntity.pl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/getGencodeEntity.pl
+END
+getEComparaAlign.pl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/getEComparaAlign.pl
+END
+run_getGTF.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/src/ensembl/run_getGTF.sh
+END

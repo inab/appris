@@ -1,0 +1,9 @@
+; This is a configuration file used by perl files
+
+; Database
+[ENCODE_DB]
+  host={DB_HOST}
+  db={DB_NAME}
+  user={DB_USER}
+  pass={DB_PWD}
+  port={DB_PORT}

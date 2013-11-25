@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rest/ebi_rest
+END
+muscle_lwp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rest/ebi_rest/muscle_lwp.pl
+END
+protein.faa
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rest/ebi_rest/protein.faa
+END
+protein2.faa
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rest/ebi_rest/protein2.faa
+END
+clustalw2_lwp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rest/ebi_rest/clustalw2_lwp.pl
+END
+ncbiblast_lwp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/server/www/ws/rest/ebi_rest/ncbiblast_lwp.pl
+END

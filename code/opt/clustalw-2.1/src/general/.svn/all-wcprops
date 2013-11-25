@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general
+END
+Stats.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/Stats.cpp
+END
+ClustalWResources.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/ClustalWResources.h
+END
+OutputFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/OutputFile.cpp
+END
+VectorOutOfRange.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/VectorOutOfRange.h
+END
+UserParameters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/UserParameters.cpp
+END
+SymMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/SymMatrix.h
+END
+Stats.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/Stats.h
+END
+Utility.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/Utility.cpp
+END
+clustalw.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/clustalw.h
+END
+OutputFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/OutputFile.h
+END
+param.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/param.h
+END
+utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/utils.h
+END
+SquareMat.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/SquareMat.h
+END
+UserParameters.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/UserParameters.h
+END
+Utility.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/Utility.h
+END
+SequenceNotFoundException.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/SequenceNotFoundException.h
+END
+InvalidCombination.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/InvalidCombination.cpp
+END
+Array2D.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/Array2D.h
+END
+RandomAccessLList.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/RandomAccessLList.h
+END
+general.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/general.h
+END
+debuglogObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/debuglogObject.h
+END
+userparams.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/userparams.h
+END
+DebugLog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/DebugLog.cpp
+END
+ClustalWResources.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/ClustalWResources.cpp
+END
+statsObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/statsObject.h
+END
+VectorUtility.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/VectorUtility.h
+END
+VectorOutOfRange.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/VectorOutOfRange.cpp
+END
+SymMatrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/SymMatrix.cpp
+END
+DebugLog.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/general/DebugLog.h
+END

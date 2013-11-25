@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec
+END
+hierarchy.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/hierarchy.tcl
+END
+util-dump.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/util-dump.tcl
+END
+util-string.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/util-string.tcl
+END
+console.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/console.tcl
+END
+util-number.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/util-number.tcl
+END
+widget.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/widget.tcl
+END
+pkgIndex.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/pkgIndex.tcl
+END
+progressbar.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/progressbar.tcl
+END
+util-tk.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/util-tk.tcl
+END
+Tk-frontend.R
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/Tk-frontend.R
+END
+util-expand.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/util-expand.tcl
+END
+util.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library/tcltk/exec/util.tcl
+END

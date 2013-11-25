@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA
+END
+RootedClusterTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/RootedClusterTree.cpp
+END
+RootedGuideTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/RootedGuideTree.h
+END
+UPGMAAlgorithm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/UPGMAAlgorithm.cpp
+END
+RootedTreeOutput.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/RootedTreeOutput.h
+END
+RootedClusterTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/RootedClusterTree.h
+END
+Node.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/Node.cpp
+END
+UPGMAAlgorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/UPGMAAlgorithm.h
+END
+upgmadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/upgmadata.h
+END
+Node.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/Node.h
+END
+RootedGuideTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/RootedGuideTree.cpp
+END
+RootedTreeOutput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/tree/UPGMA/RootedTreeOutput.cpp
+END

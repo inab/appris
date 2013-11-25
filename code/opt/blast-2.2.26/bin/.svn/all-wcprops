@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin
+END
+makemat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/makemat
+END
+megablast
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/megablast
+END
+blastclust
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/blastclust
+END
+fastacmd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/fastacmd
+END
+formatrpsdb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/formatrpsdb
+END
+impala
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/impala
+END
+seedtop
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/seedtop
+END
+bl2seq
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/bl2seq
+END
+rpsblast
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/rpsblast
+END
+blastpgp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/blastpgp
+END
+copymat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/copymat
+END
+blastall
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/blastall
+END
+formatdb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/blast-2.2.26/bin/formatdb
+END

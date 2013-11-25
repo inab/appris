@@ -1,0 +1,183 @@
+#!/usr/bin/perl -W
+
+use strict;
+use warnings;
+use HTTP::Request;
+use HTTP::Headers; 
+use LWP::UserAgent;
+use HTML::TreeBuilder;
+use JSON;
+use CGI;
+use FindBin;
+use lib "$FindBin::Bin/lib";
+use HTTP qw( print_http_response);
+use Data::Dumper;
+$|=1; # not use buffering
+
+###################
+# Global variable #
+###################
+use vars qw(
+	$UCSC_CGI
+	$UCSC_URL
+	$URL_VERSION
+	$APPRIS_URL
+	$FORMAT
+	$HEAD
+);
+
+$UCSC_CGI=$ENV{'UCSC_CGI'};
+$UCSC_URL=$ENV{'UCSC_URL'};
+$URL_VERSION=$ENV{'API_VERSION'};
+$APPRIS_URL="http://appris.bioinfo.cnio.es/ws/rest/export";
+$FORMAT = 'bed';
+$HEAD = 'no';
+
+#####################
+# Method prototypes #
+#####################
+sub main();
+
+#################
+# Method bodies #
+#################
+# Main subroutine
+sub main()
+{
+	# Get input parameters:
+	# "/id/gene_id"
+	# "/name/gene_name"
+	# "/id/trans_id"
+	# "/name/trans_name"
+	# "/position/chr22:20116979-20137016"
+
+	my ($cgi) = new CGI;
+	my ($url_path_info) = $cgi->path_info();
+	my (@input_parameters) = split('/',$url_path_info);
+
+	print_http_response(400)
+		unless ( @input_parameters ); # defined path
+
+	print_http_response(400)
+		if ( scalar(@input_parameters) > 4 ); # only 2 parameters (+1 empty value)
+
+	my ($type) = $input_parameters[1];
+	my ($specie) = $input_parameters[2];
+	my ($input) = $input_parameters[3];
+
+	print_http_response(400)
+		unless ( defined $type and defined $specie and defined $input );
+
+	print_http_response(400)
+		if ( ($type ne 'id') and ($type ne 'name') and ($type ne 'position') );
+
+	my ($head) = $cgi->param('head') || undef;
+	if (defined $head and ($head ne '')) {
+		#$head = lc($head);
+		$head =~ s/\s*//g;
+		if ($head ne '' and ( ($head =~ /^yes/) or ($head =~ /^no/) or ($head =~ /^only/) ) ) {
+			$HEAD = $head;	
+		}
+		else {
+			print_http_response(400);
+		}
+	}
+	
+	# Get the specie assembly
+	my ($ucsc_db) = '';
+	if ( $specie eq 'homo_sapiens' ) {
+		$ucsc_db = 'hg19';
+	}
+	elsif ( $specie eq 'mus_musculus' ) {
+		$ucsc_db = 'mm10';		
+	}
+	elsif ( $specie eq 'rattus_norvegicus' ) {
+		$ucsc_db = 'rn4';
+	}
+	else {
+		print_http_response(400);
+	}
+	
+	# Get URL text
+	my ($appris_export_data_url) = $APPRIS_URL.'/'.$type.'/'.$specie.'/'.$input.'?'.'format='.$FORMAT.'%26'.'head='.$HEAD;
+	
+	# Make a request to UCSC
+	my ($request);
+	eval{
+		$request = HTTP::Request->new("GET", $UCSC_URL,HTTP::Headers->new(),
+											'db='.$ucsc_db.'&'.
+											'hgt.customText='.$appris_export_data_url
+		);
+	};
+	print_http_response(404) if($@);
+
+	my ($ua) = LWP::UserAgent->new;
+	my ($req) = $ua->request($request);
+	if ( $req->is_error() ) {
+		my ($status) = $req->status_line;
+		print_http_response(503);
+	}
+	else {
+		my ($http_response) = $req->content();
+		if ( $http_response=~/warnList.innerHTML/ ) {
+			print_http_response(503); # error
+		}
+		
+		# Parse HTML response of UCSC
+		my ($parser);
+		eval {
+			$parser = HTML::TreeBuilder->new_from_content($http_response);
+		};
+		print_http_response(500) if($@);
+
+		# find UCSC url of images: side and hgt
+		my ($img_table) = $parser->find_by_attribute('id','imgTbl');
+		my ($row_data_ruler) = $img_table->find_by_attribute('id','td_data_ruler');
+		my ($img_data_ruler) = $row_data_ruler->find_by_attribute('id','img_data_ruler');
+		my ($img_data_ruler_src) = $img_data_ruler->attr('src');
+		my ($img_data_ruler_url) = $UCSC_CGI.$img_data_ruler_src;
+		
+		my ($row_side_ruler) = $img_table->find_by_attribute('id','td_side_ruler');
+		my ($img_side_ruler) = $row_side_ruler->find_by_attribute('id','img_side_ruler');
+		my ($img_side_ruler_src) = $img_side_ruler->attr('src');
+		my ($img_side_ruler_url) = $UCSC_CGI.$img_side_ruler_src;
+		my ($trash) = '../trash/hgt[^\/]*\/';
+		$img_side_ruler_src =~ s/$trash//;
+		$img_data_ruler_src =~ s/$trash//;
+		
+		# Create JSON output
+		if ( ($img_side_ruler_src ne '') and ($img_side_ruler_src ne '') ) {
+			# BEGIN: IMPORTANT
+			# Comment and uncoment these lines to change Genome Browser
+			#my ($json) = qq{{"side" : "$img_side_ruler_src", "hgt" : "$img_side_ruler_src"}};
+			my ($json) = qq{{"side" : "$img_side_ruler_src", "hgt" : "$img_data_ruler_src"}};		   	
+			# END: IMPORTANT			
+			print_http_response(200, $json, 'application/json');
+		} else {
+			my ($json) = qq{{"error" : "ucsc problems"}};
+			print_http_response(500, $json, 'application/json');
+		}
+	}
+}
+
+main();
+
+
+1;
+
+
+__END__
+
+=head1 NAME
+
+ucsc
+
+=head1 DESCRIPTION
+
+CGI-BIN script that retrieves url of images of UCSC genome browser
+
+=head1 AUTHOR
+
+Jose Manuel Rodriguez Carrasco -jmrodriguez@cnio.es- (INB-GN2,CNIO)
+
+=cut

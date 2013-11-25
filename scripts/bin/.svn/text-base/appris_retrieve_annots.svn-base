@@ -1,0 +1,402 @@
+#!/bin/bash
+
+# -----------------------------------------------------------------------------
+# Load environmental variables
+# If you do not trust the path, configure below:
+SYSTEM=`uname -s`
+if [ "$SYSTEM" = Darwin ]
+then
+	source /etc/bashrc
+	source /etc/profile
+	source ${HOME}/.bash_profile
+elif [ "$SYSTEM" = Linux ]
+then
+	source /etc/profile
+	source /etc/bash.bashrc
+	source ${HOME}/.bashrc
+fi
+
+VER=0.1b
+VERDATE="1-Apr-2013"
+
+FILENAME=`basename $0`
+FILENAME="${FILENAME%.*}"
+DIRNAME=`dirname $0`
+
+OUTPUT_DIR=""
+LOG_LEVEL=""
+
+# -----------------------------------------------------------------------------
+# Load external functions
+source ${DIRNAME}/appris_env
+
+# -----------------------------------------------------------------------------
+# Usage
+
+USAGE="
+\n
+ APPRIS's binary package.\n
+\n
+ Name:\n
+\t appris_retrieve_annots\n
+\n
+ Description:\n
+\t Retrieves annotations from APPRIS methods.\n
+\n Files that they will be downloaded from the website.\n
+\n
+ Required arguments:\n
+ \t -r, -release\n
+\t\t gen12   (Homo sapiens - gencode12/ensembl67)\n
+\t\t gen15   (Homo sapiens - gencode15/ensembl70)\n
+\t\t gen19   (Homo sapiens - gencode19/ensembl74)\n
+\t\t Mmus70  (Mus musculus - ensembl70)\n
+\t\t Rnor70  (Rattus norvegicus - ensembl70)\n
+\t\t Drer70  (Danio rerio - ensembl70)\n
+\t\t Lpar23A (Lynx pardinus)\n
+\n
+\t -f [-format]\n
+\t\t gtf\n
+\t\t gff3\n
+\t\t bed\n
+\t\t json\n
+\n
+\t -o [-out]\n
+\t\t Output path\n
+\t\t data/g15.v3.15Jul2013/\n
+\n
+\t -l, -loglevel\n
+\t\t info\n
+\t\t debug\n
+\n
+\t -v [-version]\n
+\t -h [-help]\n
+\n
+\n
+ Author: Jose Manuel Rodriguez Carrasco -jmrodriguez@cnio.es- (INB-GN2,CNIO)\n
+\n
+"
+
+# -----------------------------------------------------------------------------
+# Get input parameters
+
+while expr "//$1" : //- >/dev/null
+do
+	case "$1" in
+		-r | -release )
+			case "$2" in
+				gen12 | gen15 | gen19 | Lpar23A )
+					GENCODE=1
+					RELEASE=$2
+					;;
+				Mmus70 | Rnor70 | Drer70 )
+					GENCODE=0
+					RELEASE=$2
+					;;
+				* )
+					echo Unknown method name: "$2" 
+					echo -e $USAGE
+					exit 1
+					;;
+			esac
+			shift
+			;;
+		-f | -format )
+			case "$2" in
+				gtf | gff3 | bed | json )      
+					FORMAT=$2
+					;;
+				* )
+					echo Unknown format name: "$2" 
+					echo -e $USAGE
+					exit 1
+					;;
+			esac
+			shift
+			;;
+		-o | -out )
+        	OUTPUT_DIR=$2
+        	shift
+			;;
+		-l | -loglevel )
+			case "$2" in
+				info | debug )
+		        	LOG_LEVEL=$2
+					;;
+				* )
+					echo Unknown loglevel: "$2" 
+					echo -e $USAGE
+					exit 1
+					;;
+			esac
+			shift
+			;;
+		-h | -help )
+			echo -e $USAGE		
+			exit
+			;;
+		-v | -version )
+			echo "$VER", "$VERDATE"
+			exit
+			;;
+		* )
+			echo Unknown option: "$1"
+			echo -e $USAGE
+			exit 1
+			;;
+	esac
+	shift
+done
+
+if [ "${RELEASE}" == "" ]; then
+	echo You must specify at least a release!
+	echo -e $USAGE
+	exit 1
+fi  
+
+if [ "${FORMAT}" == "" ]; then
+	echo You must specify at least one format!
+	echo -e $USAGE
+	exit 1
+fi  
+
+if [ "${OUTPUT_DIR}" == "" ]; then
+	echo You must specify at least a output path!
+	echo -e $USAGE
+	exit 1
+fi  
+
+# -----------------------------------------------------------------------------
+# Prepare Environment from given release
+load_appris_release_env "${RELEASE}"
+
+# -----------------------------------------------------------------------------
+# Get method script name
+METHOD_SCRIPT_1="retrieve_main_data"
+METHOD_SCRIPT_2="retrieve_method_data"
+METHOD_SCRIPT_3="retrieve_allmain_data"
+
+# -----------------------------------------------------------------------------
+# Var declarations
+SPECIEID=$(echo ${APPRIS_SPECIE} | tr "[:upper:]" "[:lower:]" | sed 's/ /_/')
+OUTPUT_FILE_1="${OUTPUT_DIR}/appris_data.principal.${SPECIEID}.tsv"
+OUTPUT_FILE_2="${OUTPUT_DIR}/appris_data"
+OUTPUT_FILE_3="${OUTPUT_DIR}/appris_data.potential.${SPECIEID}.tsv"
+OUTPUT_FILE_4="${OUTPUT_DIR}/appris_data.appris_score.${SPECIEID}.txt"
+OUTPUT_FILE_5="${OUTPUT_DIR}/appris_data.prin_scores.${SPECIEID}.txt"
+
+# -----------------------------------------------------------------------------
+# Run method
+SCRIPT_1="${APPRIS_SCRIPTS_DIR}/${METHOD_SCRIPT_1}.pl"
+SCRIPT_2="${APPRIS_SCRIPTS_DIR}/${METHOD_SCRIPT_2}.pl"
+SCRIPT_3="${APPRIS_SCRIPTS_DIR}/${METHOD_SCRIPT_3}.pl"
+METHODS=('appris' 'firestar' 'matador3d' 'spade' 'corsair' 'inertia' 'crash' 'thump' 'cexonic')
+
+# from a given list of genes
+if [[ "${GENE_LIST}" != ""  || "${RELEASE}" == "Lpar23A" ]] ; then
+
+	# local parameters
+	LOG_PARAMETERS=""
+	if [ "$LOG_LEVEL" != "" ]; then
+		LOG_FILENAME="${APPRIS_WORKSPACE_LOG_DIR}/${FILENAME}.log"
+		LOG_PARAMETERS="--loglevel=${LOG_LEVEL} --logappend --logfile=${LOG_FILENAME}"
+	fi	
+
+	# export the annotations of constitutive isoforms:
+	echo "================="
+	echo "perl ${SCRIPT_3}"
+	echo " --output=${OUTPUT_FILE_3}"
+	echo " --apprisdb-conf=${APPRIS_SCRIPTS_DB_INI}"
+	echo " ${LOG_PARAMETERS}"
+	
+	perl ${SCRIPT_3} \
+		--output=${OUTPUT_FILE_3} \
+		--apprisdb-conf=${APPRIS_SCRIPTS_DB_INI} \
+		${LOG_PARAMETERS}
+	echo "================="	
+	
+	# export the annotations of constitutive isoforms:
+	echo "================="
+	echo "perl ${SCRIPT_1}"
+	echo " --output=${OUTPUT_FILE_1}"
+	echo " --apprisdb-conf=${APPRIS_SCRIPTS_DB_INI}"
+	echo " ${LOG_PARAMETERS}"
+	
+	perl ${SCRIPT_1} \
+		--output=${OUTPUT_FILE_1} \
+		--apprisdb-conf=${APPRIS_SCRIPTS_DB_INI} \
+		${LOG_PARAMETERS}
+	echo "================="		
+
+	# export the annotations of methods
+	echo "================="
+	echo "perl ${SCRIPT_2}"
+	echo " --format=${FORMAT}"
+	echo " --output=${OUTPUT_FILE_2}"
+	echo " --apprisdb-conf=${APPRIS_SCRIPTS_DB_INI}"
+	echo " ${LOG_PARAMETERS}"
+
+	perl ${SCRIPT_2} \
+		--format=${FORMAT} \
+		--output=${OUTPUT_FILE_2} \
+		--apprisdb-conf=${APPRIS_SCRIPTS_DB_INI} \
+		${LOG_PARAMETERS}
+	echo "================="
+	
+	# concatenate outputs
+	echo "================="
+	echo "gzip -9 ${OUTPUT_FILE_1}"
+	gzip -9 ${OUTPUT_FILE_1}
+	
+	echo "gzip -9 ${OUTPUT_FILE_3}"
+	gzip -9 ${OUTPUT_FILE_3}
+	
+	INDEX=${#METHODS[@]}
+	for ((j=0;j<$INDEX;j++)); do
+		M=${METHODS[${j}]}
+		OUTPUT_FILE_21="${OUTPUT_FILE_2}.${M}.${FORMAT}"
+		OUTPUT_FILE_22="${OUTPUT_FILE_2}.${M}.${SPECIEID}.${FORMAT}"
+		echo "grep ${M^^} ${OUTPUT_FILE_21} | gzip -9c > ${OUTPUT_FILE_22}.gz"
+		grep ${M^^} ${OUTPUT_FILE_21} | gzip -9c > ${OUTPUT_FILE_22}.gz
+	done
+	echo "================="
+	
+	# extract principal scores
+	echo "================="
+	for PRINC_TRANSC_ID in `zless ${OUTPUT_FILE_1} | cut -f 3`; do
+		echo "grep $PRINC_TRANSC_ID ${OUTPUT_FILE_4} >> ${OUTPUT_FILE_5}"
+		grep $PRINC_TRANSC_ID ${OUTPUT_FILE_4} >> ${OUTPUT_FILE_5}
+	done	
+	echo "================="
+	
+# for the whole genome chromsome by chromosome
+else
+
+	CHROMOSOME=(${APPRIS_CHR_LIST//,/ })
+	INDEX=${#CHROMOSOME[@]}
+	for ((i=0;i<$INDEX;i++)); do
+	
+		# local vars
+		CHR="${CHROMOSOME[${i}]}"
+		POSITION="chr${CHR}"	
+		APPRIS_SCRIPTS_DB_INI="${APPRIS_SCRIPTS_DB_INI}"
+		CHR_OUTPUT_FILE_1="${OUTPUT_FILE_1}.${POSITION}"
+		CHR_OUTPUT_FILE_2="${OUTPUT_FILE_2}.${POSITION}"
+		CHR_OUTPUT_FILE_3="${OUTPUT_FILE_3}.${POSITION}"
+		
+		# local parameters
+		LOG_PARAMETERS=""
+		if [ "$LOG_LEVEL" != "" ]; then
+			LOG_FILENAME="${APPRIS_WORKSPACE_LOG_DIR}/${FILENAME}.${POSITION}.log"
+			LOG_PARAMETERS="--loglevel=${LOG_LEVEL} --logappend --logfile=${LOG_FILENAME}"
+		fi	
+	
+		# export the annotations of constitutive isoforms:
+		echo "================="
+		echo "perl ${SCRIPT_3}"
+		echo " --chr=${CHR}"
+		echo " --output=${CHR_OUTPUT_FILE_3}"
+		echo " --apprisdb-conf=${APPRIS_SCRIPTS_DB_INI}"
+		echo " ${LOG_PARAMETERS}"
+		
+		perl ${SCRIPT_3} \
+			--chr=${CHR} \
+			--output=${CHR_OUTPUT_FILE_3} \
+			--apprisdb-conf=${APPRIS_SCRIPTS_DB_INI} \
+			${LOG_PARAMETERS}
+		echo "================="	
+		
+		# export the annotations of constitutive isoforms:
+		echo "================="
+		echo "perl ${SCRIPT_1}"
+		echo " --chr=${CHR}"
+		echo " --output=${CHR_OUTPUT_FILE_1}"
+		echo " --apprisdb-conf=${APPRIS_SCRIPTS_DB_INI}"
+		echo " ${LOG_PARAMETERS}"
+		
+		perl ${SCRIPT_1} \
+			--chr=${CHR} \
+			--output=${CHR_OUTPUT_FILE_1} \
+			--apprisdb-conf=${APPRIS_SCRIPTS_DB_INI} \
+			${LOG_PARAMETERS}
+		echo "================="		
+	
+		# export the annotations of methods
+		echo "================="
+		echo "perl ${SCRIPT_2}"
+		echo " --chr=${CHR}"
+		echo " --format=${FORMAT}"
+		echo " --output=${CHR_OUTPUT_FILE_2}"
+		echo " --apprisdb-conf=${APPRIS_SCRIPTS_DB_INI}"
+		echo " ${LOG_PARAMETERS}"
+	
+		perl ${SCRIPT_2} \
+			--chr=${CHR} \
+			--format=${FORMAT} \
+			--output=${CHR_OUTPUT_FILE_2} \
+			--apprisdb-conf=${APPRIS_SCRIPTS_DB_INI} \
+			${LOG_PARAMETERS}
+		echo "================="
+	
+		# concatenate outputs
+		echo "================="
+		echo "cat ${CHR_OUTPUT_FILE_1} >> ${OUTPUT_FILE_1}"
+		cat ${CHR_OUTPUT_FILE_1} >> ${OUTPUT_FILE_1}
+	
+		echo "cat ${CHR_OUTPUT_FILE_3} >> ${OUTPUT_FILE_3}"
+		cat ${CHR_OUTPUT_FILE_3} >> ${OUTPUT_FILE_3}
+	
+		INDEX2=${#METHODS[@]}	
+		for ((j=0;j<$INDEX2;j++)); do
+		
+			M=${METHODS[${j}]}
+			CHR_OUTPUT_FILE_22="${CHR_OUTPUT_FILE_2}.${M}.${FORMAT}"
+			OUTPUT_FILE_22="${OUTPUT_FILE_2}.${M}.${SPECIEID}.${FORMAT}"
+			
+			echo "cat ${CHR_OUTPUT_FILE_22} >> ${OUTPUT_FILE_22}"
+			cat ${CHR_OUTPUT_FILE_22} >> ${OUTPUT_FILE_22}
+		done	
+		echo "================="
+		
+	done
+	
+	# concatenate outputs
+	echo "================="
+	echo "gzip -9 ${OUTPUT_FILE_1}"
+	gzip -9 ${OUTPUT_FILE_1}
+	
+	echo "gzip -9 ${OUTPUT_FILE_3}"
+	gzip -9 ${OUTPUT_FILE_3}
+	
+	INDEX=${#METHODS[@]}
+	for ((j=0;j<$INDEX;j++)); do
+		M=${METHODS[${j}]}
+		OUTPUT_FILE_22="${OUTPUT_FILE_2}.${M}.${SPECIEID}.${FORMAT}"
+		echo "grep ${M^^} ${OUTPUT_FILE_22} | gzip -9c > ${OUTPUT_FILE_22}.gz"
+		grep ${M^^} ${OUTPUT_FILE_22} | gzip -9c > ${OUTPUT_FILE_22}.gz
+	done
+	echo "================="
+	
+	# delete tmp files
+	echo "================="
+	CHROMOSOME=(${APPRIS_CHR_LIST//,/ })
+	INDEX=${#CHROMOSOME[@]}
+	for ((i=0;i<$INDEX;i++)); do
+		CHR="${CHROMOSOME[${i}]}"
+		POSITION="chr${CHR}"
+		CHR_OUTPUT_FILE_1="${OUTPUT_FILE_1}.${POSITION}"
+		CHR_OUTPUT_FILE_2="${OUTPUT_FILE_2}.${POSITION}.*"
+		CHR_OUTPUT_FILE_3="${OUTPUT_FILE_3}.${POSITION}"		
+		echo "rm ${CHR_OUTPUT_FILE_1} ${CHR_OUTPUT_FILE_2} ${CHR_OUTPUT_FILE_3}"
+		rm ${CHR_OUTPUT_FILE_1} ${CHR_OUTPUT_FILE_2} ${CHR_OUTPUT_FILE_3}
+	done
+	echo "================="
+	
+	# extract principal scores
+	echo "================="
+	for PRINC_TRANSC_ID in `zless ${OUTPUT_FILE_1} | cut -f 3`; do
+		echo "grep $PRINC_TRANSC_ID ${OUTPUT_FILE_4} >> ${OUTPUT_FILE_5}"
+		grep $PRINC_TRANSC_ID ${OUTPUT_FILE_4} >> ${OUTPUT_FILE_5}
+	done	
+	echo "================="
+
+fi

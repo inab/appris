@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+	<title>APPRIS: Selecting Principal Alternative Isoforms</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" name="APPRIS: Selecting Principal Alternative Isoforms"/>		
+<!--
+	$Id$
+	docs/docs.html
+	Author: Jose Manuel Rodriguez Carrasco
+	Institutions:
+		*	Spanish National Cancer Research Institute (CNIO, http://www.cnio.es/)
+		*	Spanish National Bioinformatics Institute (INB, http://www.inab.org/)
+-->
+	<link rel="icon" type="image/x-icon" href="../img/APPRIS-favicon.ico.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/docs.css"/>
+
+	<script type="text/javascript" src="../js/browserDetect.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>	
+	<script type="text/javascript" src="../js/appris/APPRIS.js"></script>
+	<script type="text/javascript" src="../js/appris/search.js"></script>
+
+	<script type="text/javascript">
+		// Check browser
+		checkBrowser();
+
+		// Init objects
+		$(document).ready(function() {
+			$('#content_release').html(APPRIS.RELEASE);
+			$('#content_panel .content_leftcol .sidebar').html(APPRIS.DOC_MENU);
+			$('#content_panel .content_body .mysql_files').html(APPRIS.MYSQL_FILES);
+			$('#content_panel .content_body .gzip_mysql_files').html(APPRIS.GZIP_MYSQL_FILES);
+			$('#perl_api_file').html(APPRIS.PERL_API_FILE);		
+			
+			$('#info_frame').html(APPRIS.INFO_FRAME);
+			$('#search_frame_input').keyup(searchEntity3);
+			$('#search_frame_image').click(searchEntity3);
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="top_panel">
+	<div id="logo_frame" onclick="javascript: window.location='http://appris.bioinfo.cnio.es'"></div>
+	<div id="search_frame">
+		<div id="search_frame_launch">
+			Search gene/transcript:
+			<input id="search_frame_input" type="text" />
+			<div id="search_frame_image"></div>
+		</div>
+	</div>
+</div> <!-- div#top_panel -->
+
+<div id="menu_panel">
+	<div id="menu_frame">
+		<a href="../appris.html">Home</a>
+		> <a href="docs.html">Help & Docs</a> > Perl API Doc		
+	</div>
+	<div id="info_frame"></div>
+</div> <!-- div#menu_panel -->
+
+<div id="header_panel">
+	<div id="logo_panel">
+		<span class='logo_title'>Perl API Documentation</span>
+	</div>
+</div> <!-- div#header_panel -->
+
+<div id="center_panel">
+<div id="content_panel">
+	<div class="content_leftcol">
+		<div class="sidebar"></div> <!-- div#sidebar -->
+		<div id="content_release"></div><!-- div#content_release -->		
+	</div> <!-- div#content_leftcol -->
+	
+	<div class="content_rightcol">
+		<div class="content_body">
+		<br />
+		<p>
+			APPRIS uses <a class='content_external_ref' target='_blank' href='http://www.mysql.com/'>MySQL</a> relational
+			databases to store its information. A comprehensive set of Application Programming Interfaces (APIs) serve as 
+			a middle-layer between underlying database schemes.
+			The APIs aim to encapsulate the database layout by providing efficient high-level access to data tables 
+			and isolate applications from data layout changes.
+		</p>
+		<p>			
+			APPRIS's API is written in <a class='content_external_ref' target='_blank' href='http://www.perl.org/'>Perl</a>.
+			<img align="right" src='../img/MySQL-logo.png'/>
+			<img align="right" src='../img/powered_by_perl.gif'/>
+		</p>
+		<p>
+			This <b><a class='content_external_ref' target='_blank' href='pdoc/index.html'>API documentation</a></b> is 
+			automatically generated from POD within the modules by Pdoc.
+		</p>
+		<div class="content_subtitle">Perl API Installation</div> <!-- Perl API Installation -->
+<!--		
+		<p>
+			There are two ways of installing the Perl API. You can check it out using 
+			<a class='content_external_ref' target='_blank' href='https://github.com'>GitHub</a> 
+			(Secure source code hosting and collaborative development), or you can download the files 
+			in gzipped TAR format from either our website.
+		</p>
+-->
+
+		<ol>
+
+			<p>
+			<li>Create an installation directory:</li>
+			<pre class='code'>
+$ cd
+$ mkdir appris_rel7
+$ cd appris_rel7</pre>			
+			</p>
+
+			<p>
+			<li>Download the API packages:
+				<p>From our website:
+					<pre class='code'>
+						<div id="perl_api_file"></div><!-- div#perl_api_file -->
+					</pre>
+				</p>
+<!--				
+				<p>Or from <a class='content_external_ref' target='_blank' href='https://github.com'>GitHub</a>:
+					<pre class='code'>
+https://github.com/josemrc/appris_rel7</pre>
+				</p>
+-->
+			</li>
+			</p>
+
+			<p>
+			<li>Download required packages using <a class='content_external_ref' target='_blank' href='http://search.cpan.org'>CPAN</a>:</li>
+			<pre class='code'>
+Bio::Seq
+Bio::SeqIO
+Exporter
+FindBin
+Config::IniFiles
+Time::localtime
+File::Basename
+Getopt::Long
+Data::Dumper
+DBI
+DBD::mysql
+Bio::EnsEMBL::Registry (see http://www.ensembl.org/ documentation)</pre>			
+			</p>
+
+			<p>
+			<li>Set up your environment:</li>
+				<p>You have to tell Perl where to find the modules you just installed. The best way to do this is 
+				adding the modules into PERL5LIB environment variable.					
+				</p>
+				<p>Under 'bash', 'ksh', or any 'sh-derived' shell:</p>
+					<pre class='code'>
+APPRIS_LIB='path of APPRIS's API'
+PERL5LIB=${PERL5LIB}:${APPRIS_LIB}
+export PERL5LIB</pre>
+				<p>Under 'csh' or 'tcsh':</p>
+					<pre class='code'>
+setenv PERL5LIB ${PERL5LIB}:'path of APPRIS's API'</pre>
+			</p>
+
+			<p>
+			<li>APPRIS's database dump:</li>
+				<p>The entire MySQL database can be downloaded from our site in gzipped TAR format. See the next section learn to how to install the APPRIS data.</p>				
+			</p>
+
+		</ol>			
+
+		<div class="content_subtitle">Installing APPRIS Data</div> <!-- Installing APPRIS Data -->
+		<ol>
+			<p>
+			<li>The entire MySQL database can be downloaded from our site in gzipped TAR format:</li>
+			<div class="mysql_files"></div> <!-- get the mysql files from APPRIS.js -->
+
+			<p>
+			<li>Create APPRIS database:</li>
+			<pre class='code'>
+mysqladmin -h ${HOST} -u ${USER} -p${PWD} create ${DATABASE}</pre>			
+			</p>		
+
+			<p>
+			<li>Import entity tables:</li>
+			<pre class='code'>
+gunzip < appris.entity.homo_sapiens_gencode_7_dev.21Apr2012.v15.dump.gz | mysql ${DATABASE} -h ${HOST} -u ${USER} -p${PWD}</pre>			
+			</p>		
+
+			<p>
+			<li>Import the rest of tables:</li>
+			<div class="gzip_mysql_files"></div> <!-- get the mysql files from APPRIS.js -->
+
+		</ol>	
+				
+
+		<div class="content_subtitle">API Documentation</div> <!-- API Documentation -->
+		<p>
+			The APPRIS API has code documentation in the standard Perl POD (Plain Old Documentation) form.
+			This is documentation is mixed in with the actual code, but can be automatically extracted and formatted 
+			using software tools. For example the following command will bring up documentation about the module analysis of 
+			APPRIS class and each of its methods:
+			<pre class='code'>perldoc APPRIS::Analysis::APPRIS</pre>
+		</p>
+		<p>Also, a web version is available on the 
+		<a class='content_external_ref' target='_blank' href='pdoc/index.html'>Pdoc Perl documentation</a>
+		</p>
+
+		<h4>Connecting to the Database - The Registry</h4> 
+		
+		<p>
+			All data used and created by APPRIS is stored in MySQL relational databases. If you want to access 
+			this database the first thing you have to do is to connect to it. For that, you will need to know some things:			
+		</p>
+		<pre class='code'>
+db_host_name - the name of the host where the APPRIS database lives
+db_name      - the name of APPRIS database
+db_user      - the user name used to access the database
+db_user_pwd  - the password of user used to access the database
+db_port      - the port to access the database</pre>
+
+		<p>
+			First, we need a connection to the APPRIS database through the imported Registry module. There are several ways 
+			to connect to the APPRIS database. Almost every APPRIS script that you will write will contain a use statement 
+			like the following:
+		</p>
+
+		<ol>			
+			<p>
+			<li>Make a connection to the APPRIS Registry and pass parameters using the -attribute => 'somevalue' syntax:</li>
+			<pre class='code'>
+use APPRIS::Registry;
+
+my $registry = APPRIS::Registry->new(
+	-dbhost  => 'db_host_name',
+	-dbname  => 'db_name',
+	-dbuser  => 'db_user',
+	-dbpass  => 'db_user_pwd',
+	-dbport  => 'db_port',
+);</pre>			
+			</p>		
+
+			<p>
+			<li>Pass the parameters of connection (-attribute => 'somevalue' syntax) using the 'load_registry_from_db' method 
+			of the APPRIS Registry module:</li>
+			<pre class='code'>
+use APPRIS::Registry;
+
+my $registry = APPRIS::Registry->new();
+$registry->load_registry_from_db(
+	-dbhost  => 'db_host_name',
+	-dbname  => 'db_name',
+	-dbuser  => 'db_user',
+	-dbpass  => 'db_user_pwd',
+	-dbport  => 'db_port',
+);</pre>			
+			</p>		
+
+			<p>
+			<li><a class='content_external_ref' target='_blank' href='http://config-inifiles.sourceforge.net'>Config::IniFiles</a> module provides a way to have readable configuration files (INI) outside your Perl script. INI files consist of a number of sections, each preceded with the section name in square brackets, followed by parameter names and their values. The configuration of the APPRIS database can be accessed from a tied hash:</li>
+			<pre class='code'>
+[ENCODE_DB]
+  host=db_host_name
+  db=db_name
+  user=db_user
+  pass=db_user_pwd
+  port=db_port</pre>
+			<p>Pass the parameters of the connection using the Config INI file and the 'load_registry_from_ini' method of the APPRIS Registry module:</p>
+			<pre class='code'>
+use APPRIS::Registry;
+
+my $registry = APPRIS::Registry->new();
+$registry->load_registry_from_ini(
+	-file  => '/path/configfile.ini'
+);</pre>			
+
+			</p>		
+
+		</ol>
+
+		<p>In addition to the parameters provided above the optional 'dbport' and 'dbpass' parameters can be used specify the 
+TCP port to connect via and the password to use respectively. These values have sensible defaults and can often be omitted.
+		</p>
+
+		<h4>Perl script samples</h4>
+		
+		<p>The APPRIS API allows manipulation of the database data through various objects. For example, some of the more heavily used 
+objects are the Gene, Transcript and Translation objects.These objects are retrieved and stored in the database through the 
+use of classes. Here we show you some useful samples how to use the APPRIS API:
+		</p>			
+
+		<ul>			
+			<p>
+			<li>Retrieve a list reference of gene objects:</li>
+			<pre class='code'>
+use APPRIS::Registry;
+
+my $registry = APPRIS::Registry->new(
+	-dbhost  => 'db_host_name',
+	-dbname  => 'db_name',
+	-dbuser  => 'db_user',
+	-dbpass  => 'db_user_pwd',
+	-dbport  => 'db_port',
+);
+
+my $chromosome = $registry->fetch_by_region('M');	
+foreach my $gene (@{$chromosome}) {
+	print "gene_id: ". $gene->stable_id ." source: ".$gene->source." external: ".$gene->external_name."\n";
+}</pre>			
+			</p>
+
+			<p>
+			<li>Another useful way to obtain information with respect to a gene:</li>
+			<pre class='code'>
+my $gene = $registry->fetch_by_gene_stable_id('ENSG00000135541');
+print("gene start:end:strand is "
+		. join( ":", map { $gene->$_ } qw(start end strand) )
+		. "\n" );</pre>			
+			</p>
+
+			<p>
+			<li>Retrieve a transcript and translate object from given transcript id:</li>
+			<pre class='code'>
+my $transcript = $registry->fetch_by_transc_stable_id('ENST00000367800');  
+print "\nTranscript ENST00000367800:\n".
+		"* stable_id: ".$transcript->stable_id."\n".
+		"* sequence:\n".$transcript->sequence."\n".
+		"* pep. sequence:\n".$transcript->translation->sequence."\n";
+
+
+my $translation = $registry->fetch_by_transl_stable_id('ENST00000367800');
+print "\nTranslate ENST00000367800:\n".
+	"* stable_id: ".$translation->stable_id."\n* pep. sequence:\n".$translation->sequence."\n";</pre>			
+			</p>
+
+			<p>
+			<li>Retrieve CDS positions:</li>
+			<pre class='code'>
+use APPRIS::Registry;
+
+my $registry = APPRIS::Registry->new(
+	-dbhost  => 'db_host_name',
+	-dbname  => 'db_name',
+	-dbuser  => 'db_user',
+	-dbpass  => 'db_user_pwd',
+	-dbport  => 'db_port',
+);
+
+my $chromosome = $registry->fetch_basic_by_region('M');
+foreach my $gene (@{$chromosome}) {
+	foreach my $transcript (@{$gene->transcripts}) {			
+			
+		if ($transcript->translate and $transcript->exons) {
+			my ($exons) = $transcript->exons;
+			my ($translate) = $transcript->translate;
+			for(my $icds=0;$icds<scalar(@{$translate->cds});$icds++) {
+				my ($cds) = $translate->cds->[$icds];
+				my ($exon) = $exons->[$icds];
+
+				print	"gene_id: ". $gene->stable_id .
+						" transcript_id: ". $transcript->stable_id .
+						" exon_id: ". $exon->stable_id .
+						" cds_start: ".$cds->start .
+						" cds_end: ".$cds->end .
+						" cds_strand: ".$cds->strand."\n";
+			}
+		}
+	}
+}</pre>			
+			</p>
+			
+			<p>
+			<li>Prints the APPRIS annotations of the main box of web site:</li>
+			<pre class='code'>
+my ($gene) = $registry->fetch_by_gene_stable_id('ENSG00000140464');
+	
+foreach my $transcript (@{$gene->transcripts})
+{		
+	# get transcript info
+	my ($trans_id) = $transcript->stable_id;
+	my ($trans_name) = $transcript->external_name;
+	my ($trans_biotype) = $transcript->biotype;
+	my ($trans_status) = $transcript->status;
+ 	my ($ccds_id) = '-';
+	if ($transcript->xref_identify) {
+		foreach my $xref_identify (@{$transcript->xref_identify}) {
+			if ( $xref_identify->dbname eq 'CCDS' ) {
+				$ccds_id = $xref_identify->id;							
+			}
+		}		
+	}
+	
+	# get the length of aa and na
+	my ($length_na) = '-';
+	my ($length_aa) = '-';		
+	if ($transcript->sequence) {
+		$length_na = length($transcript->sequence);
+	}
+	if ($transcript->translate and $transcript->translate->sequence) {
+		$length_aa = length($transcript->translate->sequence);
+	}
+	
+	# get start/end codons
+	my ($no_codons) = '-';
+	if ($transcript->translate and $transcript->translate->codons) {
+		my ($aux_codons) = '';
+		foreach my $codon (@{$transcript->translate->codons}) {
+			if ( ($codon->type eq 'start') or ($codon->type eq 'stop') ) {
+				$aux_codons .= $codon->type.',';							
+			}
+		}
+		$no_codons = 'start/' unless ( $aux_codons =~ /start/ );
+		$no_codons = 'stop/' unless ( $aux_codons =~ /stop/ );
+		$no_codons =~ s/\/$// if (defined $no_codons);		
+	}
+
+	# get APPRIS annotation
+	my ($appris_annot) = '-';
+	my ($analysis) = $registry->fetch_analysis_by_stable_id($trans_id,'appris');				
+	if ( $analysis and $analysis->appris and $analysis->appris->principal_isoform_signal ) {
+		$appris_annot = $analysis->appris->principal_isoform_signal;
+	}
+	
+	 		
+	print	$gene->stable_id . "\t" .
+			$trans_id . "\t" .
+			$trans_name . "\t" .
+			$trans_biotype . "\t" .
+			$trans_status . "\t" .
+			$length_na . "\t" .
+			$length_aa . "\t" .
+			$no_codons . "\t" .
+			$ccds_id . "\t" .
+			$appris_annot . "\t" .
+			
+			"\n";	
+	
+}</pre>			
+		</p>
+			
+			<p>
+			<li>Prints the APPRIS annotations in detail of the web site:</li>
+			<pre class='code'>
+my ($gene) = $registry->fetch_by_gene_stable_id('ENSG00000140464');
+	
+foreach my $transcript (@{$gene->transcripts})
+{		
+	# get transcript info
+	my ($trans_id) = $transcript->stable_id;
+
+	# get APPRIS annotation
+
+	my ($num_func_residues) = '-';
+	my ($struct_score) = '-';
+	my ($vert_score) = '-';
+	my ($domain_annot) = '-';
+	my ($e_evol_annot) = '-';
+	my ($e_cons_annot) = '-';
+	my ($num_tmh) = '-';
+	my ($pep_annot) = '-';
+	my ($mit_annot) = '-';
+	my ($appris_annot) = '-';
+	my ($analysis) = $registry->fetch_analysis_by_stable_id($trans_id,'all');
+	
+	
+	if ( $analysis and $analysis->firestar and defined $analysis->firestar->num_residues ) {
+		$num_func_residues = $analysis->firestar->num_residues;
+	}
+	if ( $analysis and $analysis->matador3d and defined $analysis->matador3d->score ) {
+		$struct_score = $analysis->matador3d->score;
+	}
+	if ( $analysis and $analysis->corsair and defined $analysis->corsair->score ) {
+		$vert_score = $analysis->corsair->score;
+	}
+	if ( $analysis and $analysis->spade and defined $analysis->spade->domain_signal ) {
+		$domain_annot = $analysis->spade->domain_signal;
+	}
+	if ( $analysis and $analysis->inertia and defined $analysis->inertia->unusual_evolution ) {
+		$e_evol_annot = $analysis->inertia->unusual_evolution;
+	}
+	if ( $analysis and $analysis->cexonic and defined $analysis->cexonic->conservation_exon ) {
+		$e_cons_annot = $analysis->cexonic->conservation_exon;
+	}
+	if ( $analysis and $analysis->thump and defined $analysis->thump->num_tmh ) {
+		$num_tmh = $analysis->thump->num_tmh;
+	}
+	if ( $analysis and $analysis->crash and defined $analysis->crash->peptide_signal ) {
+		$pep_annot = $analysis->crash->peptide_signal;
+	}
+	if ( $analysis and $analysis->crash and defined $analysis->crash->mitochondrial_signal ) {
+		$mit_annot = $analysis->crash->mitochondrial_signal;
+	}
+	
+	if ( $analysis and $analysis->appris and defined $analysis->appris->principal_isoform_signal ) {
+		$appris_annot = $analysis->appris->principal_isoform_signal;
+	}
+	
+	 		
+	print	$gene->stable_id . "\t" .
+			$trans_id . "\t" .
+			$num_func_residues . "\t" .
+			$struct_score . "\t" .
+			$vert_score . "\t" .
+			$domain_annot . "\t" .
+			$e_evol_annot . "\t" .
+			$e_cons_annot . "\t" .
+			$num_tmh . "\t" .
+			$pep_annot . "\t" .
+			$mit_annot . "\t" .
+			$appris_annot . "\t" .
+			
+			"\n";	
+	
+}</pre>			
+		</p>
+
+		</ul>		
+
+		<p>
+			These and other useful scripts can be found on the following sites:
+		</p>
+		<ul>
+			<li><a class='content_external_ref' target='_blank' href='../download/samples/sample.txt'>sample.pl</a> - prints useful information of a gene/transcript/peptide</li>
+			<li><a class='content_external_ref' target='_blank' href='../download/samples/sample2.txt'>sample2.pl</a> - prints CDS positions from a genomic region</li>
+			<li><a class='content_external_ref' target='_blank' href='../download/samples/sample3.txt'>sample3.pl</a> - prints the APPRIS annotations of the main box of web site</li>
+			<li><a class='content_external_ref' target='_blank' href='../download/samples/sample4.txt'>sample4.pl</a> - prints the APPRIS annotations in detail of the web site</li>
+		</ul>			
+		
+						
+		</div> <!-- div#content_body -->	
+	</div>	<!-- div#content_rightcol -->
+
+</div> <!-- div#content_panel -->			
+</div> <!-- div#center_panel -->
+</body>
+</html>

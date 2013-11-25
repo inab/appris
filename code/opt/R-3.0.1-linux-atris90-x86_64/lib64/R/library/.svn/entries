@@ -1,0 +1,118 @@
+10
+
+dir
+766
+https://svn.code.sf.net/p/appris/code/tags/release-1.2/code/opt/R-3.0.1-linux-atris90-x86_64/lib64/R/library
+https://svn.code.sf.net/p/appris/code
+
+
+
+2013-08-12T09:56:45.892469Z
+565
+josemrc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14aeff2f-f874-45c9-a143-381b12637c85
+
+cluster
+dir
+
+tcltk
+dir
+
+translations
+dir
+
+stats4
+dir
+
+lattice
+dir
+
+grid
+dir
+
+rpart
+dir
+
+foreign
+dir
+
+KernSmooth
+dir
+
+codetools
+dir
+
+nlme
+dir
+
+mgcv
+dir
+
+parallel
+dir
+
+spatial
+dir
+
+stats
+dir
+
+graphics
+dir
+
+tools
+dir
+
+utils
+dir
+
+methods
+dir
+
+boot
+dir
+
+MASS
+dir
+
+Matrix
+dir
+
+nnet
+dir
+
+class
+dir
+
+datasets
+dir
+
+compiler
+dir
+
+base
+dir
+
+grDevices
+dir
+
+survival
+dir
+
+splines
+dir
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/pairwise
+END
+PairwiseAlignBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/pairwise/PairwiseAlignBase.h
+END
+FastPairwiseAlign.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/pairwise/FastPairwiseAlign.h
+END
+FullPairwiseAlign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/pairwise/FullPairwiseAlign.cpp
+END
+FullPairwiseAlign.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/pairwise/FullPairwiseAlign.h
+END
+FastPairwiseAlign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/pairwise/FastPairwiseAlign.cpp
+END

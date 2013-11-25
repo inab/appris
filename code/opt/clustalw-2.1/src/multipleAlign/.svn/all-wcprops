@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign
+END
+Iteration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/Iteration.cpp
+END
+ProfileBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileBase.h
+END
+MyersMillerProfileAlign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/MyersMillerProfileAlign.cpp
+END
+Iteration.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/Iteration.h
+END
+MyersMillerProfileAlign.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/MyersMillerProfileAlign.h
+END
+ProfileWithSub.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileWithSub.cpp
+END
+ProfileWithSub.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileWithSub.h
+END
+LowScoreSegProfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/LowScoreSegProfile.cpp
+END
+MSA.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/MSA.cpp
+END
+ProfileStandard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileStandard.cpp
+END
+LowScoreSegProfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/LowScoreSegProfile.h
+END
+MSA.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/MSA.h
+END
+ProfileStandard.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileStandard.h
+END
+ProfileAlignAlgorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileAlignAlgorithm.h
+END
+ProfileBase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/p/appris/code/!svn/ver/766/tags/release-1.2/code/opt/clustalw-2.1/src/multipleAlign/ProfileBase.cpp
+END
